@@ -1,33 +1,77 @@
 import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import { startLogin } from "@/const";
+import { useLocation } from "wouter";
+import { useEffect } from "react";
 
-/**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Workflow, Frontend Best Practices, Design Guide and Common Pitfalls
- */
 export default function Home() {
-  // The useAuth hook provides authentication state.
-  // To implement login/logout, call logout(), or start login from an event
-  // handler: onClick={() => startLogin()} (imported from "@/const"). Never call
-  // startLogin() during render (no href={startLogin()}) — it mints a one-time
-  // nonce cookie and must run only at the moment of navigation.
-  let { user, loading, error, isAuthenticated, logout } = useAuth();
+  const { user, loading, isAuthenticated, logout } = useAuth();
+  const [, setLocation] = useLocation();
 
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
+  useEffect(() => {
+    if (loading) return;
+
+    if (isAuthenticated && user) {
+      // Redirect based on role
+      if (user.role === "admin") {
+        setLocation("/admin/dashboard");
+      } else if (user.role === "driver") {
+        setLocation("/driver/dashboard");
+      } else {
+        setLocation("/user/map");
+      }
+    }
+  }, [isAuthenticated, user, loading, setLocation]);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+      </div>
+    );
+  }
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
-      </main>
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+      <div className="flex flex-col items-center justify-center min-h-screen px-4">
+        <div className="text-center max-w-2xl mx-auto">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+            Mobility Intelligence
+          </h1>
+          <p className="text-xl md:text-2xl text-slate-300 mb-4">
+            Real-time transportation platform with live tracking and intelligent routing
+          </p>
+          <p className="text-lg text-slate-400 mb-12">
+            Connect drivers, track routes, and access mobility data in real-time
+          </p>
+
+          {isAuthenticated ? (
+            <div className="flex flex-col gap-4">
+              <p className="text-slate-300">
+                Welcome, <span className="font-semibold">{user?.name || user?.email}</span>
+              </p>
+              <p className="text-sm text-slate-400">
+                Role: <span className="font-semibold capitalize">{user?.role}</span>
+              </p>
+              <Button
+                onClick={() => logout()}
+                variant="outline"
+                className="bg-slate-800 hover:bg-slate-700 border-slate-600"
+              >
+                Log Out
+              </Button>
+            </div>
+          ) : (
+            <Button
+              onClick={() => startLogin()}
+              size="lg"
+              className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-semibold px-8 py-3 rounded-lg"
+            >
+              Get Started
+            </Button>
+          )}
+        </div>
+      </div>
     </div>
   );
 }

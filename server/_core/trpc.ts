@@ -43,3 +43,20 @@ export const adminProcedure = t.procedure.use(
     });
   }),
 );
+
+export const driverProcedure = t.procedure.use(
+  t.middleware(async opts => {
+    const { ctx, next } = opts;
+
+    if (!ctx.user || ctx.user.role !== 'driver') {
+      throw new TRPCError({ code: "FORBIDDEN", message: 'Only drivers can access this resource.' });
+    }
+
+    return next({
+      ctx: {
+        ...ctx,
+        user: ctx.user,
+      },
+    });
+  }),
+);
