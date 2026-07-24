@@ -10,9 +10,9 @@
 - [x] Publicar repositorio en GitHub y entregar instrucciones de despliegue
 
 - [x] Corregir la configuración de salida SPA y rutas de API para Vercel
-- [ ] Validar la compilación estática de producción y el renderizado de la interfaz React en Vercel
-- [ ] Sincronizar el parche de frontend estático con GitHub para activar el redespliegue automático
-- [ ] Redesplegar desde GitHub y verificar que la URL pública de Vercel muestre la interfaz React
+- [x] Validar la compilación estática de producción y el renderizado de la interfaz React en Vercel
+- [x] Sincronizar el parche de frontend estático con GitHub para activar el redespliegue automático
+- [x] Redesplegar desde GitHub y verificar que la URL pública de Vercel muestre la interfaz React
 - [x] Corregir y entregar instrucciones de Vercel específicas para el frontend Vite
 - [x] Actualizar la documentación de despliegue para indicar que Supabase se configurará en una etapa posterior
 - [x] Eliminar del despliegue de Vercel la ejecución de Express y tRPC, conservando el código fuente para la futura integración con Supabase
