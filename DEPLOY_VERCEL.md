@@ -41,7 +41,10 @@ El archivo `vercel.json` utiliza `pnpm exec vite build` y publica solamente el d
 
 Cuando se inicie la integración de backend, se definirán las tablas, las políticas de acceso por rol, la autenticación, el almacenamiento de posiciones GPS y las variables de entorno correspondientes. En ese momento se reemplazarán las llamadas locales tRPC por la integración de Supabase que se acuerde para el producto.
 
+## Validación realizada
+
+La compilación estática se verificó con `pnpm check`, `pnpm test` y `pnpm exec vite build`. Después de sincronizar el repositorio, la URL pública `https://mobility-intelligence-mvp.vercel.app/` mostró la interfaz React de Mobility Intelligence en lugar del código JavaScript del servidor. Las integraciones de datos y autenticación quedan intencionalmente pendientes hasta la siguiente etapa con Supabase.
+
 ## Referencias
 
 [1]: https://vercel.com/docs/frameworks/frontend/vite "Vite on Vercel"
-
