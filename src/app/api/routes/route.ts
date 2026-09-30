@@ -10,8 +10,8 @@ function numberParam(value: string | null, fallback: number) {
 
 export async function GET(request: NextRequest) {
   const { searchParams } = request.nextUrl
-  const latitude = numberParam(searchParams.get('lat'), -17.7833)
-  const longitude = numberParam(searchParams.get('lng'), -63.1821)
+  const latitude = numberParam(searchParams.get('lat'), 20)
+  const longitude = numberParam(searchParams.get('lng'), 0)
   const requestedRadius = numberParam(searchParams.get('radius'), 2_500)
   const radius = Math.min(Math.max(requestedRadius, 1_000), MAX_RADIUS_METERS)
 
@@ -51,7 +51,8 @@ export async function GET(request: NextRequest) {
             : [],
         )
         const code = tags.ref || tags.route_ref || ''
-        const name = tags.name || (code ? `Ruta ${code}` : 'Ruta de autobús')
+        const rawName = tags.name || (code ? `Ruta ${code}` : 'Ruta de autobús')
+        const name = rawName.replace(/^l[ií]nea\s+/i, 'Ruta ')
 
         return {
           id: `osm-${relation.id}`,

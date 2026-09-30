@@ -21,7 +21,7 @@ import type { MapRoute } from '@/types/mobility'
 
 const MobilityMap = dynamic(() => import('@/components/mobility-map'), { ssr: false })
 
-const DEFAULT_CENTER: [number, number] = [-17.7833, -63.1821]
+const DEFAULT_CENTER: [number, number] = [20, 0]
 
 type LocationStatus = 'idle' | 'loading' | 'ready' | 'denied' | 'error'
 
@@ -30,7 +30,7 @@ export default function MobilityHome() {
   const [userLocation, setUserLocation] = useState<[number, number] | null>(null)
   const [locationStatus, setLocationStatus] = useState<LocationStatus>('idle')
   const [routes, setRoutes] = useState<MapRoute[]>([])
-  const [routesLoading, setRoutesLoading] = useState(true)
+  const [routesLoading, setRoutesLoading] = useState(false)
   const [routesError, setRoutesError] = useState<string | null>(null)
   const [search, setSearch] = useState('')
   const [selectedRouteId, setSelectedRouteId] = useState<string | null>(null)
@@ -53,14 +53,6 @@ export default function MobilityHome() {
       setRoutesLoading(false)
     }
   }, [])
-
-  useEffect(() => {
-    const timer = window.setTimeout(() => {
-      void fetchRoutes(DEFAULT_CENTER)
-    }, 0)
-
-    return () => window.clearTimeout(timer)
-  }, [fetchRoutes])
 
   const filteredRoutes = useMemo(() => {
     const normalizedSearch = search.trim().toLowerCase()
@@ -118,6 +110,11 @@ export default function MobilityHome() {
       },
       { enableHighAccuracy: true, timeout: 10_000, maximumAge: 60_000 },
     )
+  }
+
+  function handleMapMove(nextCenter: [number, number], zoom: number) {
+    setCenter(nextCenter)
+    if (zoom >= 8) void fetchRoutes(nextCenter)
   }
 
   const selectedRoute = routes.find((route) => route.id === selectedRouteId)
@@ -210,7 +207,7 @@ export default function MobilityHome() {
           </div>
           <div className="grid lg:grid-cols-[minmax(0,1fr)_330px]">
             <div className="relative min-h-[560px] bg-[#d9d3c5]">
-              <MobilityMap center={center} userLocation={userLocation} routes={visibleRoutes} selectedRouteId={selectedRouteId} onRouteSelect={setSelectedRouteId} />
+              <MobilityMap center={center} userLocation={userLocation} routes={visibleRoutes} selectedRouteId={selectedRouteId} onRouteSelect={setSelectedRouteId} onMapMove={handleMapMove} />
               <div className="absolute bottom-4 left-4 z-[500] rounded-lg bg-white/90 px-3 py-2 text-[10px] text-black shadow-lg backdrop-blur-sm">© OpenStreetMap contributors</div>
             </div>
             <aside className="border-t border-[#222222] lg:border-l lg:border-t-0">
@@ -218,7 +215,7 @@ export default function MobilityHome() {
               <div className="max-h-[500px] overflow-y-auto p-3">
                 {routesLoading ? <div className="flex items-center gap-2 px-3 py-5 text-sm text-[#888888]"><LoaderCircle className="animate-spin" size={17} /> Consultando rutas reales...</div> : null}
                 {!routesLoading && routesError ? <div className="rounded-xl border border-[#E63946]/30 bg-[#E63946]/10 p-4 text-sm text-[#FF9CA5]"><AlertCircle className="mb-2" size={18} /><p>{routesError}</p><button onClick={() => void fetchRoutes(userLocation ?? DEFAULT_CENTER)} className="mt-3 font-semibold underline">Intentar de nuevo</button></div> : null}
-                {!routesLoading && !routesError && filteredRoutes.length === 0 ? <div className="px-3 py-6 text-sm text-[#888888]"><MapPin className="mb-3 text-[#CB9546]" size={21} /><p className="font-medium text-[#B7B7B7]">No hay rutas publicadas en esta zona.</p><p className="mt-2 leading-6">Kabbure no inventa recorridos. Próximamente podrás importar fuentes GTFS autorizadas desde administración.</p></div> : null}
+                {!routesLoading && !routesError && filteredRoutes.length === 0 ? <div className="px-3 py-6 text-sm text-[#888888]"><MapPin className="mb-3 text-[#CB9546]" size={21} /><p className="font-medium text-[#B7B7B7]">Busca una ciudad para consultar sus rutas.</p><p className="mt-2 leading-6">Mueve el mapa a otra ciudad o país y Kabbure consultará los recorridos disponibles en esa zona.</p></div> : null}
                 {!routesLoading && !routesError ? filteredRoutes.map((route) => <div key={route.id} className={`mb-2 rounded-xl border p-3 transition ${selectedRouteId === route.id ? 'border-[#CB9546] bg-[#CB9546]/10' : 'border-[#222222] bg-black/30 hover:border-[#555555]'}`}><button onClick={() => toggleRoute(route.id)} className="kabbure-focus w-full text-left"><div className="flex items-start justify-between gap-3"><span className="font-medium text-white">{route.name}</span><span className={`rounded px-2 py-1 text-[10px] font-semibold ${visibleRouteIds.has(route.id) ? 'bg-[#06D6A0]/15 text-[#06D6A0]' : 'bg-[#CB9546]/15 text-[#E5C76B]'}`}>{visibleRouteIds.has(route.id) ? 'VISIBLE' : route.code || 'BUS'}</span></div><span className="mt-2 block text-xs text-[#888888]">Fuente: OpenStreetMap · {visibleRouteIds.has(route.id) ? 'Ocultar ruta' : 'Mostrar ruta'}</span></button>{visibleRouteIds.has(route.id) ? <button onClick={() => isolateRoute(route.id)} className="mt-3 text-xs font-semibold text-[#E5C76B] hover:text-white">Apartar esta ruta</button> : null}</div>) : null}
               </div>
               {selectedRoute ? <div className="border-t border-[#222222] bg-[#CB9546]/5 p-5"><p className="text-xs uppercase tracking-[0.16em] text-[#CB9546]">Ruta seleccionada</p><h3 className="mt-2 font-semibold">{selectedRoute.name}</h3><p className="mt-2 text-xs leading-5 text-[#A5A5A5]">Este recorrido proviene de una relación de transporte público de OpenStreetMap.</p></div> : null}

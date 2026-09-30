@@ -12,14 +12,27 @@ type MobilityMapProps = {
   routes: MapRoute[]
   selectedRouteId: string | null
   onRouteSelect: (routeId: string) => void
+  onMapMove: (center: [number, number], zoom: number) => void
 }
 
-function MapViewport({ center, userLocation }: Pick<MobilityMapProps, 'center' | 'userLocation'>) {
+function MapViewport({ center, userLocation, onMapMove }: Pick<MobilityMapProps, 'center' | 'userLocation' | 'onMapMove'>) {
   const map = useMap()
 
   useEffect(() => {
-    map.flyTo(userLocation ?? center, userLocation ? 14 : 12, { duration: 0.8 })
-  }, [center, map, userLocation])
+    if (userLocation) map.flyTo(userLocation, 14, { duration: 0.8 })
+  }, [map, userLocation])
+
+  useEffect(() => {
+    const handleMoveEnd = () => {
+      const mapCenter = map.getCenter()
+      onMapMove([mapCenter.lat, mapCenter.lng], map.getZoom())
+    }
+
+    map.on('moveend', handleMoveEnd)
+    return () => {
+      map.off('moveend', handleMoveEnd)
+    }
+  }, [map, onMapMove])
 
   return null
 }
@@ -50,14 +63,15 @@ export default function MobilityMap({
   routes,
   selectedRouteId,
   onRouteSelect,
+  onMapMove,
 }: MobilityMapProps) {
   return (
-    <MapContainer center={center} zoom={12} scrollWheelZoom className="h-full min-h-[560px] w-full">
+    <MapContainer center={center} zoom={2} scrollWheelZoom className="h-full min-h-[560px] w-full">
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <MapViewport center={center} userLocation={userLocation} />
+      <MapViewport center={center} userLocation={userLocation} onMapMove={onMapMove} />
       {userLocation ? <LocationMarker position={userLocation} /> : null}
       {routes.map((route) => (
         <>
