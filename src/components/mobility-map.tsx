@@ -42,7 +42,9 @@ function MapViewport({ center, userLocation, onMapMove, onMapPick }: Pick<Mobili
     }
 
     map.on('click', handleMapClick)
-    return () => map.off('click', handleMapClick)
+    return () => {
+      map.off('click', handleMapClick)
+    }
   }, [map, onMapPick])
 
   return null
@@ -80,7 +82,9 @@ function MapPointMarker({ position }: { position: [number, number] }) {
       fillOpacity: 1,
     }).addTo(map)
 
-    return () => marker.remove()
+    return () => {
+      marker.remove()
+    }
   }, [map, position])
 
   return null
