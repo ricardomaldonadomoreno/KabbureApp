@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --kabbure-gold: #cb9546;
+  --kabbure-gold-light: #e5c76b;
+  --kabbure-gold-dark: #b8962f;
+  --kabbure-black: #000000;
+  --kabbure-surface: #111111;
+  --kabbure-border: #222222;
+  --kabbure-white: #ffffff;
+  --kabbure-muted: #888888;
+  --kabbure-success: #06d6a0;
+  --kabbure-danger: #e63946;
+  --background: var(--kabbure-black);
+  --foreground: var(--kabbure-white);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Playfair Display', serif;
+}
+
+* { box-sizing: border-box; }
+html { min-height: 100%; background: var(--kabbure-black); }
+body {
+  min-height: 100%;
+  margin: 0;
+  background: var(--kabbure-black);
+  color: var(--kabbure-white);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+button, input, textarea, select { font: inherit; }
+button { cursor: pointer; }
+
+.kabbure-display { font-family: 'Playfair Display', Georgia, serif; }
+.kabbure-surface { background: var(--kabbure-surface); border: 1px solid var(--kabbure-border); }
+.kabbure-focus:focus-visible { outline: 2px solid var(--kabbure-gold-light); outline-offset: 3px; }
