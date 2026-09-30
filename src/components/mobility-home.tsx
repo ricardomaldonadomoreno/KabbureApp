@@ -1,6 +1,7 @@
 'use client'
 
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import {
   AlertCircle,
@@ -33,6 +34,7 @@ export default function MobilityHome() {
   const [routesError, setRoutesError] = useState<string | null>(null)
   const [search, setSearch] = useState('')
   const [selectedRouteId, setSelectedRouteId] = useState<string | null>(null)
+  const [visibleRouteIds, setVisibleRouteIds] = useState<Set<string>>(new Set())
   const [driverPanelOpen, setDriverPanelOpen] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -60,11 +62,41 @@ export default function MobilityHome() {
     return () => window.clearTimeout(timer)
   }, [fetchRoutes])
 
-  const visibleRoutes = useMemo(() => {
+  const filteredRoutes = useMemo(() => {
     const normalizedSearch = search.trim().toLowerCase()
     if (!normalizedSearch) return routes
     return routes.filter((route) => `${route.name} ${route.code} ${route.network ?? ''}`.toLowerCase().includes(normalizedSearch))
   }, [routes, search])
+
+  const visibleRoutes = useMemo(
+    () => routes.filter((route) => visibleRouteIds.has(route.id)),
+    [routes, visibleRouteIds],
+  )
+
+  function toggleRoute(routeId: string) {
+    setVisibleRouteIds((current) => {
+      const next = new Set(current)
+      if (next.has(routeId)) next.delete(routeId)
+      else next.add(routeId)
+      return next
+    })
+    setSelectedRouteId(routeId)
+  }
+
+  function showAllRoutes() {
+    setVisibleRouteIds(new Set(routes.map((route) => route.id)))
+    setSelectedRouteId(null)
+  }
+
+  function clearMap() {
+    setVisibleRouteIds(new Set())
+    setSelectedRouteId(null)
+  }
+
+  function isolateRoute(routeId: string) {
+    setVisibleRouteIds(new Set([routeId]))
+    setSelectedRouteId(routeId)
+  }
 
   function updateLocation() {
     if (!navigator.geolocation) {
@@ -95,8 +127,8 @@ export default function MobilityHome() {
       <header className="fixed inset-x-0 top-0 z-[1000] border-b border-white/10 bg-black/85 backdrop-blur-xl">
         <div className="mx-auto flex h-[76px] max-w-[1600px] items-center justify-between px-5 sm:px-8">
           <a href="#inicio" className="flex items-center gap-3" aria-label="Kabbure, inicio">
-            <span className="grid h-10 w-10 place-items-center rounded-xl border border-[#CB9546]/60 bg-[#111111] text-[#E5C76B]">
-              <MapPin size={21} strokeWidth={2.2} />
+            <span className="grid h-10 w-10 place-items-center overflow-hidden rounded-xl border border-[#CB9546]/60 bg-[#111111]">
+              <Image src="/assets/brand/kabbure-logo.svg" alt="" width={40} height={40} priority />
             </span>
             <span>
               <span className="kabbure-display block text-xl font-bold tracking-[0.16em] text-[#E5C76B]">KABBURE</span>
@@ -154,7 +186,7 @@ export default function MobilityHome() {
           </div>
 
           <div className="grid grid-cols-3 gap-3 border-t border-[#222222] pt-5 text-sm lg:border-t-0 lg:pt-0">
-            <div><p className="text-2xl font-semibold text-[#E5C76B]">{routes.length}</p><p className="mt-1 text-[#888888]">rutas encontradas</p></div>
+            <div><p className="text-2xl font-semibold text-[#E5C76B]">{visibleRoutes.length}</p><p className="mt-1 text-[#888888]">rutas visibles</p></div>
             <div><p className="text-2xl font-semibold text-[#06D6A0]">GPS</p><p className="mt-1 text-[#888888]">en tiempo real</p></div>
             <div><p className="text-2xl font-semibold text-white">OSM</p><p className="mt-1 text-[#888888]">fuente abierta</p></div>
           </div>
@@ -168,9 +200,13 @@ export default function MobilityHome() {
               <div className="grid h-10 w-10 place-items-center rounded-xl bg-[#CB9546]/15 text-[#E5C76B]"><BusFront size={20} /></div>
               <div><h2 className="font-semibold">Rutas cercanas</h2><p className="text-xs text-[#888888]">Datos consultados desde OpenStreetMap</p></div>
             </div>
-            <label className="flex w-full items-center gap-2 rounded-xl border border-[#2B2B2B] bg-black px-3 py-2.5 text-sm text-[#888888] lg:max-w-xs">
+            <div className="flex flex-wrap gap-2 lg:justify-end">
+              <button onClick={showAllRoutes} className="rounded-lg border border-[#CB9546]/60 px-3 py-2 text-xs font-semibold text-[#E5C76B] transition hover:bg-[#CB9546] hover:text-black">Mostrar todas</button>
+              <button onClick={clearMap} className="rounded-lg border border-[#333333] px-3 py-2 text-xs font-semibold text-[#B7B7B7] transition hover:border-[#CB9546] hover:text-white">Mapa limpio</button>
+            <label className="flex w-full items-center gap-2 rounded-xl border border-[#2B2B2B] bg-black px-3 py-2.5 text-sm text-[#888888] lg:w-56">
               <Search size={17} /><span className="sr-only">Buscar ruta</span><input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Buscar ruta o código" className="w-full bg-transparent text-white outline-none placeholder:text-[#666666]" />
             </label>
+            </div>
           </div>
           <div className="grid lg:grid-cols-[minmax(0,1fr)_330px]">
             <div className="relative min-h-[560px] bg-[#d9d3c5]">
@@ -178,12 +214,12 @@ export default function MobilityHome() {
               <div className="absolute bottom-4 left-4 z-[500] rounded-lg bg-white/90 px-3 py-2 text-[10px] text-black shadow-lg backdrop-blur-sm">© OpenStreetMap contributors</div>
             </div>
             <aside className="border-t border-[#222222] lg:border-l lg:border-t-0">
-              <div className="border-b border-[#222222] px-5 py-4"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#888888]">Información</p><p className="mt-1 text-sm text-[#B7B7B7]">Selecciona una ruta en la lista o directamente sobre el mapa.</p></div>
+              <div className="border-b border-[#222222] px-5 py-4"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#888888]">Rutas</p><p className="mt-1 text-sm text-[#B7B7B7]">El mapa inicia limpio. Selecciona una ruta para mostrarla.</p></div>
               <div className="max-h-[500px] overflow-y-auto p-3">
                 {routesLoading ? <div className="flex items-center gap-2 px-3 py-5 text-sm text-[#888888]"><LoaderCircle className="animate-spin" size={17} /> Consultando rutas reales...</div> : null}
                 {!routesLoading && routesError ? <div className="rounded-xl border border-[#E63946]/30 bg-[#E63946]/10 p-4 text-sm text-[#FF9CA5]"><AlertCircle className="mb-2" size={18} /><p>{routesError}</p><button onClick={() => void fetchRoutes(userLocation ?? DEFAULT_CENTER)} className="mt-3 font-semibold underline">Intentar de nuevo</button></div> : null}
-                {!routesLoading && !routesError && visibleRoutes.length === 0 ? <div className="px-3 py-6 text-sm text-[#888888]"><MapPin className="mb-3 text-[#CB9546]" size={21} /><p className="font-medium text-[#B7B7B7]">No hay rutas publicadas en esta zona.</p><p className="mt-2 leading-6">Kabbure no inventa recorridos. Próximamente podrás importar fuentes GTFS autorizadas desde administración.</p></div> : null}
-                {!routesLoading && !routesError ? visibleRoutes.map((route) => <button key={route.id} onClick={() => setSelectedRouteId(route.id)} className={`kabbure-focus mb-2 w-full rounded-xl border p-3 text-left transition ${selectedRouteId === route.id ? 'border-[#CB9546] bg-[#CB9546]/10' : 'border-[#222222] bg-black/30 hover:border-[#555555]'}`}><div className="flex items-start justify-between gap-3"><span className="font-medium text-white">{route.name}</span><span className="rounded bg-[#CB9546]/15 px-2 py-1 text-[10px] font-semibold text-[#E5C76B]">{route.code || 'BUS'}</span></div><span className="mt-2 block text-xs text-[#888888]">Fuente: OpenStreetMap</span></button>) : null}
+                {!routesLoading && !routesError && filteredRoutes.length === 0 ? <div className="px-3 py-6 text-sm text-[#888888]"><MapPin className="mb-3 text-[#CB9546]" size={21} /><p className="font-medium text-[#B7B7B7]">No hay rutas publicadas en esta zona.</p><p className="mt-2 leading-6">Kabbure no inventa recorridos. Próximamente podrás importar fuentes GTFS autorizadas desde administración.</p></div> : null}
+                {!routesLoading && !routesError ? filteredRoutes.map((route) => <div key={route.id} className={`mb-2 rounded-xl border p-3 transition ${selectedRouteId === route.id ? 'border-[#CB9546] bg-[#CB9546]/10' : 'border-[#222222] bg-black/30 hover:border-[#555555]'}`}><button onClick={() => toggleRoute(route.id)} className="kabbure-focus w-full text-left"><div className="flex items-start justify-between gap-3"><span className="font-medium text-white">{route.name}</span><span className={`rounded px-2 py-1 text-[10px] font-semibold ${visibleRouteIds.has(route.id) ? 'bg-[#06D6A0]/15 text-[#06D6A0]' : 'bg-[#CB9546]/15 text-[#E5C76B]'}`}>{visibleRouteIds.has(route.id) ? 'VISIBLE' : route.code || 'BUS'}</span></div><span className="mt-2 block text-xs text-[#888888]">Fuente: OpenStreetMap · {visibleRouteIds.has(route.id) ? 'Ocultar ruta' : 'Mostrar ruta'}</span></button>{visibleRouteIds.has(route.id) ? <button onClick={() => isolateRoute(route.id)} className="mt-3 text-xs font-semibold text-[#E5C76B] hover:text-white">Apartar esta ruta</button> : null}</div>) : null}
               </div>
               {selectedRoute ? <div className="border-t border-[#222222] bg-[#CB9546]/5 p-5"><p className="text-xs uppercase tracking-[0.16em] text-[#CB9546]">Ruta seleccionada</p><h3 className="mt-2 font-semibold">{selectedRoute.name}</h3><p className="mt-2 text-xs leading-5 text-[#A5A5A5]">Este recorrido proviene de una relación de transporte público de OpenStreetMap.</p></div> : null}
             </aside>

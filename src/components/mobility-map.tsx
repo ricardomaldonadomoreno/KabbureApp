@@ -60,16 +60,10 @@ export default function MobilityMap({
       <MapViewport center={center} userLocation={userLocation} />
       {userLocation ? <LocationMarker position={userLocation} /> : null}
       {routes.map((route) => (
-        <Polyline
-          key={route.id}
-          positions={route.geometry}
-          pathOptions={{
-            color: selectedRouteId === route.id ? '#E5C76B' : '#CB9546',
-            weight: selectedRouteId === route.id ? 7 : 4,
-            opacity: selectedRouteId === route.id ? 1 : 0.78,
-          }}
-          eventHandlers={{ click: () => onRouteSelect(route.id) }}
-        />
+        <>
+          {selectedRouteId === route.id ? <Polyline key={`${route.id}-outline`} positions={route.geometry} pathOptions={{ color: '#FFFFFF', weight: 11, opacity: 0.95 }} eventHandlers={{ click: () => onRouteSelect(route.id) }} /> : null}
+          <Polyline key={route.id} positions={route.geometry} pathOptions={{ color: selectedRouteId === route.id ? '#CB9546' : '#CB9546', weight: selectedRouteId === route.id ? 6 : 4, opacity: selectedRouteId === route.id ? 1 : 0.68 }} eventHandlers={{ click: () => onRouteSelect(route.id) }} />
+        </>
       ))}
     </MapContainer>
   )
