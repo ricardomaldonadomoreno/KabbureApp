@@ -26,3 +26,13 @@ export type VehicleLocation = {
   heading: number | null
   recordedAt: string
 }
+
+export type MapRoute = {
+  id: string
+  name: string
+  code: string
+  network: string | null
+  geometry: [number, number][]
+  source: 'openstreetmap'
+  updatedAt: string
+}
