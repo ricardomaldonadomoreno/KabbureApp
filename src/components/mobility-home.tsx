@@ -28,6 +28,7 @@ type LocationStatus = 'idle' | 'loading' | 'ready' | 'denied' | 'error'
 export default function MobilityHome() {
   const [center, setCenter] = useState(DEFAULT_CENTER)
   const [userLocation, setUserLocation] = useState<[number, number] | null>(null)
+  const [mapPoint, setMapPoint] = useState<[number, number] | null>(null)
   const [locationStatus, setLocationStatus] = useState<LocationStatus>('idle')
   const [routes, setRoutes] = useState<MapRoute[]>([])
   const [routesLoading, setRoutesLoading] = useState(false)
@@ -101,6 +102,7 @@ export default function MobilityHome() {
       ({ coords }) => {
         const nextLocation: [number, number] = [coords.latitude, coords.longitude]
         setUserLocation(nextLocation)
+        setMapPoint(null)
         setCenter(nextLocation)
         setLocationStatus('ready')
         void fetchRoutes(nextLocation)
@@ -112,9 +114,18 @@ export default function MobilityHome() {
     )
   }
 
-  function handleMapMove(nextCenter: [number, number], zoom: number) {
+  function handleMapMove(nextCenter: [number, number]) {
     setCenter(nextCenter)
-    if (zoom >= 8) void fetchRoutes(nextCenter)
+  }
+
+  function handleMapPick(point: [number, number]) {
+    setMapPoint(point)
+    setUserLocation(null)
+    setCenter(point)
+    setSelectedRouteId(null)
+    setVisibleRouteIds(new Set())
+    setSearch('')
+    void fetchRoutes(point)
   }
 
   const selectedRoute = routes.find((route) => route.id === selectedRouteId)
@@ -207,8 +218,8 @@ export default function MobilityHome() {
           </div>
           <div className="grid lg:grid-cols-[minmax(0,1fr)_330px]">
             <div className="relative min-h-[560px] bg-[#d9d3c5]">
-              <MobilityMap center={center} userLocation={userLocation} routes={visibleRoutes} selectedRouteId={selectedRouteId} onRouteSelect={setSelectedRouteId} onMapMove={handleMapMove} />
-              <div className="absolute bottom-4 left-4 z-[500] rounded-lg bg-white/90 px-3 py-2 text-[10px] text-black shadow-lg backdrop-blur-sm">© OpenStreetMap contributors</div>
+              <MobilityMap center={center} userLocation={userLocation} mapPoint={mapPoint} routes={visibleRoutes} selectedRouteId={selectedRouteId} onRouteSelect={setSelectedRouteId} onMapMove={handleMapMove} onMapPick={handleMapPick} />
+              <div className="absolute left-4 top-4 z-[500] rounded-lg border border-[#CB9546]/50 bg-black/85 px-3 py-2 text-xs text-[#E5C76B] shadow-lg backdrop-blur-sm">Haz clic en el mapa para buscar rutas aquí</div><div className="absolute bottom-4 left-4 z-[500] rounded-lg bg-white/90 px-3 py-2 text-[10px] text-black shadow-lg backdrop-blur-sm">© OpenStreetMap contributors</div>
             </div>
             <aside className="border-t border-[#222222] lg:border-l lg:border-t-0">
               <div className="border-b border-[#222222] px-5 py-4"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#888888]">Rutas</p><p className="mt-1 text-sm text-[#B7B7B7]">El mapa inicia limpio. Selecciona una ruta para mostrarla.</p></div>
