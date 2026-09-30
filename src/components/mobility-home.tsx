@@ -128,7 +128,7 @@ export default function MobilityHome() {
         <div className="mx-auto flex h-[76px] max-w-[1600px] items-center justify-between px-5 sm:px-8">
           <a href="#inicio" className="flex items-center gap-3" aria-label="Kabbure, inicio">
             <span className="grid h-10 w-10 place-items-center overflow-hidden rounded-xl border border-[#CB9546]/60 bg-[#111111]">
-              <Image src="/assets/brand/kabbure-logo.svg" alt="" width={40} height={40} priority />
+              <Image src="/assets/brand/logo.ico" alt="" width={40} height={40} priority />
             </span>
             <span>
               <span className="kabbure-display block text-xl font-bold tracking-[0.16em] text-[#E5C76B]">KABBURE</span>
