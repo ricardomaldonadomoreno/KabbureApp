@@ -148,7 +148,7 @@ export default function MobilityHome() {
             <a className="transition hover:text-white" href="#mapa">Mapa</a>
             <a className="transition hover:text-white" href="#como-funciona">Cómo funciona</a>
             <button className="text-[#E5C76B] transition hover:text-white" onClick={() => setDriverPanelOpen(true)}>
-              Soy conductor
+              Ser conductor
             </button>
           </nav>
 
@@ -161,7 +161,7 @@ export default function MobilityHome() {
             <div className="flex flex-col gap-4 text-sm text-[#B7B7B7]">
               <a href="#mapa" onClick={() => setMenuOpen(false)}>Mapa</a>
               <a href="#como-funciona" onClick={() => setMenuOpen(false)}>Cómo funciona</a>
-              <button className="text-left text-[#E5C76B]" onClick={() => { setMenuOpen(false); setDriverPanelOpen(true) }}>Soy conductor</button>
+              <button className="text-left text-[#E5C76B]" onClick={() => { setMenuOpen(false); setDriverPanelOpen(true) }}>Ser conductor</button>
             </div>
           </nav>
         ) : null}
