@@ -59,7 +59,7 @@ export default function DriverRegistration() {
           country_code: countryCode,
           country_name: selectedCountry?.name,
           phone: normalizedPhone,
-          role: 'driver',
+          cargo: 'conductor',
         },
       },
     })
