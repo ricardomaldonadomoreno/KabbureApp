@@ -57,7 +57,6 @@ export default function DriverRegistration() {
         data: {
           full_name: fullName.trim(),
           country_code: countryCode,
-          country_name: selectedCountry?.name,
           phone: normalizedPhone,
           cargo: 'conductor',
         },
