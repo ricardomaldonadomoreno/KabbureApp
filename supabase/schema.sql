@@ -24,7 +24,7 @@ create table public.profiles (
   email text,
   country_code char(2),
   phone text,
-  cargo text not null default 'usuario' check (cargo in ('usuario', 'conductor', 'organizacion')),
+  cargo text not null default 'conductor' check (cargo in ('conductor', 'organizacion')),
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );
@@ -136,10 +136,10 @@ language plpgsql
 security definer set search_path = public
 as $$
 declare
-  profile_cargo text := coalesce(new.raw_user_meta_data ->> 'cargo', 'usuario');
+  profile_cargo text := coalesce(new.raw_user_meta_data ->> 'cargo', 'conductor');
 begin
-  if profile_cargo not in ('usuario', 'conductor', 'organizacion') then
-    profile_cargo := 'usuario';
+  if profile_cargo not in ('conductor', 'organizacion') then
+    profile_cargo := 'conductor';
   end if;
 
   insert into public.profiles (id, full_name, email, country_code, phone, cargo)
