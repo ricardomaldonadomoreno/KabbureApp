@@ -12,6 +12,7 @@
     "@hookform/resolvers": "^5.9.1",
     "@supabase/supabase-js": "^2.117.2",
     "clsx": "^2.1.1",
+    "countries-list": "^3.4.1",
     "date-fns": "^4.4.0",
     "leaflet": "^1.9.4",
     "lucide-react": "^1.48.0",

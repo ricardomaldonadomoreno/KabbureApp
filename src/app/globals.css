@@ -38,3 +38,7 @@ button { cursor: pointer; }
 .kabbure-display { font-family: 'Playfair Display', Georgia, serif; }
 .kabbure-surface { background: var(--kabbure-surface); border: 1px solid var(--kabbure-border); }
 .kabbure-focus:focus-visible { outline: 2px solid var(--kabbure-gold-light); outline-offset: 3px; }
+.kabbure-input { width: 100%; border: 1px solid #333333; border-radius: 0.75rem; background: #000000; padding: 0.8rem 0.9rem; color: #ffffff; outline: none; }
+.kabbure-input:focus { border-color: var(--kabbure-gold); box-shadow: 0 0 0 3px rgb(203 149 70 / 15%); }
+.kabbure-input::placeholder { color: #666666; }
+select.kabbure-input { color-scheme: dark; }
