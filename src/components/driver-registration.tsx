@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useMemo, useState } from 'react'
 import { ArrowLeft, CheckCircle2, LoaderCircle, Mail, MapPin, ShieldCheck } from 'lucide-react'
 import { countries } from 'countries-list'
-import { getSupabaseClient } from '@/lib/supabase/client'
+import { getSupabaseClient, getSupabaseConfigurationError } from '@/lib/supabase/client'
 
 type RegistrationStatus = 'idle' | 'loading' | 'success' | 'error'
 type FormMode = 'register' | 'login'
@@ -61,7 +61,7 @@ export default function DriverRegistration() {
     const supabase = getSupabaseClient()
     if (!supabase) {
       setStatus('error')
-      setErrorMessage('Supabase todavía no está conectado en este entorno.')
+      setErrorMessage(getSupabaseConfigurationError() ?? 'Supabase no pudo inicializarse en este deployment.')
       return
     }
 
