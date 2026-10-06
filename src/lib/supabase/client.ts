@@ -8,5 +8,11 @@ export function getSupabaseClient() {
     return null
   }
 
-  return createClient(supabaseUrl, supabaseAnonKey)
+  const normalizedUrl = supabaseUrl.trim().replace(/\/+$/, '').replace(/\/rest\/v1$/, '')
+
+  try {
+    return createClient(normalizedUrl, supabaseAnonKey.trim())
+  } catch {
+    return null
+  }
 }
