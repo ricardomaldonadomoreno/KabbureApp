@@ -7,6 +7,7 @@ import { countries } from 'countries-list'
 import { getSupabaseClient } from '@/lib/supabase/client'
 
 type RegistrationStatus = 'idle' | 'loading' | 'success' | 'error'
+type FormMode = 'register' | 'login'
 
 type CountryOption = {
   code: string
@@ -33,6 +34,8 @@ export default function DriverRegistration() {
   const [status, setStatus] = useState<RegistrationStatus>('idle')
   const [errorMessage, setErrorMessage] = useState('')
   const [verificationRequired, setVerificationRequired] = useState(false)
+  const [mode, setMode] = useState<FormMode>('register')
+  const isLogin = mode === 'login'
 
   const selectedCountry = useMemo(
     () => countryOptions.find((country) => country.code === countryCode),
@@ -63,20 +66,37 @@ export default function DriverRegistration() {
       return
     }
 
-    const normalizedPhone = `${selectedCountry?.phoneCode ?? ''} ${phone.trim()}`.trim()
     try {
+      if (isLogin) {
+        const { error } = await supabase.auth.signInWithPassword({
+          email: email.trim().toLowerCase(),
+          password,
+        })
+
+        if (error) {
+          setStatus('error')
+          setErrorMessage(error.message)
+          return
+        }
+
+        setVerificationRequired(false)
+        setStatus('success')
+        return
+      }
+
+      const normalizedPhone = `${selectedCountry?.phoneCode ?? ''} ${phone.trim()}`.trim()
       const { data, error } = await supabase.auth.signUp({
-        email: email.trim().toLowerCase(),
-        password,
-        options: {
-          emailRedirectTo: `${window.location.origin}/registro?verified=1`,
-          data: {
-            full_name: fullName.trim(),
-            country_code: countryCode,
-            phone: normalizedPhone,
-            cargo: 'conductor',
+          email: email.trim().toLowerCase(),
+          password,
+          options: {
+            emailRedirectTo: `${window.location.origin}/registro?verified=1`,
+            data: {
+              full_name: fullName.trim(),
+              country_code: countryCode,
+              phone: normalizedPhone,
+              cargo: 'conductor',
+            },
           },
-        },
       })
 
       if (error) {
@@ -99,9 +119,9 @@ export default function DriverRegistration() {
         <div className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-xl items-center justify-center">
           <section className="w-full rounded-3xl border border-[#222222] bg-[#111111] p-7 text-center shadow-2xl shadow-black/40 sm:p-10">
             <div className="mx-auto grid h-16 w-16 place-items-center rounded-2xl bg-[#06D6A0]/15 text-[#06D6A0]"><Mail size={30} /></div>
-            <p className="mt-7 text-xs font-semibold uppercase tracking-[0.2em] text-[#CB9546]">Cuenta creada</p>
-            <h1 className="kabbure-display mt-3 text-4xl font-bold">{verificationRequired ? 'Revisa tu bandeja de entrada.' : 'Ya puedes continuar.'}</h1>
-            <p className="mt-5 leading-7 text-[#A5A5A5]">{verificationRequired ? <>Enviamos un enlace de verificación a <strong className="text-white">{email}</strong>. Confirma tu correo para continuar con el registro de conductor.</> : <>La cuenta de <strong className="text-white">{email}</strong> fue creada correctamente. Ya puedes continuar con el registro de conductor.</>}</p>
+            <p className="mt-7 text-xs font-semibold uppercase tracking-[0.2em] text-[#CB9546]">{isLogin ? 'Sesión iniciada' : 'Cuenta creada'}</p>
+            <h1 className="kabbure-display mt-3 text-4xl font-bold">{isLogin ? 'Bienvenido de nuevo.' : verificationRequired ? 'Revisa tu bandeja de entrada.' : 'Ya puedes continuar.'}</h1>
+            <p className="mt-5 leading-7 text-[#A5A5A5]">{isLogin ? <>La sesión de <strong className="text-white">{email}</strong> se inició correctamente.</> : verificationRequired ? <>Enviamos un enlace de verificación a <strong className="text-white">{email}</strong>. Confirma tu correo para continuar con el registro de conductor.</> : <>La cuenta de <strong className="text-white">{email}</strong> fue creada correctamente. Ya puedes continuar con el registro de conductor.</>}</p>
             <div className="mt-7 flex items-center justify-center gap-2 text-xs text-[#888888]"><ShieldCheck size={15} className="text-[#06D6A0]" /> Los datos fueron guardados en Supabase Auth.</div>
             <Link href="/" className="mt-8 inline-flex items-center gap-2 rounded-xl border border-[#CB9546] px-5 py-3 text-sm font-semibold text-[#E5C76B] transition hover:bg-[#CB9546] hover:text-black"><ArrowLeft size={17} /> Volver al mapa</Link>
           </section>
@@ -123,16 +143,15 @@ export default function DriverRegistration() {
           </div>
 
           <section className="rounded-3xl border border-[#222222] bg-[#111111] p-6 shadow-2xl shadow-black/40 sm:p-8">
-            <div className="mb-7 flex items-center gap-3"><div className="grid h-10 w-10 place-items-center rounded-xl bg-[#CB9546]/15 text-[#E5C76B]"><MapPin size={20} /></div><div><h2 className="font-semibold">Datos de acceso</h2><p className="text-xs text-[#888888]">Solo necesitamos lo esencial para comenzar.</p></div></div>
+            <div className="mb-7 flex items-center justify-between gap-3"><div className="flex items-center gap-3"><div className="grid h-10 w-10 place-items-center rounded-xl bg-[#CB9546]/15 text-[#E5C76B]"><MapPin size={20} /></div><div><h2 className="font-semibold">{isLogin ? 'Iniciar sesión' : 'Crear acceso'}</h2><p className="text-xs text-[#888888]">{isLogin ? 'Ingresa con tu cuenta existente.' : 'Solo necesitamos lo esencial para comenzar.'}</p></div></div><button type="button" onClick={() => { setMode(isLogin ? 'register' : 'login'); setStatus('idle'); setErrorMessage('') }} className="text-xs font-semibold text-[#E5C76B] hover:text-white">{isLogin ? 'Crear cuenta' : 'Ya tengo cuenta'}</button></div>
             <form onSubmit={handleSubmit} className="space-y-5">
-              <label className="block text-sm"><span className="mb-2 block font-medium text-[#D5D5D5]">Nombre completo</span><input required minLength={3} value={fullName} onChange={(event) => setFullName(event.target.value)} placeholder="Ej. Carlos Ramírez" className="kabbure-input" /></label>
+              {!isLogin ? <label className="block text-sm"><span className="mb-2 block font-medium text-[#D5D5D5]">Nombre completo</span><input required minLength={3} value={fullName} onChange={(event) => setFullName(event.target.value)} placeholder="Ej. Carlos Ramírez" className="kabbure-input" /></label> : null}
               <label className="block text-sm"><span className="mb-2 block font-medium text-[#D5D5D5]">Correo electrónico</span><input required type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="tu-correo@ejemplo.com" className="kabbure-input" /></label>
               <label className="block text-sm"><span className="mb-2 block font-medium text-[#D5D5D5]">Contraseña</span><input required minLength={8} type="password" value={password} onChange={(event) => setPassword(event.target.value)} placeholder="Mínimo 8 caracteres" className="kabbure-input" /></label>
-              <label className="block text-sm"><span className="mb-2 block font-medium text-[#D5D5D5]">Confirmar contraseña</span><input required minLength={8} type="password" value={passwordConfirmation} onChange={(event) => setPasswordConfirmation(event.target.value)} placeholder="Repite tu contraseña" className="kabbure-input" /></label>
-              <div className="grid gap-4 sm:grid-cols-[1fr_1.25fr]"><label className="block text-sm"><span className="mb-2 block font-medium text-[#D5D5D5]">País</span><select required value={countryCode} onChange={(event) => setCountryCode(event.target.value)} className="kabbure-input"><option value="">Selecciona un país</option>{countryOptions.map((country) => <option key={country.code} value={country.code}>{country.name} ({country.phoneCode})</option>)}</select></label><label className="block text-sm"><span className="mb-2 block font-medium text-[#D5D5D5]">Número telefónico</span><div className="flex"><span className="flex min-w-[62px] items-center justify-center rounded-l-xl border border-r-0 border-[#333333] bg-black px-2 text-sm text-[#E5C76B]">{selectedCountry?.phoneCode || '+—'}</span><input required type="tel" inputMode="tel" value={phone} onChange={(event) => setPhone(event.target.value)} placeholder="700 000 000" className="kabbure-input rounded-l-none" /></div></label></div>
+              {!isLogin ? <><label className="block text-sm"><span className="mb-2 block font-medium text-[#D5D5D5]">Confirmar contraseña</span><input required minLength={8} type="password" value={passwordConfirmation} onChange={(event) => setPasswordConfirmation(event.target.value)} placeholder="Repite tu contraseña" className="kabbure-input" /></label><div className="grid gap-4 sm:grid-cols-[1fr_1.25fr]"><label className="block text-sm"><span className="mb-2 block font-medium text-[#D5D5D5]">País</span><select required value={countryCode} onChange={(event) => setCountryCode(event.target.value)} className="kabbure-input"><option value="">Selecciona un país</option>{countryOptions.map((country) => <option key={country.code} value={country.code}>{country.name} ({country.phoneCode})</option>)}</select></label><label className="block text-sm"><span className="mb-2 block font-medium text-[#D5D5D5]">Número telefónico</span><div className="flex"><span className="flex min-w-[62px] items-center justify-center rounded-l-xl border border-r-0 border-[#333333] bg-black px-2 text-sm text-[#E5C76B]">{selectedCountry?.phoneCode || '+—'}</span><input required type="tel" inputMode="tel" value={phone} onChange={(event) => setPhone(event.target.value)} placeholder="700 000 000" className="kabbure-input rounded-l-none" /></div></label></div></> : null}
               {status === 'error' ? <div className="rounded-xl border border-[#E63946]/30 bg-[#E63946]/10 px-4 py-3 text-sm leading-6 text-[#FFB0B7]">{errorMessage}</div> : null}
-              <button type="submit" disabled={status === 'loading'} className="kabbure-focus flex w-full items-center justify-center gap-2 rounded-xl bg-[#CB9546] px-5 py-3.5 text-sm font-semibold text-black transition hover:bg-[#E5C76B] disabled:cursor-not-allowed disabled:opacity-60">{status === 'loading' ? <LoaderCircle className="animate-spin" size={18} /> : <Mail size={18} />}Enviar verificación</button>
-              <p className="text-center text-xs leading-5 text-[#777777]">Durante las pruebas puedes crear la cuenta directamente. Si activas la confirmación de correo, Supabase enviará el enlace según su configuración.</p>
+              <button type="submit" disabled={status === 'loading'} className="kabbure-focus flex w-full items-center justify-center gap-2 rounded-xl bg-[#CB9546] px-5 py-3.5 text-sm font-semibold text-black transition hover:bg-[#E5C76B] disabled:cursor-not-allowed disabled:opacity-60">{status === 'loading' ? <LoaderCircle className="animate-spin" size={18} /> : <Mail size={18} />}{isLogin ? 'Iniciar sesión' : 'Crear cuenta'}</button>
+              <p className="text-center text-xs leading-5 text-[#777777]">{isLogin ? 'Usa el correo y la contraseña de tu cuenta Kabbure.' : 'Durante las pruebas puedes crear la cuenta directamente. Si activas la confirmación de correo, Supabase enviará el enlace según su configuración.'}</p>
             </form>
           </section>
         </div>
