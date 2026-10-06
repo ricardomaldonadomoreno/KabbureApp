@@ -33,7 +33,6 @@ export default function DriverRegistration() {
   const [phone, setPhone] = useState('')
   const [status, setStatus] = useState<RegistrationStatus>('idle')
   const [errorMessage, setErrorMessage] = useState('')
-  const [verificationRequired, setVerificationRequired] = useState(false)
   const [mode, setMode] = useState<FormMode>('register')
   const isLogin = mode === 'login'
 
@@ -53,7 +52,7 @@ export default function DriverRegistration() {
       return
     }
 
-    if (password !== passwordConfirmation) {
+    if (!isLogin && password !== passwordConfirmation) {
       setStatus('error')
       setErrorMessage('Las contraseñas no coinciden.')
       return
@@ -75,17 +74,16 @@ export default function DriverRegistration() {
 
         if (error) {
           setStatus('error')
-          setErrorMessage(error.message)
+          setErrorMessage(error.message.toLowerCase().includes('email not confirmed') ? 'Tu correo todavía no está verificado. Revisa tu bandeja de entrada antes de iniciar sesión.' : error.message)
           return
         }
 
-        setVerificationRequired(false)
         setStatus('success')
         return
       }
 
       const normalizedPhone = `${selectedCountry?.phoneCode ?? ''} ${phone.trim()}`.trim()
-      const { data, error } = await supabase.auth.signUp({
+      const { error } = await supabase.auth.signUp({
           email: email.trim().toLowerCase(),
           password,
           options: {
@@ -105,7 +103,6 @@ export default function DriverRegistration() {
         return
       }
 
-      setVerificationRequired(!data.session)
       setStatus('success')
     } catch {
       setStatus('error')
@@ -119,9 +116,9 @@ export default function DriverRegistration() {
         <div className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-xl items-center justify-center">
           <section className="w-full rounded-3xl border border-[#222222] bg-[#111111] p-7 text-center shadow-2xl shadow-black/40 sm:p-10">
             <div className="mx-auto grid h-16 w-16 place-items-center rounded-2xl bg-[#06D6A0]/15 text-[#06D6A0]"><Mail size={30} /></div>
-            <p className="mt-7 text-xs font-semibold uppercase tracking-[0.2em] text-[#CB9546]">{isLogin ? 'Sesión iniciada' : 'Cuenta creada'}</p>
-            <h1 className="kabbure-display mt-3 text-4xl font-bold">{isLogin ? 'Bienvenido de nuevo.' : verificationRequired ? 'Revisa tu bandeja de entrada.' : 'Ya puedes continuar.'}</h1>
-            <p className="mt-5 leading-7 text-[#A5A5A5]">{isLogin ? <>La sesión de <strong className="text-white">{email}</strong> se inició correctamente.</> : verificationRequired ? <>Enviamos un enlace de verificación a <strong className="text-white">{email}</strong>. Confirma tu correo para continuar con el registro de conductor.</> : <>La cuenta de <strong className="text-white">{email}</strong> fue creada correctamente. Ya puedes continuar con el registro de conductor.</>}</p>
+            <p className="mt-7 text-xs font-semibold uppercase tracking-[0.2em] text-[#CB9546]">{isLogin ? 'Sesión iniciada' : 'Registro completado'}</p>
+            <h1 className="kabbure-display mt-3 text-4xl font-bold">{isLogin ? 'Bienvenido de nuevo.' : 'Te has registrado.'}</h1>
+            <p className="mt-5 leading-7 text-[#A5A5A5]">{isLogin ? <>La sesión de <strong className="text-white">{email}</strong> se inició correctamente.</> : <>Ahora verifica tu correo <strong className="text-white">{email}</strong> para iniciar sesión y continuar con el registro de conductor.</>}</p>
             <div className="mt-7 flex items-center justify-center gap-2 text-xs text-[#888888]"><ShieldCheck size={15} className="text-[#06D6A0]" /> Los datos fueron guardados en Supabase Auth.</div>
             <Link href="/" className="mt-8 inline-flex items-center gap-2 rounded-xl border border-[#CB9546] px-5 py-3 text-sm font-semibold text-[#E5C76B] transition hover:bg-[#CB9546] hover:text-black"><ArrowLeft size={17} /> Volver al mapa</Link>
           </section>
