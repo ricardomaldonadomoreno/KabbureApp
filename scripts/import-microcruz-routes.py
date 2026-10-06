@@ -38,6 +38,22 @@ def route_slug(name: str) -> str:
     return value or "ruta-sin-nombre"
 
 
+def build_kabbure_codes(names: list[str]) -> dict[str, str]:
+    grouped: dict[str, list[str]] = {}
+    for name in names:
+        grouped.setdefault(route_code(name), []).append(name)
+
+    codes: dict[str, str] = {}
+    for base, group in grouped.items():
+        if len(group) == 1:
+            codes[group[0]] = f"RK-{base}"
+            continue
+        for index, name in enumerate(group):
+            suffix = chr(ord("A") + index)
+            codes[name] = f"RK-{base}-{suffix}"
+    return codes
+
+
 def coordinates(points: list[dict]) -> list[list[float]]:
     return [[float(point["lng"]), float(point["lat"])] for point in points if "lng" in point and "lat" in point]
 
@@ -47,6 +63,7 @@ def main() -> None:
     names = get_json({"action": "list"}).get("routes", [])
     if not isinstance(names, list):
         raise RuntimeError("Microcruz no devolvió una lista de rutas")
+    kabbure_codes = build_kabbure_codes(names)
 
     route_payloads: dict[str, dict] = {}
     direction_payloads: dict[str, dict] = {}
@@ -64,6 +81,7 @@ def main() -> None:
     missing_geometry = []
 
     for name in names:
+        kabbure_code = kabbure_codes[name]
         full_points = route_payloads.get(name, [])
         segments = segment_payloads.get(name, {})
         route_directions = []
@@ -89,14 +107,13 @@ def main() -> None:
                     "id": f"microcruz-{route_slug(name)}-{direction_id}",
                     "properties": {
                         "route_id": f"microcruz-{route_slug(name)}",
-                        "route_name": name,
-                        "route_code": route_code(name),
+                        "route_name": f"Ruta {kabbure_code}",
+                        "route_code": kabbure_code,
                         "direction_id": direction_id,
                         "direction_label": direction["label"],
                         "country_code": "BO",
                         "city": "Santa Cruz de la Sierra",
-                        "source": "Microcruz",
-                        "source_url": SOURCE_URL,
+                        "source": "pública",
                         "approval_status": "pending",
                     },
                     "geometry": {"type": "LineString", "coordinates": coords},
@@ -104,16 +121,14 @@ def main() -> None:
 
         routes.append({
             "id": f"microcruz-{route_slug(name)}",
-            "external_id": name,
-            "name": name,
-            "code": route_code(name),
+            "name": f"Ruta {kabbure_code}",
+            "code": kabbure_code,
             "country_code": "BO",
             "city": "Santa Cruz de la Sierra",
-            "source": "Microcruz",
-            "source_url": SOURCE_URL,
+            "source": "pública",
             "approval_status": "pending",
             "directions": route_directions,
-            "source_directions": direction_payloads.get(name, {}),
+            "import_reference": {"external_name": name, "directions": direction_payloads.get(name, {})},
         })
 
     imported_at = datetime.now(timezone.utc).isoformat()
@@ -121,7 +136,7 @@ def main() -> None:
         "format": "kabbure-route-import",
         "version": 1,
         "imported_at": imported_at,
-        "source": {"name": "Microcruz", "url": SOURCE_URL, "api": BASE_URL},
+        "source": {"type": "publica"},
         "location": {"country_code": "BO", "city": "Santa Cruz de la Sierra"},
         "approval_status_default": "pending",
         "route_count": len(routes),
@@ -136,8 +151,7 @@ def main() -> None:
             "format": "kabbure-route-geojson",
             "version": 1,
             "imported_at": imported_at,
-            "source": "Microcruz",
-            "source_url": SOURCE_URL,
+            "source": "pública",
             "approval_status_default": "pending",
         },
         "features": features,
@@ -148,11 +162,11 @@ def main() -> None:
     (OUTPUT_DIR / "README.md").write_text(
         "# Importación de rutas: Microcruz / Santa Cruz\n\n"
         "Paquete normalizado para cargar rutas en el panel administrativo de Kabbure.\n\n"
-        "- `routes-package.json`: formato completo de importación, con dos sentidos, secuencias y metadatos.\n"
+        "- `routes-package.json`: formato completo de importación, con códigos RK, dos sentidos, secuencias y metadatos.\n"
         "- `routes.geojson`: formato cartográfico estándar para Leaflet y editores de geometría.\n"
         "- Todas las rutas quedan como `pending` y no deben publicarse automáticamente.\n"
         "- Las coordenadas GeoJSON usan el orden `[longitud, latitud]`.\n\n"
-        f"Fuente: [{SOURCE_URL}]({SOURCE_URL})\n"
+        "Fuente funcional: pública. La referencia técnica de importación se conserva únicamente en el script.\n"
     )
     print(json.dumps({
         "output_dir": str(OUTPUT_DIR),

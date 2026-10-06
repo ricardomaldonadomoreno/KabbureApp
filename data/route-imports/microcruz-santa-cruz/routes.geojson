@@ -4,9 +4,8 @@
   "metadata": {
     "format": "kabbure-route-geojson",
     "version": 1,
-    "imported_at": "2026-10-06T22:39:53.933963+00:00",
-    "source": "Microcruz",
-    "source_url": "https://microcruz.tel.bo",
+    "imported_at": "2026-10-06T22:50:53.457773+00:00",
+    "source": "pública",
     "approval_status_default": "pending"
   },
   "features": [
@@ -15,14 +14,13 @@
       "id": "microcruz-linea1-sentido_a",
       "properties": {
         "route_id": "microcruz-linea1",
-        "route_name": "linea1",
-        "route_code": "1",
+        "route_name": "Ruta RK-1",
+        "route_code": "RK-1",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -628,14 +626,13 @@
       "id": "microcruz-linea1-sentido_b",
       "properties": {
         "route_id": "microcruz-linea1",
-        "route_name": "linea1",
-        "route_code": "1",
+        "route_name": "Ruta RK-1",
+        "route_code": "RK-1",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -1197,14 +1194,13 @@
       "id": "microcruz-linea2-sentido_a",
       "properties": {
         "route_id": "microcruz-linea2",
-        "route_name": "linea2",
-        "route_code": "2",
+        "route_name": "Ruta RK-2",
+        "route_code": "RK-2",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -1730,14 +1726,13 @@
       "id": "microcruz-linea2-sentido_b",
       "properties": {
         "route_id": "microcruz-linea2",
-        "route_name": "linea2",
-        "route_code": "2",
+        "route_name": "Ruta RK-2",
+        "route_code": "RK-2",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -2295,14 +2290,13 @@
       "id": "microcruz-linea3-sentido_a",
       "properties": {
         "route_id": "microcruz-linea3",
-        "route_name": "linea3",
-        "route_code": "3",
+        "route_name": "Ruta RK-3",
+        "route_code": "RK-3",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -2996,14 +2990,13 @@
       "id": "microcruz-linea3-sentido_b",
       "properties": {
         "route_id": "microcruz-linea3",
-        "route_name": "linea3",
-        "route_code": "3",
+        "route_name": "Ruta RK-3",
+        "route_code": "RK-3",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -3753,14 +3746,13 @@
       "id": "microcruz-linea4-sentido_a",
       "properties": {
         "route_id": "microcruz-linea4",
-        "route_name": "linea4",
-        "route_code": "4",
+        "route_name": "Ruta RK-4",
+        "route_code": "RK-4",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -4506,14 +4498,13 @@
       "id": "microcruz-linea4-sentido_b",
       "properties": {
         "route_id": "microcruz-linea4",
-        "route_name": "linea4",
-        "route_code": "4",
+        "route_name": "Ruta RK-4",
+        "route_code": "RK-4",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -5095,14 +5086,13 @@
       "id": "microcruz-linea5-sentido_a",
       "properties": {
         "route_id": "microcruz-linea5",
-        "route_name": "linea5",
-        "route_code": "5",
+        "route_name": "Ruta RK-5",
+        "route_code": "RK-5",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -5940,14 +5930,13 @@
       "id": "microcruz-linea5-sentido_b",
       "properties": {
         "route_id": "microcruz-linea5",
-        "route_name": "linea5",
-        "route_code": "5",
+        "route_name": "Ruta RK-5",
+        "route_code": "RK-5",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -6649,14 +6638,13 @@
       "id": "microcruz-linea6-sentido_a",
       "properties": {
         "route_id": "microcruz-linea6",
-        "route_name": "linea6",
-        "route_code": "6",
+        "route_name": "Ruta RK-6",
+        "route_code": "RK-6",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -7302,14 +7290,13 @@
       "id": "microcruz-linea6-sentido_b",
       "properties": {
         "route_id": "microcruz-linea6",
-        "route_name": "linea6",
-        "route_code": "6",
+        "route_name": "Ruta RK-6",
+        "route_code": "RK-6",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -8063,14 +8050,13 @@
       "id": "microcruz-linea7-sentido_a",
       "properties": {
         "route_id": "microcruz-linea7",
-        "route_name": "linea7",
-        "route_code": "7",
+        "route_name": "Ruta RK-7",
+        "route_code": "RK-7",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -8912,14 +8898,13 @@
       "id": "microcruz-linea7-sentido_b",
       "properties": {
         "route_id": "microcruz-linea7",
-        "route_name": "linea7",
-        "route_code": "7",
+        "route_name": "Ruta RK-7",
+        "route_code": "RK-7",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -9573,14 +9558,13 @@
       "id": "microcruz-linea8-sentido_a",
       "properties": {
         "route_id": "microcruz-linea8",
-        "route_name": "linea8",
-        "route_code": "8",
+        "route_name": "Ruta RK-8",
+        "route_code": "RK-8",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -10234,14 +10218,13 @@
       "id": "microcruz-linea8-sentido_b",
       "properties": {
         "route_id": "microcruz-linea8",
-        "route_name": "linea8",
-        "route_code": "8",
+        "route_name": "Ruta RK-8",
+        "route_code": "RK-8",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -10907,14 +10890,13 @@
       "id": "microcruz-linea9-sentido_a",
       "properties": {
         "route_id": "microcruz-linea9",
-        "route_name": "linea9",
-        "route_code": "9",
+        "route_name": "Ruta RK-9",
+        "route_code": "RK-9",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -11364,14 +11346,13 @@
       "id": "microcruz-linea9-sentido_b",
       "properties": {
         "route_id": "microcruz-linea9",
-        "route_name": "linea9",
-        "route_code": "9",
+        "route_name": "Ruta RK-9",
+        "route_code": "RK-9",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -11845,14 +11826,13 @@
       "id": "microcruz-linea10-sentido_a",
       "properties": {
         "route_id": "microcruz-linea10",
-        "route_name": "linea10",
-        "route_code": "10",
+        "route_name": "Ruta RK-10",
+        "route_code": "RK-10",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -12274,14 +12254,13 @@
       "id": "microcruz-linea10-sentido_b",
       "properties": {
         "route_id": "microcruz-linea10",
-        "route_name": "linea10",
-        "route_code": "10",
+        "route_name": "Ruta RK-10",
+        "route_code": "RK-10",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -12727,14 +12706,13 @@
       "id": "microcruz-linea11-sentido_a",
       "properties": {
         "route_id": "microcruz-linea11",
-        "route_name": "linea11",
-        "route_code": "11",
+        "route_name": "Ruta RK-11",
+        "route_code": "RK-11",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -13532,14 +13510,13 @@
       "id": "microcruz-linea11-sentido_b",
       "properties": {
         "route_id": "microcruz-linea11",
-        "route_name": "linea11",
-        "route_code": "11",
+        "route_name": "Ruta RK-11",
+        "route_code": "RK-11",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -14021,14 +13998,13 @@
       "id": "microcruz-linea12-sentido_a",
       "properties": {
         "route_id": "microcruz-linea12",
-        "route_name": "linea12",
-        "route_code": "12",
+        "route_name": "Ruta RK-12",
+        "route_code": "RK-12",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -14830,14 +14806,13 @@
       "id": "microcruz-linea12-sentido_b",
       "properties": {
         "route_id": "microcruz-linea12",
-        "route_name": "linea12",
-        "route_code": "12",
+        "route_name": "Ruta RK-12",
+        "route_code": "RK-12",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -15371,14 +15346,13 @@
       "id": "microcruz-linea13-sentido_a",
       "properties": {
         "route_id": "microcruz-linea13",
-        "route_name": "linea13",
-        "route_code": "13",
+        "route_name": "Ruta RK-13",
+        "route_code": "RK-13",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -16084,14 +16058,13 @@
       "id": "microcruz-linea13-sentido_b",
       "properties": {
         "route_id": "microcruz-linea13",
-        "route_name": "linea13",
-        "route_code": "13",
+        "route_name": "Ruta RK-13",
+        "route_code": "RK-13",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -17081,14 +17054,13 @@
       "id": "microcruz-linea14-sentido_a",
       "properties": {
         "route_id": "microcruz-linea14",
-        "route_name": "linea14",
-        "route_code": "14",
+        "route_name": "Ruta RK-14",
+        "route_code": "RK-14",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -17534,14 +17506,13 @@
       "id": "microcruz-linea14-sentido_b",
       "properties": {
         "route_id": "microcruz-linea14",
-        "route_name": "linea14",
-        "route_code": "14",
+        "route_name": "Ruta RK-14",
+        "route_code": "RK-14",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -18235,14 +18206,13 @@
       "id": "microcruz-linea15-sentido_a",
       "properties": {
         "route_id": "microcruz-linea15",
-        "route_name": "linea15",
-        "route_code": "15",
+        "route_name": "Ruta RK-15",
+        "route_code": "RK-15",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -18696,14 +18666,13 @@
       "id": "microcruz-linea15-sentido_b",
       "properties": {
         "route_id": "microcruz-linea15",
-        "route_name": "linea15",
-        "route_code": "15",
+        "route_name": "Ruta RK-15",
+        "route_code": "RK-15",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -18957,14 +18926,13 @@
       "id": "microcruz-linea16-azul-sentido_a",
       "properties": {
         "route_id": "microcruz-linea16-azul",
-        "route_name": "linea16 Azul",
-        "route_code": "16",
+        "route_name": "Ruta RK-16",
+        "route_code": "RK-16",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -19382,14 +19350,13 @@
       "id": "microcruz-linea16-azul-sentido_b",
       "properties": {
         "route_id": "microcruz-linea16-azul",
-        "route_name": "linea16 Azul",
-        "route_code": "16",
+        "route_name": "Ruta RK-16",
+        "route_code": "RK-16",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -19959,14 +19926,13 @@
       "id": "microcruz-linea17-sentido_a",
       "properties": {
         "route_id": "microcruz-linea17",
-        "route_name": "linea17",
-        "route_code": "17",
+        "route_name": "Ruta RK-17",
+        "route_code": "RK-17",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -20304,14 +20270,13 @@
       "id": "microcruz-linea17-sentido_b",
       "properties": {
         "route_id": "microcruz-linea17",
-        "route_name": "linea17",
-        "route_code": "17",
+        "route_name": "Ruta RK-17",
+        "route_code": "RK-17",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -20493,14 +20458,13 @@
       "id": "microcruz-linea18-sentido_a",
       "properties": {
         "route_id": "microcruz-linea18",
-        "route_name": "linea18",
-        "route_code": "18",
+        "route_name": "Ruta RK-18",
+        "route_code": "RK-18",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -20682,14 +20646,13 @@
       "id": "microcruz-linea18-sentido_b",
       "properties": {
         "route_id": "microcruz-linea18",
-        "route_name": "linea18",
-        "route_code": "18",
+        "route_name": "Ruta RK-18",
+        "route_code": "RK-18",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -21007,14 +20970,13 @@
       "id": "microcruz-linea19-sentido_a",
       "properties": {
         "route_id": "microcruz-linea19",
-        "route_name": "linea19",
-        "route_code": "19",
+        "route_name": "Ruta RK-19",
+        "route_code": "RK-19",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -21396,14 +21358,13 @@
       "id": "microcruz-linea19-sentido_b",
       "properties": {
         "route_id": "microcruz-linea19",
-        "route_name": "linea19",
-        "route_code": "19",
+        "route_name": "Ruta RK-19",
+        "route_code": "RK-19",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -22001,14 +21962,13 @@
       "id": "microcruz-linea20-sentido_a",
       "properties": {
         "route_id": "microcruz-linea20",
-        "route_name": "linea20",
-        "route_code": "20",
+        "route_name": "Ruta RK-20",
+        "route_code": "RK-20",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -22726,14 +22686,13 @@
       "id": "microcruz-linea20-sentido_b",
       "properties": {
         "route_id": "microcruz-linea20",
-        "route_name": "linea20",
-        "route_code": "20",
+        "route_name": "Ruta RK-20",
+        "route_code": "RK-20",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -23059,14 +23018,13 @@
       "id": "microcruz-linea21-sentido_a",
       "properties": {
         "route_id": "microcruz-linea21",
-        "route_name": "linea21",
-        "route_code": "21",
+        "route_name": "Ruta RK-21",
+        "route_code": "RK-21",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -23436,14 +23394,13 @@
       "id": "microcruz-linea21-sentido_b",
       "properties": {
         "route_id": "microcruz-linea21",
-        "route_name": "linea21",
-        "route_code": "21",
+        "route_name": "Ruta RK-21",
+        "route_code": "RK-21",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -24073,14 +24030,13 @@
       "id": "microcruz-linea22-rojo-sentido_a",
       "properties": {
         "route_id": "microcruz-linea22-rojo",
-        "route_name": "linea22 Rojo",
-        "route_code": "22",
+        "route_name": "Ruta RK-22",
+        "route_code": "RK-22",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -24918,14 +24874,13 @@
       "id": "microcruz-linea22-rojo-sentido_b",
       "properties": {
         "route_id": "microcruz-linea22-rojo",
-        "route_name": "linea22 Rojo",
-        "route_code": "22",
+        "route_name": "Ruta RK-22",
+        "route_code": "RK-22",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -25411,14 +25366,13 @@
       "id": "microcruz-linea23-sentido_a",
       "properties": {
         "route_id": "microcruz-linea23",
-        "route_name": "linea23",
-        "route_code": "23",
+        "route_name": "Ruta RK-23",
+        "route_code": "RK-23",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -25704,14 +25658,13 @@
       "id": "microcruz-linea23-sentido_b",
       "properties": {
         "route_id": "microcruz-linea23",
-        "route_name": "linea23",
-        "route_code": "23",
+        "route_name": "Ruta RK-23",
+        "route_code": "RK-23",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -26221,14 +26174,13 @@
       "id": "microcruz-linea24-sentido_a",
       "properties": {
         "route_id": "microcruz-linea24",
-        "route_name": "linea24",
-        "route_code": "24",
+        "route_name": "Ruta RK-24",
+        "route_code": "RK-24",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -26758,14 +26710,13 @@
       "id": "microcruz-linea24-sentido_b",
       "properties": {
         "route_id": "microcruz-linea24",
-        "route_name": "linea24",
-        "route_code": "24",
+        "route_name": "Ruta RK-24",
+        "route_code": "RK-24",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -27299,14 +27250,13 @@
       "id": "microcruz-linea25-sentido_a",
       "properties": {
         "route_id": "microcruz-linea25",
-        "route_name": "linea25",
-        "route_code": "25",
+        "route_name": "Ruta RK-25",
+        "route_code": "RK-25",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -27820,14 +27770,13 @@
       "id": "microcruz-linea25-sentido_b",
       "properties": {
         "route_id": "microcruz-linea25",
-        "route_name": "linea25",
-        "route_code": "25",
+        "route_name": "Ruta RK-25",
+        "route_code": "RK-25",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -28321,14 +28270,13 @@
       "id": "microcruz-linea26-sentido_a",
       "properties": {
         "route_id": "microcruz-linea26",
-        "route_name": "linea26",
-        "route_code": "26",
+        "route_name": "Ruta RK-26",
+        "route_code": "RK-26",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -28666,14 +28614,13 @@
       "id": "microcruz-linea26-sentido_b",
       "properties": {
         "route_id": "microcruz-linea26",
-        "route_name": "linea26",
-        "route_code": "26",
+        "route_name": "Ruta RK-26",
+        "route_code": "RK-26",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -28931,14 +28878,13 @@
       "id": "microcruz-linea27-sentido_a",
       "properties": {
         "route_id": "microcruz-linea27",
-        "route_name": "linea27",
-        "route_code": "27",
+        "route_name": "Ruta RK-27",
+        "route_code": "RK-27",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -29496,14 +29442,13 @@
       "id": "microcruz-linea27-sentido_b",
       "properties": {
         "route_id": "microcruz-linea27",
-        "route_name": "linea27",
-        "route_code": "27",
+        "route_name": "Ruta RK-27",
+        "route_code": "RK-27",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -29993,14 +29938,13 @@
       "id": "microcruz-linea28-sentido_a",
       "properties": {
         "route_id": "microcruz-linea28",
-        "route_name": "linea28",
-        "route_code": "28",
+        "route_name": "Ruta RK-28",
+        "route_code": "RK-28",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -30274,14 +30218,13 @@
       "id": "microcruz-linea28-sentido_b",
       "properties": {
         "route_id": "microcruz-linea28",
-        "route_name": "linea28",
-        "route_code": "28",
+        "route_name": "Ruta RK-28",
+        "route_code": "RK-28",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -30523,14 +30466,13 @@
       "id": "microcruz-linea29-sentido_a",
       "properties": {
         "route_id": "microcruz-linea29",
-        "route_name": "linea29",
-        "route_code": "29",
+        "route_name": "Ruta RK-29",
+        "route_code": "RK-29",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -30932,14 +30874,13 @@
       "id": "microcruz-linea29-sentido_b",
       "properties": {
         "route_id": "microcruz-linea29",
-        "route_name": "linea29",
-        "route_code": "29",
+        "route_name": "Ruta RK-29",
+        "route_code": "RK-29",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -31369,14 +31310,13 @@
       "id": "microcruz-linea30-sentido_a",
       "properties": {
         "route_id": "microcruz-linea30",
-        "route_name": "linea30",
-        "route_code": "30",
+        "route_name": "Ruta RK-30",
+        "route_code": "RK-30",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -31834,14 +31774,13 @@
       "id": "microcruz-linea30-sentido_b",
       "properties": {
         "route_id": "microcruz-linea30",
-        "route_name": "linea30",
-        "route_code": "30",
+        "route_name": "Ruta RK-30",
+        "route_code": "RK-30",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -32371,14 +32310,13 @@
       "id": "microcruz-linea31-sentido_a",
       "properties": {
         "route_id": "microcruz-linea31",
-        "route_name": "linea31",
-        "route_code": "31",
+        "route_name": "Ruta RK-31",
+        "route_code": "RK-31",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -32864,14 +32802,13 @@
       "id": "microcruz-linea31-sentido_b",
       "properties": {
         "route_id": "microcruz-linea31",
-        "route_name": "linea31",
-        "route_code": "31",
+        "route_name": "Ruta RK-31",
+        "route_code": "RK-31",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -33341,14 +33278,13 @@
       "id": "microcruz-linea32-sentido_a",
       "properties": {
         "route_id": "microcruz-linea32",
-        "route_name": "linea32",
-        "route_code": "32",
+        "route_name": "Ruta RK-32",
+        "route_code": "RK-32",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -33634,14 +33570,13 @@
       "id": "microcruz-linea32-sentido_b",
       "properties": {
         "route_id": "microcruz-linea32",
-        "route_name": "linea32",
-        "route_code": "32",
+        "route_name": "Ruta RK-32",
+        "route_code": "RK-32",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -33883,14 +33818,13 @@
       "id": "microcruz-linea33-sentido_a",
       "properties": {
         "route_id": "microcruz-linea33",
-        "route_name": "linea33",
-        "route_code": "33",
+        "route_name": "Ruta RK-33",
+        "route_code": "RK-33",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -34432,14 +34366,13 @@
       "id": "microcruz-linea33-sentido_b",
       "properties": {
         "route_id": "microcruz-linea33",
-        "route_name": "linea33",
-        "route_code": "33",
+        "route_name": "Ruta RK-33",
+        "route_code": "RK-33",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -34977,14 +34910,13 @@
       "id": "microcruz-linea34-sentido_a",
       "properties": {
         "route_id": "microcruz-linea34",
-        "route_name": "linea34",
-        "route_code": "34",
+        "route_name": "Ruta RK-34",
+        "route_code": "RK-34",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -35466,14 +35398,13 @@
       "id": "microcruz-linea34-sentido_b",
       "properties": {
         "route_id": "microcruz-linea34",
-        "route_name": "linea34",
-        "route_code": "34",
+        "route_name": "Ruta RK-34",
+        "route_code": "RK-34",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -35927,14 +35858,13 @@
       "id": "microcruz-linea35-sentido_a",
       "properties": {
         "route_id": "microcruz-linea35",
-        "route_name": "linea35",
-        "route_code": "35",
+        "route_name": "Ruta RK-35",
+        "route_code": "RK-35",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -36164,14 +36094,13 @@
       "id": "microcruz-linea35-sentido_b",
       "properties": {
         "route_id": "microcruz-linea35",
-        "route_name": "linea35",
-        "route_code": "35",
+        "route_name": "Ruta RK-35",
+        "route_code": "RK-35",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -36449,14 +36378,13 @@
       "id": "microcruz-linea36-sentido_a",
       "properties": {
         "route_id": "microcruz-linea36",
-        "route_name": "linea36",
-        "route_code": "36",
+        "route_name": "Ruta RK-36",
+        "route_code": "RK-36",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -36962,14 +36890,13 @@
       "id": "microcruz-linea36-sentido_b",
       "properties": {
         "route_id": "microcruz-linea36",
-        "route_name": "linea36",
-        "route_code": "36",
+        "route_name": "Ruta RK-36",
+        "route_code": "RK-36",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -37407,14 +37334,13 @@
       "id": "microcruz-linea37-sentido_a",
       "properties": {
         "route_id": "microcruz-linea37",
-        "route_name": "linea37",
-        "route_code": "37",
+        "route_name": "Ruta RK-37",
+        "route_code": "RK-37",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -37880,14 +37806,13 @@
       "id": "microcruz-linea37-sentido_b",
       "properties": {
         "route_id": "microcruz-linea37",
-        "route_name": "linea37",
-        "route_code": "37",
+        "route_name": "Ruta RK-37",
+        "route_code": "RK-37",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -38417,14 +38342,13 @@
       "id": "microcruz-linea38-sentido_a",
       "properties": {
         "route_id": "microcruz-linea38",
-        "route_name": "linea38",
-        "route_code": "38",
+        "route_name": "Ruta RK-38",
+        "route_code": "RK-38",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -39066,14 +38990,13 @@
       "id": "microcruz-linea38-sentido_b",
       "properties": {
         "route_id": "microcruz-linea38",
-        "route_name": "linea38",
-        "route_code": "38",
+        "route_name": "Ruta RK-38",
+        "route_code": "RK-38",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -39759,14 +39682,13 @@
       "id": "microcruz-linea39-sentido_a",
       "properties": {
         "route_id": "microcruz-linea39",
-        "route_name": "linea39",
-        "route_code": "39",
+        "route_name": "Ruta RK-39",
+        "route_code": "RK-39",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -40276,14 +40198,13 @@
       "id": "microcruz-linea39-sentido_b",
       "properties": {
         "route_id": "microcruz-linea39",
-        "route_name": "linea39",
-        "route_code": "39",
+        "route_name": "Ruta RK-39",
+        "route_code": "RK-39",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -40717,14 +40638,13 @@
       "id": "microcruz-linea40-sentido_a",
       "properties": {
         "route_id": "microcruz-linea40",
-        "route_name": "linea40",
-        "route_code": "40",
+        "route_name": "Ruta RK-40",
+        "route_code": "RK-40",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -41298,14 +41218,13 @@
       "id": "microcruz-linea40-sentido_b",
       "properties": {
         "route_id": "microcruz-linea40",
-        "route_name": "linea40",
-        "route_code": "40",
+        "route_name": "Ruta RK-40",
+        "route_code": "RK-40",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -41851,14 +41770,13 @@
       "id": "microcruz-linea41-rojo-sentido_a",
       "properties": {
         "route_id": "microcruz-linea41-rojo",
-        "route_name": "linea41 Rojo",
-        "route_code": "41",
+        "route_name": "Ruta RK-41-A",
+        "route_code": "RK-41-A",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -42128,14 +42046,13 @@
       "id": "microcruz-linea41-rojo-sentido_b",
       "properties": {
         "route_id": "microcruz-linea41-rojo",
-        "route_name": "linea41 Rojo",
-        "route_code": "41",
+        "route_name": "Ruta RK-41-A",
+        "route_code": "RK-41-A",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -42377,14 +42294,13 @@
       "id": "microcruz-linea41-verde-sentido_a",
       "properties": {
         "route_id": "microcruz-linea41-verde",
-        "route_name": "linea41 Verde",
-        "route_code": "41",
+        "route_name": "Ruta RK-41-B",
+        "route_code": "RK-41-B",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -42930,14 +42846,13 @@
       "id": "microcruz-linea41-verde-sentido_b",
       "properties": {
         "route_id": "microcruz-linea41-verde",
-        "route_name": "linea41 Verde",
-        "route_code": "41",
+        "route_name": "Ruta RK-41-B",
+        "route_code": "RK-41-B",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -43491,14 +43406,13 @@
       "id": "microcruz-linea42-sentido_a",
       "properties": {
         "route_id": "microcruz-linea42",
-        "route_name": "linea42",
-        "route_code": "42",
+        "route_name": "Ruta RK-42",
+        "route_code": "RK-42",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -44148,14 +44062,13 @@
       "id": "microcruz-linea42-sentido_b",
       "properties": {
         "route_id": "microcruz-linea42",
-        "route_name": "linea42",
-        "route_code": "42",
+        "route_name": "Ruta RK-42",
+        "route_code": "RK-42",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -44745,14 +44658,13 @@
       "id": "microcruz-linea43-sentido_a",
       "properties": {
         "route_id": "microcruz-linea43",
-        "route_name": "linea43",
-        "route_code": "43",
+        "route_name": "Ruta RK-43",
+        "route_code": "RK-43",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -45202,14 +45114,13 @@
       "id": "microcruz-linea43-sentido_b",
       "properties": {
         "route_id": "microcruz-linea43",
-        "route_name": "linea43",
-        "route_code": "43",
+        "route_name": "Ruta RK-43",
+        "route_code": "RK-43",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -45771,14 +45682,13 @@
       "id": "microcruz-linea44-azul-sentido_a",
       "properties": {
         "route_id": "microcruz-linea44-azul",
-        "route_name": "linea44 Azul",
-        "route_code": "44",
+        "route_name": "Ruta RK-44-A",
+        "route_code": "RK-44-A",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -45896,14 +45806,13 @@
       "id": "microcruz-linea44-azul-sentido_b",
       "properties": {
         "route_id": "microcruz-linea44-azul",
-        "route_name": "linea44 Azul",
-        "route_code": "44",
+        "route_name": "Ruta RK-44-A",
+        "route_code": "RK-44-A",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -46049,14 +45958,13 @@
       "id": "microcruz-linea44-rojo-sentido_a",
       "properties": {
         "route_id": "microcruz-linea44-rojo",
-        "route_name": "linea44 Rojo",
-        "route_code": "44",
+        "route_name": "Ruta RK-44-B",
+        "route_code": "RK-44-B",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -46578,14 +46486,13 @@
       "id": "microcruz-linea44-rojo-sentido_b",
       "properties": {
         "route_id": "microcruz-linea44-rojo",
-        "route_name": "linea44 Rojo",
-        "route_code": "44",
+        "route_name": "Ruta RK-44-B",
+        "route_code": "RK-44-B",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -46979,14 +46886,13 @@
       "id": "microcruz-linea45-sentido_a",
       "properties": {
         "route_id": "microcruz-linea45",
-        "route_name": "linea45",
-        "route_code": "45",
+        "route_name": "Ruta RK-45",
+        "route_code": "RK-45",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -47472,14 +47378,13 @@
       "id": "microcruz-linea45-sentido_b",
       "properties": {
         "route_id": "microcruz-linea45",
-        "route_name": "linea45",
-        "route_code": "45",
+        "route_name": "Ruta RK-45",
+        "route_code": "RK-45",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -47957,14 +47862,13 @@
       "id": "microcruz-linea46-sentido_a",
       "properties": {
         "route_id": "microcruz-linea46",
-        "route_name": "linea46",
-        "route_code": "46",
+        "route_name": "Ruta RK-46",
+        "route_code": "RK-46",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -48530,14 +48434,13 @@
       "id": "microcruz-linea46-sentido_b",
       "properties": {
         "route_id": "microcruz-linea46",
-        "route_name": "linea46",
-        "route_code": "46",
+        "route_name": "Ruta RK-46",
+        "route_code": "RK-46",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -49099,14 +49002,13 @@
       "id": "microcruz-linea47-sentido_a",
       "properties": {
         "route_id": "microcruz-linea47",
-        "route_name": "linea47",
-        "route_code": "47",
+        "route_name": "Ruta RK-47",
+        "route_code": "RK-47",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -49696,14 +49598,13 @@
       "id": "microcruz-linea47-sentido_b",
       "properties": {
         "route_id": "microcruz-linea47",
-        "route_name": "linea47",
-        "route_code": "47",
+        "route_name": "Ruta RK-47",
+        "route_code": "RK-47",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -50345,14 +50246,13 @@
       "id": "microcruz-linea48-sentido_a",
       "properties": {
         "route_id": "microcruz-linea48",
-        "route_name": "linea48",
-        "route_code": "48",
+        "route_name": "Ruta RK-48",
+        "route_code": "RK-48",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -50938,14 +50838,13 @@
       "id": "microcruz-linea48-sentido_b",
       "properties": {
         "route_id": "microcruz-linea48",
-        "route_name": "linea48",
-        "route_code": "48",
+        "route_name": "Ruta RK-48",
+        "route_code": "RK-48",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -51543,14 +51442,13 @@
       "id": "microcruz-linea49-sentido_a",
       "properties": {
         "route_id": "microcruz-linea49",
-        "route_name": "linea49",
-        "route_code": "49",
+        "route_name": "Ruta RK-49",
+        "route_code": "RK-49",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -52108,14 +52006,13 @@
       "id": "microcruz-linea49-sentido_b",
       "properties": {
         "route_id": "microcruz-linea49",
-        "route_name": "linea49",
-        "route_code": "49",
+        "route_name": "Ruta RK-49",
+        "route_code": "RK-49",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -52581,14 +52478,13 @@
       "id": "microcruz-linea50-sentido_a",
       "properties": {
         "route_id": "microcruz-linea50",
-        "route_name": "linea50",
-        "route_code": "50",
+        "route_name": "Ruta RK-50",
+        "route_code": "RK-50",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -53266,14 +53162,13 @@
       "id": "microcruz-linea50-sentido_b",
       "properties": {
         "route_id": "microcruz-linea50",
-        "route_name": "linea50",
-        "route_code": "50",
+        "route_name": "Ruta RK-50",
+        "route_code": "RK-50",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -53863,14 +53758,13 @@
       "id": "microcruz-linea51-sentido_a",
       "properties": {
         "route_id": "microcruz-linea51",
-        "route_name": "linea51",
-        "route_code": "51",
+        "route_name": "Ruta RK-51",
+        "route_code": "RK-51",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -54528,14 +54422,13 @@
       "id": "microcruz-linea51-sentido_b",
       "properties": {
         "route_id": "microcruz-linea51",
-        "route_name": "linea51",
-        "route_code": "51",
+        "route_name": "Ruta RK-51",
+        "route_code": "RK-51",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -55245,14 +55138,13 @@
       "id": "microcruz-linea52-sentido_a",
       "properties": {
         "route_id": "microcruz-linea52",
-        "route_name": "linea52",
-        "route_code": "52",
+        "route_name": "Ruta RK-52",
+        "route_code": "RK-52",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -55870,14 +55762,13 @@
       "id": "microcruz-linea52-sentido_b",
       "properties": {
         "route_id": "microcruz-linea52",
-        "route_name": "linea52",
-        "route_code": "52",
+        "route_name": "Ruta RK-52",
+        "route_code": "RK-52",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -56575,14 +56466,13 @@
       "id": "microcruz-linea53-sentido_a",
       "properties": {
         "route_id": "microcruz-linea53",
-        "route_name": "linea53",
-        "route_code": "53",
+        "route_name": "Ruta RK-53",
+        "route_code": "RK-53",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -57052,14 +56942,13 @@
       "id": "microcruz-linea53-sentido_b",
       "properties": {
         "route_id": "microcruz-linea53",
-        "route_name": "linea53",
-        "route_code": "53",
+        "route_name": "Ruta RK-53",
+        "route_code": "RK-53",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -57461,14 +57350,13 @@
       "id": "microcruz-linea54-sentido_a",
       "properties": {
         "route_id": "microcruz-linea54",
-        "route_name": "linea54",
-        "route_code": "54",
+        "route_name": "Ruta RK-54",
+        "route_code": "RK-54",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -58054,14 +57942,13 @@
       "id": "microcruz-linea54-sentido_b",
       "properties": {
         "route_id": "microcruz-linea54",
-        "route_name": "linea54",
-        "route_code": "54",
+        "route_name": "Ruta RK-54",
+        "route_code": "RK-54",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -58683,14 +58570,13 @@
       "id": "microcruz-linea55-sentido_a",
       "properties": {
         "route_id": "microcruz-linea55",
-        "route_name": "linea55",
-        "route_code": "55",
+        "route_name": "Ruta RK-55",
+        "route_code": "RK-55",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -59288,14 +59174,13 @@
       "id": "microcruz-linea55-sentido_b",
       "properties": {
         "route_id": "microcruz-linea55",
-        "route_name": "linea55",
-        "route_code": "55",
+        "route_name": "Ruta RK-55",
+        "route_code": "RK-55",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -59905,14 +59790,13 @@
       "id": "microcruz-linea56-sentido_a",
       "properties": {
         "route_id": "microcruz-linea56",
-        "route_name": "linea56",
-        "route_code": "56",
+        "route_name": "Ruta RK-56",
+        "route_code": "RK-56",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -60482,14 +60366,13 @@
       "id": "microcruz-linea56-sentido_b",
       "properties": {
         "route_id": "microcruz-linea56",
-        "route_name": "linea56",
-        "route_code": "56",
+        "route_name": "Ruta RK-56",
+        "route_code": "RK-56",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -61003,14 +60886,13 @@
       "id": "microcruz-linea57-sentido_a",
       "properties": {
         "route_id": "microcruz-linea57",
-        "route_name": "linea57",
-        "route_code": "57",
+        "route_name": "Ruta RK-57",
+        "route_code": "RK-57",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -61508,14 +61390,13 @@
       "id": "microcruz-linea57-sentido_b",
       "properties": {
         "route_id": "microcruz-linea57",
-        "route_name": "linea57",
-        "route_code": "57",
+        "route_name": "Ruta RK-57",
+        "route_code": "RK-57",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -62013,14 +61894,13 @@
       "id": "microcruz-linea58-sentido_a",
       "properties": {
         "route_id": "microcruz-linea58",
-        "route_name": "linea58",
-        "route_code": "58",
+        "route_name": "Ruta RK-58",
+        "route_code": "RK-58",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -62530,14 +62410,13 @@
       "id": "microcruz-linea58-sentido_b",
       "properties": {
         "route_id": "microcruz-linea58",
-        "route_name": "linea58",
-        "route_code": "58",
+        "route_name": "Ruta RK-58",
+        "route_code": "RK-58",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -63027,14 +62906,13 @@
       "id": "microcruz-linea59-sentido_a",
       "properties": {
         "route_id": "microcruz-linea59",
-        "route_name": "linea59",
-        "route_code": "59",
+        "route_name": "Ruta RK-59",
+        "route_code": "RK-59",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -63792,14 +63670,13 @@
       "id": "microcruz-linea59-sentido_b",
       "properties": {
         "route_id": "microcruz-linea59",
-        "route_name": "linea59",
-        "route_code": "59",
+        "route_name": "Ruta RK-59",
+        "route_code": "RK-59",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -64589,14 +64466,13 @@
       "id": "microcruz-linea60-rojo-sentido_a",
       "properties": {
         "route_id": "microcruz-linea60-rojo",
-        "route_name": "linea60 Rojo",
-        "route_code": "60",
+        "route_name": "Ruta RK-60-A",
+        "route_code": "RK-60-A",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -65050,14 +64926,13 @@
       "id": "microcruz-linea60-rojo-sentido_b",
       "properties": {
         "route_id": "microcruz-linea60-rojo",
-        "route_name": "linea60 Rojo",
-        "route_code": "60",
+        "route_name": "Ruta RK-60-A",
+        "route_code": "RK-60-A",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -65511,14 +65386,13 @@
       "id": "microcruz-linea60-verde-sentido_a",
       "properties": {
         "route_id": "microcruz-linea60-verde",
-        "route_name": "linea60 Verde",
-        "route_code": "60",
+        "route_name": "Ruta RK-60-B",
+        "route_code": "RK-60-B",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -65788,14 +65662,13 @@
       "id": "microcruz-linea60-verde-sentido_b",
       "properties": {
         "route_id": "microcruz-linea60-verde",
-        "route_name": "linea60 Verde",
-        "route_code": "60",
+        "route_name": "Ruta RK-60-B",
+        "route_code": "RK-60-B",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -66017,14 +65890,13 @@
       "id": "microcruz-linea61-azul-sentido_a",
       "properties": {
         "route_id": "microcruz-linea61-azul",
-        "route_name": "linea61 Azul",
-        "route_code": "61",
+        "route_name": "Ruta RK-61-A",
+        "route_code": "RK-61-A",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -66530,14 +66402,13 @@
       "id": "microcruz-linea61-azul-sentido_b",
       "properties": {
         "route_id": "microcruz-linea61-azul",
-        "route_name": "linea61 Azul",
-        "route_code": "61",
+        "route_name": "Ruta RK-61-A",
+        "route_code": "RK-61-A",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -67043,14 +66914,13 @@
       "id": "microcruz-linea61-rojo-sentido_a",
       "properties": {
         "route_id": "microcruz-linea61-rojo",
-        "route_name": "linea61 Rojo",
-        "route_code": "61",
+        "route_name": "Ruta RK-61-B",
+        "route_code": "RK-61-B",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -67560,14 +67430,13 @@
       "id": "microcruz-linea61-rojo-sentido_b",
       "properties": {
         "route_id": "microcruz-linea61-rojo",
-        "route_name": "linea61 Rojo",
-        "route_code": "61",
+        "route_name": "Ruta RK-61-B",
+        "route_code": "RK-61-B",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -68089,14 +67958,13 @@
       "id": "microcruz-linea62-sentido_a",
       "properties": {
         "route_id": "microcruz-linea62",
-        "route_name": "linea62",
-        "route_code": "62",
+        "route_name": "Ruta RK-62-A",
+        "route_code": "RK-62-A",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -68462,14 +68330,13 @@
       "id": "microcruz-linea62-sentido_b",
       "properties": {
         "route_id": "microcruz-linea62",
-        "route_name": "linea62",
-        "route_code": "62",
+        "route_name": "Ruta RK-62-A",
+        "route_code": "RK-62-A",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -68863,14 +68730,13 @@
       "id": "microcruz-linea62-naranja-sentido_a",
       "properties": {
         "route_id": "microcruz-linea62-naranja",
-        "route_name": "linea62 Naranja",
-        "route_code": "62",
+        "route_name": "Ruta RK-62-B",
+        "route_code": "RK-62-B",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -69160,14 +69026,13 @@
       "id": "microcruz-linea62-naranja-sentido_b",
       "properties": {
         "route_id": "microcruz-linea62-naranja",
-        "route_name": "linea62 Naranja",
-        "route_code": "62",
+        "route_name": "Ruta RK-62-B",
+        "route_code": "RK-62-B",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -69493,14 +69358,13 @@
       "id": "microcruz-linea63-sentido_a",
       "properties": {
         "route_id": "microcruz-linea63",
-        "route_name": "linea63",
-        "route_code": "63",
+        "route_name": "Ruta RK-63",
+        "route_code": "RK-63",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -69862,14 +69726,13 @@
       "id": "microcruz-linea63-sentido_b",
       "properties": {
         "route_id": "microcruz-linea63",
-        "route_name": "linea63",
-        "route_code": "63",
+        "route_name": "Ruta RK-63",
+        "route_code": "RK-63",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -70259,14 +70122,13 @@
       "id": "microcruz-linea64-amarillo-sentido_a",
       "properties": {
         "route_id": "microcruz-linea64-amarillo",
-        "route_name": "linea64 Amarillo",
-        "route_code": "64",
+        "route_name": "Ruta RK-64-A",
+        "route_code": "RK-64-A",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -70480,14 +70342,13 @@
       "id": "microcruz-linea64-amarillo-sentido_b",
       "properties": {
         "route_id": "microcruz-linea64-amarillo",
-        "route_name": "linea64 Amarillo",
-        "route_code": "64",
+        "route_name": "Ruta RK-64-A",
+        "route_code": "RK-64-A",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -70737,14 +70598,13 @@
       "id": "microcruz-linea64-rojo-sentido_a",
       "properties": {
         "route_id": "microcruz-linea64-rojo",
-        "route_name": "linea64 Rojo",
-        "route_code": "64",
+        "route_name": "Ruta RK-64-B",
+        "route_code": "RK-64-B",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -71078,14 +70938,13 @@
       "id": "microcruz-linea64-rojo-sentido_b",
       "properties": {
         "route_id": "microcruz-linea64-rojo",
-        "route_name": "linea64 Rojo",
-        "route_code": "64",
+        "route_name": "Ruta RK-64-B",
+        "route_code": "RK-64-B",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -71439,14 +71298,13 @@
       "id": "microcruz-linea65-sentido_a",
       "properties": {
         "route_id": "microcruz-linea65",
-        "route_name": "linea65",
-        "route_code": "65",
+        "route_name": "Ruta RK-65",
+        "route_code": "RK-65",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -72000,14 +71858,13 @@
       "id": "microcruz-linea65-sentido_b",
       "properties": {
         "route_id": "microcruz-linea65",
-        "route_name": "linea65",
-        "route_code": "65",
+        "route_name": "Ruta RK-65",
+        "route_code": "RK-65",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -72581,14 +72438,13 @@
       "id": "microcruz-linea66-rojo-sentido_a",
       "properties": {
         "route_id": "microcruz-linea66-rojo",
-        "route_name": "linea66 Rojo",
-        "route_code": "66",
+        "route_name": "Ruta RK-66",
+        "route_code": "RK-66",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -73174,14 +73030,13 @@
       "id": "microcruz-linea66-rojo-sentido_b",
       "properties": {
         "route_id": "microcruz-linea66-rojo",
-        "route_name": "linea66 Rojo",
-        "route_code": "66",
+        "route_name": "Ruta RK-66",
+        "route_code": "RK-66",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -73839,14 +73694,13 @@
       "id": "microcruz-linea67-sentido_a",
       "properties": {
         "route_id": "microcruz-linea67",
-        "route_name": "linea67",
-        "route_code": "67",
+        "route_name": "Ruta RK-67",
+        "route_code": "RK-67",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -74224,14 +74078,13 @@
       "id": "microcruz-linea67-sentido_b",
       "properties": {
         "route_id": "microcruz-linea67",
-        "route_name": "linea67",
-        "route_code": "67",
+        "route_name": "Ruta RK-67",
+        "route_code": "RK-67",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -74685,14 +74538,13 @@
       "id": "microcruz-linea68-rojo-sentido_a",
       "properties": {
         "route_id": "microcruz-linea68-rojo",
-        "route_name": "linea68 Rojo",
-        "route_code": "68",
+        "route_name": "Ruta RK-68-A",
+        "route_code": "RK-68-A",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -75262,14 +75114,13 @@
       "id": "microcruz-linea68-rojo-sentido_b",
       "properties": {
         "route_id": "microcruz-linea68-rojo",
-        "route_name": "linea68 Rojo",
-        "route_code": "68",
+        "route_name": "Ruta RK-68-A",
+        "route_code": "RK-68-A",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -75927,14 +75778,13 @@
       "id": "microcruz-linea68-verde-sentido_a",
       "properties": {
         "route_id": "microcruz-linea68-verde",
-        "route_name": "linea68 Verde",
-        "route_code": "68",
+        "route_name": "Ruta RK-68-B",
+        "route_code": "RK-68-B",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -76384,14 +76234,13 @@
       "id": "microcruz-linea68-verde-sentido_b",
       "properties": {
         "route_id": "microcruz-linea68-verde",
-        "route_name": "linea68 Verde",
-        "route_code": "68",
+        "route_name": "Ruta RK-68-B",
+        "route_code": "RK-68-B",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -76889,14 +76738,13 @@
       "id": "microcruz-linea69-sentido_a",
       "properties": {
         "route_id": "microcruz-linea69",
-        "route_name": "linea69",
-        "route_code": "69",
+        "route_name": "Ruta RK-69",
+        "route_code": "RK-69",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -77294,14 +77142,13 @@
       "id": "microcruz-linea69-sentido_b",
       "properties": {
         "route_id": "microcruz-linea69",
-        "route_name": "linea69",
-        "route_code": "69",
+        "route_name": "Ruta RK-69",
+        "route_code": "RK-69",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -77723,14 +77570,13 @@
       "id": "microcruz-linea70-sentido_a",
       "properties": {
         "route_id": "microcruz-linea70",
-        "route_name": "linea70",
-        "route_code": "70",
+        "route_name": "Ruta RK-70",
+        "route_code": "RK-70",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -78148,14 +77994,13 @@
       "id": "microcruz-linea70-sentido_b",
       "properties": {
         "route_id": "microcruz-linea70",
-        "route_name": "linea70",
-        "route_code": "70",
+        "route_name": "Ruta RK-70",
+        "route_code": "RK-70",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -78621,14 +78466,13 @@
       "id": "microcruz-linea71-sentido_a",
       "properties": {
         "route_id": "microcruz-linea71",
-        "route_name": "linea71",
-        "route_code": "71",
+        "route_name": "Ruta RK-71",
+        "route_code": "RK-71",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -79102,14 +78946,13 @@
       "id": "microcruz-linea71-sentido_b",
       "properties": {
         "route_id": "microcruz-linea71",
-        "route_name": "linea71",
-        "route_code": "71",
+        "route_name": "Ruta RK-71",
+        "route_code": "RK-71",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -79491,14 +79334,13 @@
       "id": "microcruz-linea72-sentido_a",
       "properties": {
         "route_id": "microcruz-linea72",
-        "route_name": "linea72",
-        "route_code": "72",
+        "route_name": "Ruta RK-72",
+        "route_code": "RK-72",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -79664,14 +79506,13 @@
       "id": "microcruz-linea72-sentido_b",
       "properties": {
         "route_id": "microcruz-linea72",
-        "route_name": "linea72",
-        "route_code": "72",
+        "route_name": "Ruta RK-72",
+        "route_code": "RK-72",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -79845,14 +79686,13 @@
       "id": "microcruz-linea73-sentido_a",
       "properties": {
         "route_id": "microcruz-linea73",
-        "route_name": "linea73",
-        "route_code": "73",
+        "route_name": "Ruta RK-73",
+        "route_code": "RK-73",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -80042,14 +79882,13 @@
       "id": "microcruz-linea73-sentido_b",
       "properties": {
         "route_id": "microcruz-linea73",
-        "route_name": "linea73",
-        "route_code": "73",
+        "route_name": "Ruta RK-73",
+        "route_code": "RK-73",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -80239,14 +80078,13 @@
       "id": "microcruz-linea74-sentido_a",
       "properties": {
         "route_id": "microcruz-linea74",
-        "route_name": "linea74",
-        "route_code": "74",
+        "route_name": "Ruta RK-74",
+        "route_code": "RK-74",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -81004,14 +80842,13 @@
       "id": "microcruz-linea74-sentido_b",
       "properties": {
         "route_id": "microcruz-linea74",
-        "route_name": "linea74",
-        "route_code": "74",
+        "route_name": "Ruta RK-74",
+        "route_code": "RK-74",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -81769,14 +81606,13 @@
       "id": "microcruz-linea75-sentido_a",
       "properties": {
         "route_id": "microcruz-linea75",
-        "route_name": "linea75",
-        "route_code": "75",
+        "route_name": "Ruta RK-75",
+        "route_code": "RK-75",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -82590,14 +82426,13 @@
       "id": "microcruz-linea75-sentido_b",
       "properties": {
         "route_id": "microcruz-linea75",
-        "route_name": "linea75",
-        "route_code": "75",
+        "route_name": "Ruta RK-75",
+        "route_code": "RK-75",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -83407,14 +83242,13 @@
       "id": "microcruz-linea76-sentido_a",
       "properties": {
         "route_id": "microcruz-linea76",
-        "route_name": "linea76",
-        "route_code": "76",
+        "route_name": "Ruta RK-76",
+        "route_code": "RK-76",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -83840,14 +83674,13 @@
       "id": "microcruz-linea76-sentido_b",
       "properties": {
         "route_id": "microcruz-linea76",
-        "route_name": "linea76",
-        "route_code": "76",
+        "route_name": "Ruta RK-76",
+        "route_code": "RK-76",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -84341,14 +84174,13 @@
       "id": "microcruz-linea77-sentido_a",
       "properties": {
         "route_id": "microcruz-linea77",
-        "route_name": "linea77",
-        "route_code": "77",
+        "route_name": "Ruta RK-77",
+        "route_code": "RK-77",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -84790,14 +84622,13 @@
       "id": "microcruz-linea77-sentido_b",
       "properties": {
         "route_id": "microcruz-linea77",
-        "route_name": "linea77",
-        "route_code": "77",
+        "route_name": "Ruta RK-77",
+        "route_code": "RK-77",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -85251,14 +85082,13 @@
       "id": "microcruz-linea78-sentido_a",
       "properties": {
         "route_id": "microcruz-linea78",
-        "route_name": "linea78",
-        "route_code": "78",
+        "route_name": "Ruta RK-78",
+        "route_code": "RK-78",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -85656,14 +85486,13 @@
       "id": "microcruz-linea78-sentido_b",
       "properties": {
         "route_id": "microcruz-linea78",
-        "route_name": "linea78",
-        "route_code": "78",
+        "route_name": "Ruta RK-78",
+        "route_code": "RK-78",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -86045,14 +85874,13 @@
       "id": "microcruz-linea79-sentido_a",
       "properties": {
         "route_id": "microcruz-linea79",
-        "route_name": "linea79",
-        "route_code": "79",
+        "route_name": "Ruta RK-79",
+        "route_code": "RK-79",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -86658,14 +86486,13 @@
       "id": "microcruz-linea79-sentido_b",
       "properties": {
         "route_id": "microcruz-linea79",
-        "route_name": "linea79",
-        "route_code": "79",
+        "route_name": "Ruta RK-79",
+        "route_code": "RK-79",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -87279,14 +87106,13 @@
       "id": "microcruz-linea80-sentido_a",
       "properties": {
         "route_id": "microcruz-linea80",
-        "route_name": "linea80",
-        "route_code": "80",
+        "route_name": "Ruta RK-80",
+        "route_code": "RK-80",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -88256,14 +88082,13 @@
       "id": "microcruz-linea80-sentido_b",
       "properties": {
         "route_id": "microcruz-linea80",
-        "route_name": "linea80",
-        "route_code": "80",
+        "route_name": "Ruta RK-80",
+        "route_code": "RK-80",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -89173,14 +88998,13 @@
       "id": "microcruz-linea81-sentido_a",
       "properties": {
         "route_id": "microcruz-linea81",
-        "route_name": "linea81",
-        "route_code": "81",
+        "route_name": "Ruta RK-81",
+        "route_code": "RK-81",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -89730,14 +89554,13 @@
       "id": "microcruz-linea81-sentido_b",
       "properties": {
         "route_id": "microcruz-linea81",
-        "route_name": "linea81",
-        "route_code": "81",
+        "route_name": "Ruta RK-81",
+        "route_code": "RK-81",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -90251,14 +90074,13 @@
       "id": "microcruz-linea82-sentido_a",
       "properties": {
         "route_id": "microcruz-linea82",
-        "route_name": "linea82",
-        "route_code": "82",
+        "route_name": "Ruta RK-82",
+        "route_code": "RK-82",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -90940,14 +90762,13 @@
       "id": "microcruz-linea82-sentido_b",
       "properties": {
         "route_id": "microcruz-linea82",
-        "route_name": "linea82",
-        "route_code": "82",
+        "route_name": "Ruta RK-82",
+        "route_code": "RK-82",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -91645,14 +91466,13 @@
       "id": "microcruz-linea83-sentido_a",
       "properties": {
         "route_id": "microcruz-linea83",
-        "route_name": "linea83",
-        "route_code": "83",
+        "route_name": "Ruta RK-83",
+        "route_code": "RK-83",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -91862,14 +91682,13 @@
       "id": "microcruz-linea83-sentido_b",
       "properties": {
         "route_id": "microcruz-linea83",
-        "route_name": "linea83",
-        "route_code": "83",
+        "route_name": "Ruta RK-83",
+        "route_code": "RK-83",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -92131,14 +91950,13 @@
       "id": "microcruz-linea84-sentido_a",
       "properties": {
         "route_id": "microcruz-linea84",
-        "route_name": "linea84",
-        "route_code": "84",
+        "route_name": "Ruta RK-84",
+        "route_code": "RK-84",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -92668,14 +92486,13 @@
       "id": "microcruz-linea84-sentido_b",
       "properties": {
         "route_id": "microcruz-linea84",
-        "route_name": "linea84",
-        "route_code": "84",
+        "route_name": "Ruta RK-84",
+        "route_code": "RK-84",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -93173,14 +92990,13 @@
       "id": "microcruz-linea85-sentido_a",
       "properties": {
         "route_id": "microcruz-linea85",
-        "route_name": "linea85",
-        "route_code": "85",
+        "route_name": "Ruta RK-85",
+        "route_code": "RK-85",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -93786,14 +93602,13 @@
       "id": "microcruz-linea85-sentido_b",
       "properties": {
         "route_id": "microcruz-linea85",
-        "route_name": "linea85",
-        "route_code": "85",
+        "route_name": "Ruta RK-85",
+        "route_code": "RK-85",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -94351,14 +94166,13 @@
       "id": "microcruz-linea86-sentido_a",
       "properties": {
         "route_id": "microcruz-linea86",
-        "route_name": "linea86",
-        "route_code": "86",
+        "route_name": "Ruta RK-86",
+        "route_code": "RK-86",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -95012,14 +94826,13 @@
       "id": "microcruz-linea86-sentido_b",
       "properties": {
         "route_id": "microcruz-linea86",
-        "route_name": "linea86",
-        "route_code": "86",
+        "route_name": "Ruta RK-86",
+        "route_code": "RK-86",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -95681,14 +95494,13 @@
       "id": "microcruz-linea87-sentido_a",
       "properties": {
         "route_id": "microcruz-linea87",
-        "route_name": "linea87",
-        "route_code": "87",
+        "route_name": "Ruta RK-87",
+        "route_code": "RK-87",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -96266,14 +96078,13 @@
       "id": "microcruz-linea87-sentido_b",
       "properties": {
         "route_id": "microcruz-linea87",
-        "route_name": "linea87",
-        "route_code": "87",
+        "route_name": "Ruta RK-87",
+        "route_code": "RK-87",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -96915,14 +96726,13 @@
       "id": "microcruz-linea88-amarillo-sentido_a",
       "properties": {
         "route_id": "microcruz-linea88-amarillo",
-        "route_name": "linea88 Amarillo",
-        "route_code": "88",
+        "route_name": "Ruta RK-88-A",
+        "route_code": "RK-88-A",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -97176,14 +96986,13 @@
       "id": "microcruz-linea88-amarillo-sentido_b",
       "properties": {
         "route_id": "microcruz-linea88-amarillo",
-        "route_name": "linea88 Amarillo",
-        "route_code": "88",
+        "route_name": "Ruta RK-88-A",
+        "route_code": "RK-88-A",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -97433,14 +97242,13 @@
       "id": "microcruz-linea88-azul-sentido_a",
       "properties": {
         "route_id": "microcruz-linea88-azul",
-        "route_name": "linea88 Azul",
-        "route_code": "88",
+        "route_name": "Ruta RK-88-B",
+        "route_code": "RK-88-B",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -97898,14 +97706,13 @@
       "id": "microcruz-linea88-azul-sentido_b",
       "properties": {
         "route_id": "microcruz-linea88-azul",
-        "route_name": "linea88 Azul",
-        "route_code": "88",
+        "route_name": "Ruta RK-88-B",
+        "route_code": "RK-88-B",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -98359,14 +98166,13 @@
       "id": "microcruz-linea89-sentido_a",
       "properties": {
         "route_id": "microcruz-linea89",
-        "route_name": "linea89",
-        "route_code": "89",
+        "route_name": "Ruta RK-89",
+        "route_code": "RK-89",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -98868,14 +98674,13 @@
       "id": "microcruz-linea89-sentido_b",
       "properties": {
         "route_id": "microcruz-linea89",
-        "route_name": "linea89",
-        "route_code": "89",
+        "route_name": "Ruta RK-89",
+        "route_code": "RK-89",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -99357,14 +99162,13 @@
       "id": "microcruz-linea90-sentido_a",
       "properties": {
         "route_id": "microcruz-linea90",
-        "route_name": "linea90",
-        "route_code": "90",
+        "route_name": "Ruta RK-90",
+        "route_code": "RK-90",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -99970,14 +99774,13 @@
       "id": "microcruz-linea90-sentido_b",
       "properties": {
         "route_id": "microcruz-linea90",
-        "route_name": "linea90",
-        "route_code": "90",
+        "route_name": "Ruta RK-90",
+        "route_code": "RK-90",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -100583,14 +100386,13 @@
       "id": "microcruz-linea92-sentido_a",
       "properties": {
         "route_id": "microcruz-linea92",
-        "route_name": "linea92",
-        "route_code": "92",
+        "route_name": "Ruta RK-92",
+        "route_code": "RK-92",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -101052,14 +100854,13 @@
       "id": "microcruz-linea92-sentido_b",
       "properties": {
         "route_id": "microcruz-linea92",
-        "route_name": "linea92",
-        "route_code": "92",
+        "route_name": "Ruta RK-92",
+        "route_code": "RK-92",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -101385,14 +101186,13 @@
       "id": "microcruz-linea93-sentido_a",
       "properties": {
         "route_id": "microcruz-linea93",
-        "route_name": "linea93",
-        "route_code": "93",
+        "route_name": "Ruta RK-93",
+        "route_code": "RK-93",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -101678,14 +101478,13 @@
       "id": "microcruz-linea93-sentido_b",
       "properties": {
         "route_id": "microcruz-linea93",
-        "route_name": "linea93",
-        "route_code": "93",
+        "route_name": "Ruta RK-93",
+        "route_code": "RK-93",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -102011,14 +101810,13 @@
       "id": "microcruz-linea94-sentido_a",
       "properties": {
         "route_id": "microcruz-linea94",
-        "route_name": "linea94",
-        "route_code": "94",
+        "route_name": "Ruta RK-94",
+        "route_code": "RK-94",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -102488,14 +102286,13 @@
       "id": "microcruz-linea94-sentido_b",
       "properties": {
         "route_id": "microcruz-linea94",
-        "route_name": "linea94",
-        "route_code": "94",
+        "route_name": "Ruta RK-94",
+        "route_code": "RK-94",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -102889,14 +102686,13 @@
       "id": "microcruz-linea96-amarillo-sentido_a",
       "properties": {
         "route_id": "microcruz-linea96-amarillo",
-        "route_name": "linea96 Amarillo",
-        "route_code": "96",
+        "route_name": "Ruta RK-96-A",
+        "route_code": "RK-96-A",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -103378,14 +103174,13 @@
       "id": "microcruz-linea96-amarillo-sentido_b",
       "properties": {
         "route_id": "microcruz-linea96-amarillo",
-        "route_name": "linea96 Amarillo",
-        "route_code": "96",
+        "route_name": "Ruta RK-96-A",
+        "route_code": "RK-96-A",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -103843,14 +103638,13 @@
       "id": "microcruz-linea96-rojo-sentido_a",
       "properties": {
         "route_id": "microcruz-linea96-rojo",
-        "route_name": "linea96 Rojo",
-        "route_code": "96",
+        "route_name": "Ruta RK-96-B",
+        "route_code": "RK-96-B",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -104288,14 +104082,13 @@
       "id": "microcruz-linea96-rojo-sentido_b",
       "properties": {
         "route_id": "microcruz-linea96-rojo",
-        "route_name": "linea96 Rojo",
-        "route_code": "96",
+        "route_name": "Ruta RK-96-B",
+        "route_code": "RK-96-B",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -104669,14 +104462,13 @@
       "id": "microcruz-linea97-sentido_a",
       "properties": {
         "route_id": "microcruz-linea97",
-        "route_name": "linea97",
-        "route_code": "97",
+        "route_name": "Ruta RK-97",
+        "route_code": "RK-97",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -105142,14 +104934,13 @@
       "id": "microcruz-linea97-sentido_b",
       "properties": {
         "route_id": "microcruz-linea97",
-        "route_name": "linea97",
-        "route_code": "97",
+        "route_name": "Ruta RK-97",
+        "route_code": "RK-97",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -105563,14 +105354,13 @@
       "id": "microcruz-linea98-sentido_a",
       "properties": {
         "route_id": "microcruz-linea98",
-        "route_name": "linea98",
-        "route_code": "98",
+        "route_name": "Ruta RK-98",
+        "route_code": "RK-98",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -106020,14 +105810,13 @@
       "id": "microcruz-linea98-sentido_b",
       "properties": {
         "route_id": "microcruz-linea98",
-        "route_name": "linea98",
-        "route_code": "98",
+        "route_name": "Ruta RK-98",
+        "route_code": "RK-98",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -106429,14 +106218,13 @@
       "id": "microcruz-linea99-sentido_a",
       "properties": {
         "route_id": "microcruz-linea99",
-        "route_name": "linea99",
-        "route_code": "99",
+        "route_name": "Ruta RK-99",
+        "route_code": "RK-99",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -106710,14 +106498,13 @@
       "id": "microcruz-linea99-sentido_b",
       "properties": {
         "route_id": "microcruz-linea99",
-        "route_name": "linea99",
-        "route_code": "99",
+        "route_name": "Ruta RK-99",
+        "route_code": "RK-99",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -107047,14 +106834,13 @@
       "id": "microcruz-linea100-sentido_a",
       "properties": {
         "route_id": "microcruz-linea100",
-        "route_name": "linea100",
-        "route_code": "100",
+        "route_name": "Ruta RK-100",
+        "route_code": "RK-100",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -107444,14 +107230,13 @@
       "id": "microcruz-linea100-sentido_b",
       "properties": {
         "route_id": "microcruz-linea100",
-        "route_name": "linea100",
-        "route_code": "100",
+        "route_name": "Ruta RK-100",
+        "route_code": "RK-100",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -107833,14 +107618,13 @@
       "id": "microcruz-linea101-sentido_a",
       "properties": {
         "route_id": "microcruz-linea101",
-        "route_name": "linea101",
-        "route_code": "101",
+        "route_name": "Ruta RK-101",
+        "route_code": "RK-101",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -108282,14 +108066,13 @@
       "id": "microcruz-linea101-sentido_b",
       "properties": {
         "route_id": "microcruz-linea101",
-        "route_name": "linea101",
-        "route_code": "101",
+        "route_name": "Ruta RK-101",
+        "route_code": "RK-101",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -108711,14 +108494,13 @@
       "id": "microcruz-linea102-sentido_a",
       "properties": {
         "route_id": "microcruz-linea102",
-        "route_name": "linea102",
-        "route_code": "102",
+        "route_name": "Ruta RK-102",
+        "route_code": "RK-102",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -108880,14 +108662,13 @@
       "id": "microcruz-linea102-sentido_b",
       "properties": {
         "route_id": "microcruz-linea102",
-        "route_name": "linea102",
-        "route_code": "102",
+        "route_name": "Ruta RK-102",
+        "route_code": "RK-102",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -109053,14 +108834,13 @@
       "id": "microcruz-linea103-sentido_a",
       "properties": {
         "route_id": "microcruz-linea103",
-        "route_name": "linea103",
-        "route_code": "103",
+        "route_name": "Ruta RK-103",
+        "route_code": "RK-103",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -109666,14 +109446,13 @@
       "id": "microcruz-linea103-sentido_b",
       "properties": {
         "route_id": "microcruz-linea103",
-        "route_name": "linea103",
-        "route_code": "103",
+        "route_name": "Ruta RK-103",
+        "route_code": "RK-103",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -110279,14 +110058,13 @@
       "id": "microcruz-linea104-el-carmen-sentido_a",
       "properties": {
         "route_id": "microcruz-linea104-el-carmen",
-        "route_name": "linea104 El Carmen",
-        "route_code": "104",
+        "route_name": "Ruta RK-104-A",
+        "route_code": "RK-104-A",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -110624,14 +110402,13 @@
       "id": "microcruz-linea104-el-carmen-sentido_b",
       "properties": {
         "route_id": "microcruz-linea104-el-carmen",
-        "route_name": "linea104 El Carmen",
-        "route_code": "104",
+        "route_name": "Ruta RK-104-A",
+        "route_code": "RK-104-A",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -110957,14 +110734,13 @@
       "id": "microcruz-linea104b-sentido_a",
       "properties": {
         "route_id": "microcruz-linea104b",
-        "route_name": "linea104B",
-        "route_code": "104",
+        "route_name": "Ruta RK-104-B",
+        "route_code": "RK-104-B",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -111330,14 +111106,13 @@
       "id": "microcruz-linea104b-sentido_b",
       "properties": {
         "route_id": "microcruz-linea104b",
-        "route_name": "linea104B",
-        "route_code": "104",
+        "route_name": "Ruta RK-104-B",
+        "route_code": "RK-104-B",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -111679,14 +111454,13 @@
       "id": "microcruz-linea105-verde-sentido_a",
       "properties": {
         "route_id": "microcruz-linea105-verde",
-        "route_name": "linea105 Verde",
-        "route_code": "105",
+        "route_name": "Ruta RK-105",
+        "route_code": "RK-105",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -111796,14 +111570,13 @@
       "id": "microcruz-linea105-verde-sentido_b",
       "properties": {
         "route_id": "microcruz-linea105-verde",
-        "route_name": "linea105 Verde",
-        "route_code": "105",
+        "route_name": "Ruta RK-105",
+        "route_code": "RK-105",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -111937,14 +111710,13 @@
       "id": "microcruz-linea106-sentido_a",
       "properties": {
         "route_id": "microcruz-linea106",
-        "route_name": "linea106",
-        "route_code": "106",
+        "route_name": "Ruta RK-106",
+        "route_code": "RK-106",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -112462,14 +112234,13 @@
       "id": "microcruz-linea106-sentido_b",
       "properties": {
         "route_id": "microcruz-linea106",
-        "route_name": "linea106",
-        "route_code": "106",
+        "route_name": "Ruta RK-106",
+        "route_code": "RK-106",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -112931,14 +112702,13 @@
       "id": "microcruz-linea107-sentido_a",
       "properties": {
         "route_id": "microcruz-linea107",
-        "route_name": "linea107",
-        "route_code": "107",
+        "route_name": "Ruta RK-107",
+        "route_code": "RK-107",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -113332,14 +113102,13 @@
       "id": "microcruz-linea107-sentido_b",
       "properties": {
         "route_id": "microcruz-linea107",
-        "route_name": "linea107",
-        "route_code": "107",
+        "route_name": "Ruta RK-107",
+        "route_code": "RK-107",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -113753,14 +113522,13 @@
       "id": "microcruz-linea108-sentido_a",
       "properties": {
         "route_id": "microcruz-linea108",
-        "route_name": "linea108",
-        "route_code": "108",
+        "route_name": "Ruta RK-108",
+        "route_code": "RK-108",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -114258,14 +114026,13 @@
       "id": "microcruz-linea108-sentido_b",
       "properties": {
         "route_id": "microcruz-linea108",
-        "route_name": "linea108",
-        "route_code": "108",
+        "route_name": "Ruta RK-108",
+        "route_code": "RK-108",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -114663,14 +114430,13 @@
       "id": "microcruz-linea109-sentido_a",
       "properties": {
         "route_id": "microcruz-linea109",
-        "route_name": "linea109",
-        "route_code": "109",
+        "route_name": "Ruta RK-109",
+        "route_code": "RK-109",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -115108,14 +114874,13 @@
       "id": "microcruz-linea109-sentido_b",
       "properties": {
         "route_id": "microcruz-linea109",
-        "route_name": "linea109",
-        "route_code": "109",
+        "route_name": "Ruta RK-109",
+        "route_code": "RK-109",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -115557,14 +115322,13 @@
       "id": "microcruz-linea110-sentido_a",
       "properties": {
         "route_id": "microcruz-linea110",
-        "route_name": "linea110",
-        "route_code": "110",
+        "route_name": "Ruta RK-110",
+        "route_code": "RK-110",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -116010,14 +115774,13 @@
       "id": "microcruz-linea110-sentido_b",
       "properties": {
         "route_id": "microcruz-linea110",
-        "route_name": "linea110",
-        "route_code": "110",
+        "route_name": "Ruta RK-110",
+        "route_code": "RK-110",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -116479,14 +116242,13 @@
       "id": "microcruz-linea111-sentido_a",
       "properties": {
         "route_id": "microcruz-linea111",
-        "route_name": "linea111",
-        "route_code": "111",
+        "route_name": "Ruta RK-111-A",
+        "route_code": "RK-111-A",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -116688,14 +116450,13 @@
       "id": "microcruz-linea111-sentido_b",
       "properties": {
         "route_id": "microcruz-linea111",
-        "route_name": "linea111",
-        "route_code": "111",
+        "route_name": "Ruta RK-111-A",
+        "route_code": "RK-111-A",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -116937,14 +116698,13 @@
       "id": "microcruz-linea111-paititi-sentido_a",
       "properties": {
         "route_id": "microcruz-linea111-paititi",
-        "route_name": "linea111 Paititi",
-        "route_code": "111",
+        "route_name": "Ruta RK-111-B",
+        "route_code": "RK-111-B",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -117150,14 +116910,13 @@
       "id": "microcruz-linea111-paititi-sentido_b",
       "properties": {
         "route_id": "microcruz-linea111-paititi",
-        "route_name": "linea111 Paititi",
-        "route_code": "111",
+        "route_name": "Ruta RK-111-B",
+        "route_code": "RK-111-B",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -117431,14 +117190,13 @@
       "id": "microcruz-linea112-sentido_a",
       "properties": {
         "route_id": "microcruz-linea112",
-        "route_name": "linea112",
-        "route_code": "112",
+        "route_name": "Ruta RK-112",
+        "route_code": "RK-112",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -117856,14 +117614,13 @@
       "id": "microcruz-linea112-sentido_b",
       "properties": {
         "route_id": "microcruz-linea112",
-        "route_name": "linea112",
-        "route_code": "112",
+        "route_name": "Ruta RK-112",
+        "route_code": "RK-112",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -118265,14 +118022,13 @@
       "id": "microcruz-linea113-sentido_a",
       "properties": {
         "route_id": "microcruz-linea113",
-        "route_name": "linea113",
-        "route_code": "113",
+        "route_name": "Ruta RK-113",
+        "route_code": "RK-113",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -118670,14 +118426,13 @@
       "id": "microcruz-linea113-sentido_b",
       "properties": {
         "route_id": "microcruz-linea113",
-        "route_name": "linea113",
-        "route_code": "113",
+        "route_name": "Ruta RK-113",
+        "route_code": "RK-113",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -119047,14 +118802,13 @@
       "id": "microcruz-linea114-sentido_a",
       "properties": {
         "route_id": "microcruz-linea114",
-        "route_name": "linea114",
-        "route_code": "114",
+        "route_name": "Ruta RK-114",
+        "route_code": "RK-114",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -119500,14 +119254,13 @@
       "id": "microcruz-linea114-sentido_b",
       "properties": {
         "route_id": "microcruz-linea114",
-        "route_name": "linea114",
-        "route_code": "114",
+        "route_name": "Ruta RK-114",
+        "route_code": "RK-114",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -119921,14 +119674,13 @@
       "id": "microcruz-linea115-sentido_a",
       "properties": {
         "route_id": "microcruz-linea115",
-        "route_name": "linea115",
-        "route_code": "115",
+        "route_name": "Ruta RK-115",
+        "route_code": "RK-115",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -120302,14 +120054,13 @@
       "id": "microcruz-linea115-sentido_b",
       "properties": {
         "route_id": "microcruz-linea115",
-        "route_name": "linea115",
-        "route_code": "115",
+        "route_name": "Ruta RK-115",
+        "route_code": "RK-115",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -120699,14 +120450,13 @@
       "id": "microcruz-linea116-sentido_a",
       "properties": {
         "route_id": "microcruz-linea116",
-        "route_name": "linea116",
-        "route_code": "116",
+        "route_name": "Ruta RK-116",
+        "route_code": "RK-116",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -121028,14 +120778,13 @@
       "id": "microcruz-linea116-sentido_b",
       "properties": {
         "route_id": "microcruz-linea116",
-        "route_name": "linea116",
-        "route_code": "116",
+        "route_name": "Ruta RK-116",
+        "route_code": "RK-116",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -121393,14 +121142,13 @@
       "id": "microcruz-linea119-sentido_a",
       "properties": {
         "route_id": "microcruz-linea119",
-        "route_name": "linea119",
-        "route_code": "119",
+        "route_name": "Ruta RK-119",
+        "route_code": "RK-119",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -121650,14 +121398,13 @@
       "id": "microcruz-linea119-sentido_b",
       "properties": {
         "route_id": "microcruz-linea119",
-        "route_name": "linea119",
-        "route_code": "119",
+        "route_name": "Ruta RK-119",
+        "route_code": "RK-119",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -121875,14 +121622,13 @@
       "id": "microcruz-linea120-sentido_a",
       "properties": {
         "route_id": "microcruz-linea120",
-        "route_name": "linea120",
-        "route_code": "120",
+        "route_name": "Ruta RK-120",
+        "route_code": "RK-120",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -122476,14 +122222,13 @@
       "id": "microcruz-linea120-sentido_b",
       "properties": {
         "route_id": "microcruz-linea120",
-        "route_name": "linea120",
-        "route_code": "120",
+        "route_name": "Ruta RK-120",
+        "route_code": "RK-120",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -123089,14 +122834,13 @@
       "id": "microcruz-linea121-rojo-sentido_a",
       "properties": {
         "route_id": "microcruz-linea121-rojo",
-        "route_name": "linea121 Rojo",
-        "route_code": "121",
+        "route_name": "Ruta RK-121",
+        "route_code": "RK-121",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -123478,14 +123222,13 @@
       "id": "microcruz-linea121-rojo-sentido_b",
       "properties": {
         "route_id": "microcruz-linea121-rojo",
-        "route_name": "linea121 Rojo",
-        "route_code": "121",
+        "route_name": "Ruta RK-121",
+        "route_code": "RK-121",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -123811,14 +123554,13 @@
       "id": "microcruz-linea122-amarillo-sentido_a",
       "properties": {
         "route_id": "microcruz-linea122-amarillo",
-        "route_name": "linea122 Amarillo",
-        "route_code": "122",
+        "route_name": "Ruta RK-122",
+        "route_code": "RK-122",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -124140,14 +123882,13 @@
       "id": "microcruz-linea122-amarillo-sentido_b",
       "properties": {
         "route_id": "microcruz-linea122-amarillo",
-        "route_name": "linea122 Amarillo",
-        "route_code": "122",
+        "route_name": "Ruta RK-122",
+        "route_code": "RK-122",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -124469,14 +124210,13 @@
       "id": "microcruz-linea123-sentido_a",
       "properties": {
         "route_id": "microcruz-linea123",
-        "route_name": "linea123",
-        "route_code": "123",
+        "route_name": "Ruta RK-123",
+        "route_code": "RK-123",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -125206,14 +124946,13 @@
       "id": "microcruz-linea123-sentido_b",
       "properties": {
         "route_id": "microcruz-linea123",
-        "route_name": "linea123",
-        "route_code": "123",
+        "route_name": "Ruta RK-123",
+        "route_code": "RK-123",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -125907,14 +125646,13 @@
       "id": "microcruz-linea124-sentido_a",
       "properties": {
         "route_id": "microcruz-linea124",
-        "route_name": "linea124",
-        "route_code": "124",
+        "route_name": "Ruta RK-124",
+        "route_code": "RK-124",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -126380,14 +126118,13 @@
       "id": "microcruz-linea124-sentido_b",
       "properties": {
         "route_id": "microcruz-linea124",
-        "route_name": "linea124",
-        "route_code": "124",
+        "route_name": "Ruta RK-124",
+        "route_code": "RK-124",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -127009,14 +126746,13 @@
       "id": "microcruz-linea125-uv-doce-sentido_a",
       "properties": {
         "route_id": "microcruz-linea125-uv-doce",
-        "route_name": "linea125 UV Doce",
-        "route_code": "125",
+        "route_name": "Ruta RK-125-A",
+        "route_code": "RK-125-A",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -127366,14 +127102,13 @@
       "id": "microcruz-linea125-uv-doce-sentido_b",
       "properties": {
         "route_id": "microcruz-linea125-uv-doce",
-        "route_name": "linea125 UV Doce",
-        "route_code": "125",
+        "route_name": "Ruta RK-125-A",
+        "route_code": "RK-125-A",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -127759,14 +127494,13 @@
       "id": "microcruz-linea125-uv-once-sentido_a",
       "properties": {
         "route_id": "microcruz-linea125-uv-once",
-        "route_name": "linea125 UV Once",
-        "route_code": "125",
+        "route_name": "Ruta RK-125-B",
+        "route_code": "RK-125-B",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -128100,14 +127834,13 @@
       "id": "microcruz-linea125-uv-once-sentido_b",
       "properties": {
         "route_id": "microcruz-linea125-uv-once",
-        "route_name": "linea125 UV Once",
-        "route_code": "125",
+        "route_name": "Ruta RK-125-B",
+        "route_code": "RK-125-B",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -128457,14 +128190,13 @@
       "id": "microcruz-linea126-sentido_a",
       "properties": {
         "route_id": "microcruz-linea126",
-        "route_name": "linea126",
-        "route_code": "126",
+        "route_name": "Ruta RK-126",
+        "route_code": "RK-126",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -128802,14 +128534,13 @@
       "id": "microcruz-linea126-sentido_b",
       "properties": {
         "route_id": "microcruz-linea126",
-        "route_name": "linea126",
-        "route_code": "126",
+        "route_name": "Ruta RK-126",
+        "route_code": "RK-126",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -129107,14 +128838,13 @@
       "id": "microcruz-linea127-sentido_a",
       "properties": {
         "route_id": "microcruz-linea127",
-        "route_name": "linea127",
-        "route_code": "127",
+        "route_name": "Ruta RK-127",
+        "route_code": "RK-127",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -129244,14 +128974,13 @@
       "id": "microcruz-linea127-sentido_b",
       "properties": {
         "route_id": "microcruz-linea127",
-        "route_name": "linea127",
-        "route_code": "127",
+        "route_name": "Ruta RK-127",
+        "route_code": "RK-127",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -129425,14 +129154,13 @@
       "id": "microcruz-linea129-sentido_a",
       "properties": {
         "route_id": "microcruz-linea129",
-        "route_name": "linea129",
-        "route_code": "129",
+        "route_name": "Ruta RK-129",
+        "route_code": "RK-129",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -129642,14 +129370,13 @@
       "id": "microcruz-linea129-sentido_b",
       "properties": {
         "route_id": "microcruz-linea129",
-        "route_name": "linea129",
-        "route_code": "129",
+        "route_name": "Ruta RK-129",
+        "route_code": "RK-129",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -129855,14 +129582,13 @@
       "id": "microcruz-linea130-sentido_a",
       "properties": {
         "route_id": "microcruz-linea130",
-        "route_name": "linea130",
-        "route_code": "130",
+        "route_name": "Ruta RK-130",
+        "route_code": "RK-130",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -130568,14 +130294,13 @@
       "id": "microcruz-linea130-sentido_b",
       "properties": {
         "route_id": "microcruz-linea130",
-        "route_name": "linea130",
-        "route_code": "130",
+        "route_name": "Ruta RK-130",
+        "route_code": "RK-130",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -131273,14 +130998,13 @@
       "id": "microcruz-linea132-sentido_a",
       "properties": {
         "route_id": "microcruz-linea132",
-        "route_name": "linea132",
-        "route_code": "132",
+        "route_name": "Ruta RK-132-A",
+        "route_code": "RK-132-A",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -131710,14 +131434,13 @@
       "id": "microcruz-linea132-sentido_b",
       "properties": {
         "route_id": "microcruz-linea132",
-        "route_name": "linea132",
-        "route_code": "132",
+        "route_name": "Ruta RK-132-A",
+        "route_code": "RK-132-A",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -132151,14 +131874,13 @@
       "id": "microcruz-linea132-montero-sentido_a",
       "properties": {
         "route_id": "microcruz-linea132-montero",
-        "route_name": "linea132 Montero",
-        "route_code": "132",
+        "route_name": "Ruta RK-132-B",
+        "route_code": "RK-132-B",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -132408,14 +132130,13 @@
       "id": "microcruz-linea132-montero-sentido_b",
       "properties": {
         "route_id": "microcruz-linea132-montero",
-        "route_name": "linea132 Montero",
-        "route_code": "132",
+        "route_name": "Ruta RK-132-B",
+        "route_code": "RK-132-B",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -132649,14 +132370,13 @@
       "id": "microcruz-linea135-viru-viru-sentido_a",
       "properties": {
         "route_id": "microcruz-linea135-viru-viru",
-        "route_name": "linea135 Viru Viru",
-        "route_code": "135",
+        "route_name": "Ruta RK-135",
+        "route_code": "RK-135",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -132854,14 +132574,13 @@
       "id": "microcruz-linea135-viru-viru-sentido_b",
       "properties": {
         "route_id": "microcruz-linea135-viru-viru",
-        "route_name": "linea135 Viru Viru",
-        "route_code": "135",
+        "route_name": "Ruta RK-135",
+        "route_code": "RK-135",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -133207,14 +132926,13 @@
       "id": "microcruz-linea136-norte-sentido_a",
       "properties": {
         "route_id": "microcruz-linea136-norte",
-        "route_name": "linea136 Norte",
-        "route_code": "136",
+        "route_name": "Ruta RK-136-A",
+        "route_code": "RK-136-A",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -133396,14 +133114,13 @@
       "id": "microcruz-linea136-norte-sentido_b",
       "properties": {
         "route_id": "microcruz-linea136-norte",
-        "route_name": "linea136 Norte",
-        "route_code": "136",
+        "route_name": "Ruta RK-136-A",
+        "route_code": "RK-136-A",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -133577,14 +133294,13 @@
       "id": "microcruz-linea136-recreo-sentido_a",
       "properties": {
         "route_id": "microcruz-linea136-recreo",
-        "route_name": "linea136 Recreo",
-        "route_code": "136",
+        "route_name": "Ruta RK-136-B",
+        "route_code": "RK-136-B",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -133974,14 +133690,13 @@
       "id": "microcruz-linea136-recreo-sentido_b",
       "properties": {
         "route_id": "microcruz-linea136-recreo",
-        "route_name": "linea136 Recreo",
-        "route_code": "136",
+        "route_name": "Ruta RK-136-B",
+        "route_code": "RK-136-B",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -134343,14 +134058,13 @@
       "id": "microcruz-linea140-g-pascana-sentido_a",
       "properties": {
         "route_id": "microcruz-linea140-g-pascana",
-        "route_name": "linea140 G Pascana",
-        "route_code": "140",
+        "route_name": "Ruta RK-140-A",
+        "route_code": "RK-140-A",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -134624,14 +134338,13 @@
       "id": "microcruz-linea140-g-pascana-sentido_b",
       "properties": {
         "route_id": "microcruz-linea140-g-pascana",
-        "route_name": "linea140 G Pascana",
-        "route_code": "140",
+        "route_name": "Ruta RK-140-A",
+        "route_code": "RK-140-A",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -134949,14 +134662,13 @@
       "id": "microcruz-linea140-p-pascana-sentido_a",
       "properties": {
         "route_id": "microcruz-linea140-p-pascana",
-        "route_name": "linea140 P Pascana",
-        "route_code": "140",
+        "route_name": "Ruta RK-140-B",
+        "route_code": "RK-140-B",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -135290,14 +135002,13 @@
       "id": "microcruz-linea140-p-pascana-sentido_b",
       "properties": {
         "route_id": "microcruz-linea140-p-pascana",
-        "route_name": "linea140 P Pascana",
-        "route_code": "140",
+        "route_name": "Ruta RK-140-B",
+        "route_code": "RK-140-B",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -135679,14 +135390,13 @@
       "id": "microcruz-linea141-sentido_a",
       "properties": {
         "route_id": "microcruz-linea141",
-        "route_name": "linea141",
-        "route_code": "141",
+        "route_name": "Ruta RK-141",
+        "route_code": "RK-141",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -136136,14 +135846,13 @@
       "id": "microcruz-linea141-sentido_b",
       "properties": {
         "route_id": "microcruz-linea141",
-        "route_name": "linea141",
-        "route_code": "141",
+        "route_name": "Ruta RK-141",
+        "route_code": "RK-141",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -136529,14 +136238,13 @@
       "id": "microcruz-linea142-verde-sentido_a",
       "properties": {
         "route_id": "microcruz-linea142-verde",
-        "route_name": "linea142 Verde",
-        "route_code": "142",
+        "route_name": "Ruta RK-142",
+        "route_code": "RK-142",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -136718,14 +136426,13 @@
       "id": "microcruz-linea142-verde-sentido_b",
       "properties": {
         "route_id": "microcruz-linea142-verde",
-        "route_name": "linea142 Verde",
-        "route_code": "142",
+        "route_name": "Ruta RK-142",
+        "route_code": "RK-142",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -136899,14 +136606,13 @@
       "id": "microcruz-linea151-sentido_a",
       "properties": {
         "route_id": "microcruz-linea151",
-        "route_name": "linea151",
-        "route_code": "151",
+        "route_name": "Ruta RK-151",
+        "route_code": "RK-151",
         "direction_id": "sentido_a",
         "direction_label": "Sentido A",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {
@@ -137028,14 +136734,13 @@
       "id": "microcruz-linea151-sentido_b",
       "properties": {
         "route_id": "microcruz-linea151",
-        "route_name": "linea151",
-        "route_code": "151",
+        "route_name": "Ruta RK-151",
+        "route_code": "RK-151",
         "direction_id": "sentido_b",
         "direction_label": "Sentido B",
         "country_code": "BO",
         "city": "Santa Cruz de la Sierra",
-        "source": "Microcruz",
-        "source_url": "https://microcruz.tel.bo",
+        "source": "pública",
         "approval_status": "pending"
       },
       "geometry": {

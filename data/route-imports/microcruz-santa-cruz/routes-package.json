@@ -1,11 +1,9 @@
 {
   "format": "kabbure-route-import",
   "version": 1,
-  "imported_at": "2026-10-06T22:39:53.933963+00:00",
+  "imported_at": "2026-10-06T22:50:53.457773+00:00",
   "source": {
-    "name": "Microcruz",
-    "url": "https://microcruz.tel.bo",
-    "api": "https://microcruz.tel.bo/api/routes.php"
+    "type": "publica"
   },
   "location": {
     "country_code": "BO",
@@ -18,13 +16,11 @@
   "routes": [
     {
       "id": "microcruz-linea1",
-      "external_id": "linea1",
-      "name": "linea1",
-      "code": "1",
+      "name": "Ruta RK-1",
+      "code": "RK-1",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -1469,24 +1465,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 985,
-        "seq_inicio_vuelta": 986,
-        "seq_fin_vuelta": 1721,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea1",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 985,
+          "seq_inicio_vuelta": 986,
+          "seq_fin_vuelta": 1721,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea2",
-      "external_id": "linea2",
-      "name": "linea2",
-      "code": "2",
+      "name": "Ruta RK-2",
+      "code": "RK-2",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -2826,24 +2823,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1091,
-        "seq_fin_ida": 1624,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 1090,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea2",
+        "directions": {
+          "seq_inicio_ida": 1091,
+          "seq_fin_ida": 1624,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 1090,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea3",
-      "external_id": "linea3",
-      "name": "linea3",
-      "code": "3",
+      "name": "Ruta RK-3",
+      "code": "RK-3",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -4633,24 +4631,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 1235,
-        "seq_inicio_vuelta": 1236,
-        "seq_fin_vuelta": 2234,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea3",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 1235,
+          "seq_inicio_vuelta": 1236,
+          "seq_fin_vuelta": 2234,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea4",
-      "external_id": "linea4",
-      "name": "linea4",
-      "code": "4",
+      "name": "Ruta RK-4",
+      "code": "RK-4",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -6295,24 +6294,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 351,
-        "seq_fin_ida": 838,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 350,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea4",
+        "directions": {
+          "seq_inicio_ida": 351,
+          "seq_fin_ida": 838,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 350,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea5",
-      "external_id": "linea5",
-      "name": "linea5",
-      "code": "5",
+      "name": "Ruta RK-5",
+      "code": "RK-5",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -8222,24 +8222,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 289,
-        "seq_fin_ida": 826,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 288,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea5",
+        "directions": {
+          "seq_inicio_ida": 289,
+          "seq_fin_ida": 826,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 288,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea6",
-      "external_id": "linea6",
-      "name": "linea6",
-      "code": "6",
+      "name": "Ruta RK-6",
+      "code": "RK-6",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -9974,24 +9975,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 376,
-        "seq_inicio_vuelta": 377,
-        "seq_fin_vuelta": 842,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea6",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 376,
+          "seq_inicio_vuelta": 377,
+          "seq_fin_vuelta": 842,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea7",
-      "external_id": "linea7",
-      "name": "linea7",
-      "code": "7",
+      "name": "Ruta RK-7",
+      "code": "RK-7",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -11846,24 +11848,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 1007,
-        "seq_inicio_vuelta": 1008,
-        "seq_fin_vuelta": 1563,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea7",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 1007,
+          "seq_inicio_vuelta": 1008,
+          "seq_fin_vuelta": 1563,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea8",
-      "external_id": "linea8",
-      "name": "linea8",
-      "code": "8",
+      "name": "Ruta RK-8",
+      "code": "RK-8",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -13498,24 +13501,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 460,
-        "seq_fin_ida": 993,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 459,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea8",
+        "directions": {
+          "seq_inicio_ida": 460,
+          "seq_fin_ida": 993,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 459,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea9",
-      "external_id": "linea9",
-      "name": "linea9",
-      "code": "9",
+      "name": "Ruta RK-9",
+      "code": "RK-9",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -14655,24 +14659,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 437,
-        "seq_inicio_vuelta": 438,
-        "seq_fin_vuelta": 766,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea9",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 437,
+          "seq_inicio_vuelta": 438,
+          "seq_fin_vuelta": 766,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea10",
-      "external_id": "linea10",
-      "name": "linea10",
-      "code": "10",
+      "name": "Ruta RK-10",
+      "code": "RK-10",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -15742,24 +15747,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 393,
-        "seq_fin_ida": 794,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 392,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea10",
+        "directions": {
+          "seq_inicio_ida": 393,
+          "seq_fin_ida": 794,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 392,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea11",
-      "external_id": "linea11",
-      "name": "linea11",
-      "code": "11",
+      "name": "Ruta RK-11",
+      "code": "RK-11",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -17344,24 +17350,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 1126,
-        "seq_inicio_vuelta": 1127,
-        "seq_fin_vuelta": 1571,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea11",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 1126,
+          "seq_inicio_vuelta": 1127,
+          "seq_fin_vuelta": 1571,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea12",
-      "external_id": "linea12",
-      "name": "linea12",
-      "code": "12",
+      "name": "Ruta RK-12",
+      "code": "RK-12",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -19016,24 +19023,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 1005,
-        "seq_inicio_vuelta": 1006,
-        "seq_fin_vuelta": 1472,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea12",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 1005,
+          "seq_inicio_vuelta": 1006,
+          "seq_fin_vuelta": 1472,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea13",
-      "external_id": "linea13",
-      "name": "linea13",
-      "code": "13",
+      "name": "Ruta RK-13",
+      "code": "RK-13",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -21138,24 +21146,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1022,
-        "seq_fin_ida": 1625,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 1021,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea13",
+        "directions": {
+          "seq_inicio_ida": 1022,
+          "seq_fin_ida": 1625,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 1021,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea14",
-      "external_id": "linea14",
-      "name": "linea14",
-      "code": "14",
+      "name": "Ruta RK-14",
+      "code": "RK-14",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -22565,24 +22574,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 659,
-        "seq_fin_ida": 1029,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 658,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea14",
+        "directions": {
+          "seq_inicio_ida": 659,
+          "seq_fin_ida": 1029,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 658,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea15",
-      "external_id": "linea15",
-      "name": "linea15",
-      "code": "15",
+      "name": "Ruta RK-15",
+      "code": "RK-15",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -23452,24 +23462,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 410,
-        "seq_inicio_vuelta": 411,
-        "seq_fin_vuelta": 609,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea15",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 410,
+          "seq_inicio_vuelta": 411,
+          "seq_fin_vuelta": 609,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea16-azul",
-      "external_id": "linea16 Azul",
-      "name": "linea16 Azul",
-      "code": "16",
+      "name": "Ruta RK-16",
+      "code": "RK-16",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -24689,24 +24700,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 502,
-        "seq_fin_ida": 871,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 501,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea16 Azul",
+        "directions": {
+          "seq_inicio_ida": 502,
+          "seq_fin_ida": 871,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 501,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea17",
-      "external_id": "linea17",
-      "name": "linea17",
-      "code": "17",
+      "name": "Ruta RK-17",
+      "code": "RK-17",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -25341,24 +25353,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 267,
-        "seq_inicio_vuelta": 268,
-        "seq_fin_vuelta": 404,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea17",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 267,
+          "seq_inicio_vuelta": 268,
+          "seq_fin_vuelta": 404,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea18",
-      "external_id": "linea18",
-      "name": "linea18",
-      "code": "18",
+      "name": "Ruta RK-18",
+      "code": "RK-18",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -25968,24 +25981,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 268,
-        "seq_fin_ida": 404,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 267,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea18",
+        "directions": {
+          "seq_inicio_ida": 268,
+          "seq_fin_ida": 404,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 267,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea19",
-      "external_id": "linea19",
-      "name": "linea19",
-      "code": "19",
+      "name": "Ruta RK-19",
+      "code": "RK-19",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -27195,24 +27209,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 554,
-        "seq_fin_ida": 869,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 553,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea19",
+        "directions": {
+          "seq_inicio_ida": 554,
+          "seq_fin_ida": 869,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 553,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea20",
-      "external_id": "linea20",
-      "name": "linea20",
-      "code": "20",
+      "name": "Ruta RK-20",
+      "code": "RK-20",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -28502,24 +28517,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 837,
-        "seq_inicio_vuelta": 838,
-        "seq_fin_vuelta": 1143,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea20",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 837,
+          "seq_inicio_vuelta": 838,
+          "seq_fin_vuelta": 1143,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea21",
-      "external_id": "linea21",
-      "name": "linea21",
-      "code": "21",
+      "name": "Ruta RK-21",
+      "code": "RK-21",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -29754,24 +29770,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 755,
-        "seq_fin_ida": 1111,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 754,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea21",
+        "directions": {
+          "seq_inicio_ida": 755,
+          "seq_fin_ida": 1111,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 754,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea22-rojo",
-      "external_id": "linea22 Rojo",
-      "name": "linea22 Rojo",
-      "code": "22",
+      "name": "Ruta RK-22",
+      "code": "RK-22",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -31411,24 +31428,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 1010,
-        "seq_inicio_vuelta": 1011,
-        "seq_fin_vuelta": 1515,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea22 Rojo",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 1010,
+          "seq_inicio_vuelta": 1011,
+          "seq_fin_vuelta": 1515,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea23",
-      "external_id": "linea23",
-      "name": "linea23",
-      "code": "23",
+      "name": "Ruta RK-23",
+      "code": "RK-23",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -32408,24 +32426,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 585,
-        "seq_fin_ida": 863,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 584,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea23",
+        "directions": {
+          "seq_inicio_ida": 585,
+          "seq_fin_ida": 863,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 584,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea24",
-      "external_id": "linea24",
-      "name": "linea24",
-      "code": "24",
+      "name": "Ruta RK-24",
+      "code": "RK-24",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -33740,24 +33759,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 520,
-        "seq_fin_ida": 1036,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 519,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea24",
+        "directions": {
+          "seq_inicio_ida": 520,
+          "seq_fin_ida": 1036,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 519,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea25",
-      "external_id": "linea25",
-      "name": "linea25",
-      "code": "25",
+      "name": "Ruta RK-25",
+      "code": "RK-25",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -35002,24 +35022,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 378,
-        "seq_inicio_vuelta": 379,
-        "seq_fin_vuelta": 829,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea25",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 378,
+          "seq_inicio_vuelta": 379,
+          "seq_fin_vuelta": 829,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea26",
-      "external_id": "linea26",
-      "name": "linea26",
-      "code": "26",
+      "name": "Ruta RK-26",
+      "code": "RK-26",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -35749,24 +35770,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 185,
-        "seq_inicio_vuelta": 186,
-        "seq_fin_vuelta": 380,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea26",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 185,
+          "seq_inicio_vuelta": 186,
+          "seq_fin_vuelta": 380,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea27",
-      "external_id": "linea27",
-      "name": "linea27",
-      "code": "27",
+      "name": "Ruta RK-27",
+      "code": "RK-27",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -37061,24 +37083,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 312,
-        "seq_fin_ida": 705,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 311,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea27",
+        "directions": {
+          "seq_inicio_ida": 312,
+          "seq_fin_ida": 705,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 311,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea28",
-      "external_id": "linea28",
-      "name": "linea28",
-      "code": "28",
+      "name": "Ruta RK-28",
+      "code": "RK-28",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -37708,24 +37731,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 183,
-        "seq_fin_ida": 378,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 182,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea28",
+        "directions": {
+          "seq_inicio_ida": 183,
+          "seq_fin_ida": 378,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 182,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea29",
-      "external_id": "linea29",
-      "name": "linea29",
-      "code": "29",
+      "name": "Ruta RK-29",
+      "code": "RK-29",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -38750,24 +38774,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 271,
-        "seq_inicio_vuelta": 272,
-        "seq_fin_vuelta": 591,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea29",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 271,
+          "seq_inicio_vuelta": 272,
+          "seq_fin_vuelta": 591,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea30",
-      "external_id": "linea30",
-      "name": "linea30",
-      "code": "30",
+      "name": "Ruta RK-30",
+      "code": "RK-30",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -39987,24 +40012,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 382,
-        "seq_inicio_vuelta": 383,
-        "seq_fin_vuelta": 909,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea30",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 382,
+          "seq_inicio_vuelta": 383,
+          "seq_fin_vuelta": 909,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea31",
-      "external_id": "linea31",
-      "name": "linea31",
-      "code": "31",
+      "name": "Ruta RK-31",
+      "code": "RK-31",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -41184,24 +41210,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 292,
-        "seq_inicio_vuelta": 293,
-        "seq_fin_vuelta": 665,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea31",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 292,
+          "seq_inicio_vuelta": 293,
+          "seq_fin_vuelta": 665,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea32",
-      "external_id": "linea32",
-      "name": "linea32",
-      "code": "32",
+      "name": "Ruta RK-32",
+      "code": "RK-32",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -41846,24 +41873,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 166,
-        "seq_fin_ida": 371,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 165,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea32",
+        "directions": {
+          "seq_inicio_ida": 166,
+          "seq_fin_ida": 371,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 165,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea33",
-      "external_id": "linea33",
-      "name": "linea33",
-      "code": "33",
+      "name": "Ruta RK-33",
+      "code": "RK-33",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -43198,24 +43226,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 335,
-        "seq_fin_ida": 734,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 334,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea33",
+        "directions": {
+          "seq_inicio_ida": 335,
+          "seq_fin_ida": 734,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 334,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea34",
-      "external_id": "linea34",
-      "name": "linea34",
-      "code": "34",
+      "name": "Ruta RK-34",
+      "code": "RK-34",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -44370,24 +44399,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 282,
-        "seq_inicio_vuelta": 283,
-        "seq_fin_vuelta": 619,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea34",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 282,
+          "seq_inicio_vuelta": 283,
+          "seq_fin_vuelta": 619,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea35",
-      "external_id": "linea35",
-      "name": "linea35",
-      "code": "35",
+      "name": "Ruta RK-35",
+      "code": "RK-35",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -45007,24 +45037,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 144,
-        "seq_inicio_vuelta": 145,
-        "seq_fin_vuelta": 351,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea35",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 144,
+          "seq_inicio_vuelta": 145,
+          "seq_fin_vuelta": 351,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea36",
-      "external_id": "linea36",
-      "name": "linea36",
-      "code": "36",
+      "name": "Ruta RK-36",
+      "code": "RK-36",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -46189,24 +46220,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 327,
-        "seq_fin_ida": 666,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 326,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea36",
+        "directions": {
+          "seq_inicio_ida": 327,
+          "seq_fin_ida": 666,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 326,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea37",
-      "external_id": "linea37",
-      "name": "linea37",
-      "code": "37",
+      "name": "Ruta RK-37",
+      "code": "RK-37",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -47436,24 +47468,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 300,
-        "seq_inicio_vuelta": 301,
-        "seq_fin_vuelta": 576,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea37",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 300,
+          "seq_inicio_vuelta": 301,
+          "seq_fin_vuelta": 576,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea38",
-      "external_id": "linea38",
-      "name": "linea38",
-      "code": "38",
+      "name": "Ruta RK-38",
+      "code": "RK-38",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -49098,24 +49131,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 379,
-        "seq_fin_ida": 747,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 378,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea38",
+        "directions": {
+          "seq_inicio_ida": 379,
+          "seq_fin_ida": 747,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 378,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea39",
-      "external_id": "linea39",
-      "name": "linea39",
-      "code": "39",
+      "name": "Ruta RK-39",
+      "code": "RK-39",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -50280,24 +50314,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 349,
-        "seq_inicio_vuelta": 350,
-        "seq_fin_vuelta": 682,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea39",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 349,
+          "seq_inicio_vuelta": 350,
+          "seq_fin_vuelta": 682,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea40",
-      "external_id": "linea40",
-      "name": "linea40",
-      "code": "40",
+      "name": "Ruta RK-40",
+      "code": "RK-40",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -51682,24 +51717,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 495,
-        "seq_inicio_vuelta": 496,
-        "seq_fin_vuelta": 900,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea40",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 495,
+          "seq_inicio_vuelta": 496,
+          "seq_fin_vuelta": 900,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea41-rojo",
-      "external_id": "linea41 Rojo",
-      "name": "linea41 Rojo",
-      "code": "41",
+      "name": "Ruta RK-41-A",
+      "code": "RK-41-A",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -52324,24 +52360,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 184,
-        "seq_fin_ida": 367,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 183,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea41 Rojo",
+        "directions": {
+          "seq_inicio_ida": 184,
+          "seq_fin_ida": 367,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 183,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea41-verde",
-      "external_id": "linea41 Verde",
-      "name": "linea41 Verde",
-      "code": "41",
+      "name": "Ruta RK-41-B",
+      "code": "RK-41-B",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -53701,24 +53738,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 273,
-        "seq_fin_ida": 568,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 272,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea41 Verde",
+        "directions": {
+          "seq_inicio_ida": 273,
+          "seq_fin_ida": 568,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 272,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea42",
-      "external_id": "linea42",
-      "name": "linea42",
-      "code": "42",
+      "name": "Ruta RK-42",
+      "code": "RK-42",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -55253,24 +55291,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 490,
-        "seq_fin_ida": 891,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 489,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea42",
+        "directions": {
+          "seq_inicio_ida": 490,
+          "seq_fin_ida": 891,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 489,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea43",
-      "external_id": "linea43",
-      "name": "linea43",
-      "code": "43",
+      "name": "Ruta RK-43",
+      "code": "RK-43",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -56520,24 +56559,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 295,
-        "seq_inicio_vuelta": 296,
-        "seq_fin_vuelta": 592,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea43",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 295,
+          "seq_inicio_vuelta": 296,
+          "seq_fin_vuelta": 592,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea44-azul",
-      "external_id": "linea44 Azul",
-      "name": "linea44 Azul",
-      "code": "44",
+      "name": "Ruta RK-44-A",
+      "code": "RK-44-A",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -56852,24 +56892,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 84,
-        "seq_fin_ida": 172,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 83,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea44 Azul",
+        "directions": {
+          "seq_inicio_ida": 84,
+          "seq_fin_ida": 172,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 83,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea44-rojo",
-      "external_id": "linea44 Rojo",
-      "name": "linea44 Rojo",
-      "code": "44",
+      "name": "Ruta RK-44-B",
+      "code": "RK-44-B",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -57999,24 +58040,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 518,
-        "seq_inicio_vuelta": 519,
-        "seq_fin_vuelta": 807,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea44 Rojo",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 518,
+          "seq_inicio_vuelta": 519,
+          "seq_fin_vuelta": 807,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea45",
-      "external_id": "linea45",
-      "name": "linea45",
-      "code": "45",
+      "name": "Ruta RK-45",
+      "code": "RK-45",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -59206,24 +59248,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 310,
-        "seq_fin_ida": 638,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 309,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea45",
+        "directions": {
+          "seq_inicio_ida": 310,
+          "seq_fin_ida": 638,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 309,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea46",
-      "external_id": "linea46",
-      "name": "linea46",
-      "code": "46",
+      "name": "Ruta RK-46",
+      "code": "RK-46",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -60618,24 +60661,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 443,
-        "seq_inicio_vuelta": 444,
-        "seq_fin_vuelta": 818,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea46",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 443,
+          "seq_inicio_vuelta": 444,
+          "seq_fin_vuelta": 818,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea47",
-      "external_id": "linea47",
-      "name": "linea47",
-      "code": "47",
+      "name": "Ruta RK-47",
+      "code": "RK-47",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -62160,24 +62204,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 486,
-        "seq_fin_ida": 931,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 485,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea47",
+        "directions": {
+          "seq_inicio_ida": 486,
+          "seq_fin_ida": 931,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 485,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea48",
-      "external_id": "linea48",
-      "name": "linea48",
-      "code": "48",
+      "name": "Ruta RK-48",
+      "code": "RK-48",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -63642,24 +63687,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 460,
-        "seq_fin_ida": 851,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 459,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea48",
+        "directions": {
+          "seq_inicio_ida": 460,
+          "seq_fin_ida": 851,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 459,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea49",
-      "external_id": "linea49",
-      "name": "linea49",
-      "code": "49",
+      "name": "Ruta RK-49",
+      "code": "RK-49",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -64924,24 +64970,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 269,
-        "seq_fin_ida": 593,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 268,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea49",
+        "directions": {
+          "seq_inicio_ida": 269,
+          "seq_fin_ida": 593,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 268,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea50",
-      "external_id": "linea50",
-      "name": "linea50",
-      "code": "50",
+      "name": "Ruta RK-50",
+      "code": "RK-50",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -66511,24 +66558,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 345,
-        "seq_fin_ida": 698,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 344,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea50",
+        "directions": {
+          "seq_inicio_ida": 345,
+          "seq_fin_ida": 698,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 344,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea51",
-      "external_id": "linea51",
-      "name": "linea51",
-      "code": "51",
+      "name": "Ruta RK-51",
+      "code": "RK-51",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -68223,24 +68271,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 237,
-        "seq_inicio_vuelta": 238,
-        "seq_fin_vuelta": 487,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea51",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 237,
+          "seq_inicio_vuelta": 238,
+          "seq_fin_vuelta": 487,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea52",
-      "external_id": "linea52",
-      "name": "linea52",
-      "code": "52",
+      "name": "Ruta RK-52",
+      "code": "RK-52",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -69870,24 +69919,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 223,
-        "seq_inicio_vuelta": 224,
-        "seq_fin_vuelta": 502,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea52",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 223,
+          "seq_inicio_vuelta": 224,
+          "seq_fin_vuelta": 502,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea53",
-      "external_id": "linea53",
-      "name": "linea53",
-      "code": "53",
+      "name": "Ruta RK-53",
+      "code": "RK-53",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -70962,24 +71012,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 245,
-        "seq_inicio_vuelta": 246,
-        "seq_fin_vuelta": 465,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea53",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 245,
+          "seq_inicio_vuelta": 246,
+          "seq_fin_vuelta": 465,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea54",
-      "external_id": "linea54",
-      "name": "linea54",
-      "code": "54",
+      "name": "Ruta RK-54",
+      "code": "RK-54",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -72474,24 +72525,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 265,
-        "seq_inicio_vuelta": 266,
-        "seq_fin_vuelta": 558,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea54",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 265,
+          "seq_inicio_vuelta": 266,
+          "seq_fin_vuelta": 558,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea55",
-      "external_id": "linea55",
-      "name": "linea55",
-      "code": "55",
+      "name": "Ruta RK-55",
+      "code": "RK-55",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -73986,24 +74038,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 275,
-        "seq_inicio_vuelta": 276,
-        "seq_fin_vuelta": 552,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea55",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 275,
+          "seq_inicio_vuelta": 276,
+          "seq_fin_vuelta": 552,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea56",
-      "external_id": "linea56",
-      "name": "linea56",
-      "code": "56",
+      "name": "Ruta RK-56",
+      "code": "RK-56",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -75343,24 +75396,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 239,
-        "seq_inicio_vuelta": 240,
-        "seq_fin_vuelta": 457,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea56",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 239,
+          "seq_inicio_vuelta": 240,
+          "seq_fin_vuelta": 457,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea57",
-      "external_id": "linea57",
-      "name": "linea57",
-      "code": "57",
+      "name": "Ruta RK-57",
+      "code": "RK-57",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -76590,24 +76644,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 173,
-        "seq_inicio_vuelta": 174,
-        "seq_fin_vuelta": 402,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea57",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 173,
+          "seq_inicio_vuelta": 174,
+          "seq_fin_vuelta": 402,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea58",
-      "external_id": "linea58",
-      "name": "linea58",
-      "code": "58",
+      "name": "Ruta RK-58",
+      "code": "RK-58",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -77842,24 +77897,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 264,
-        "seq_fin_ida": 502,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 263,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea58",
+        "directions": {
+          "seq_inicio_ida": 264,
+          "seq_fin_ida": 502,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 263,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea59",
-      "external_id": "linea59",
-      "name": "linea59",
-      "code": "59",
+      "name": "Ruta RK-59",
+      "code": "RK-59",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -79779,24 +79835,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 330,
-        "seq_inicio_vuelta": 331,
-        "seq_fin_vuelta": 717,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea59",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 330,
+          "seq_inicio_vuelta": 331,
+          "seq_fin_vuelta": 717,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea60-rojo",
-      "external_id": "linea60 Rojo",
-      "name": "linea60 Rojo",
-      "code": "60",
+      "name": "Ruta RK-60-A",
+      "code": "RK-60-A",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -80916,24 +80973,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 215,
-        "seq_inicio_vuelta": 216,
-        "seq_fin_vuelta": 451,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea60 Rojo",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 215,
+          "seq_inicio_vuelta": 216,
+          "seq_fin_vuelta": 451,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea60-verde",
-      "external_id": "linea60 Verde",
-      "name": "linea60 Verde",
-      "code": "60",
+      "name": "Ruta RK-60-B",
+      "code": "RK-60-B",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -81533,24 +81591,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 120,
-        "seq_fin_ida": 271,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 119,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea60 Verde",
+        "directions": {
+          "seq_inicio_ida": 120,
+          "seq_fin_ida": 271,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 119,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea61-azul",
-      "external_id": "linea61 Azul",
-      "name": "linea61 Azul",
-      "code": "61",
+      "name": "Ruta RK-61-A",
+      "code": "RK-61-A",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -82800,24 +82859,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 180,
-        "seq_fin_ida": 450,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 179,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea61 Azul",
+        "directions": {
+          "seq_inicio_ida": 180,
+          "seq_fin_ida": 450,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 179,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea61-rojo",
-      "external_id": "linea61 Rojo",
-      "name": "linea61 Rojo",
-      "code": "61",
+      "name": "Ruta RK-61-B",
+      "code": "RK-61-B",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -84092,24 +84152,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 254,
-        "seq_inicio_vuelta": 255,
-        "seq_fin_vuelta": 592,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea61 Rojo",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 254,
+          "seq_inicio_vuelta": 255,
+          "seq_fin_vuelta": 592,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea62",
-      "external_id": "linea62",
-      "name": "linea62",
-      "code": "62",
+      "name": "Ruta RK-62-A",
+      "code": "RK-62-A",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -85044,24 +85105,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 198,
-        "seq_fin_ida": 392,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 197,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea62",
+        "directions": {
+          "seq_inicio_ida": 198,
+          "seq_fin_ida": 392,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 197,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea62-naranja",
-      "external_id": "linea62 Naranja",
-      "name": "linea62 Naranja",
-      "code": "62",
+      "name": "Ruta RK-62-B",
+      "code": "RK-62-B",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -85816,24 +85878,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 142,
-        "seq_fin_ida": 334,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 141,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea62 Naranja",
+        "directions": {
+          "seq_inicio_ida": 142,
+          "seq_fin_ida": 334,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 141,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea63",
-      "external_id": "linea63",
-      "name": "linea63",
-      "code": "63",
+      "name": "Ruta RK-63",
+      "code": "RK-63",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -86758,24 +86821,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 169,
-        "seq_inicio_vuelta": 170,
-        "seq_fin_vuelta": 372,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea63",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 169,
+          "seq_inicio_vuelta": 170,
+          "seq_fin_vuelta": 372,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea64-amarillo",
-      "external_id": "linea64 Amarillo",
-      "name": "linea64 Amarillo",
-      "code": "64",
+      "name": "Ruta RK-64-A",
+      "code": "RK-64-A",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -87340,24 +87404,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 88,
-        "seq_inicio_vuelta": 89,
-        "seq_fin_vuelta": 203,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea64 Amarillo",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 88,
+          "seq_inicio_vuelta": 89,
+          "seq_fin_vuelta": 203,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea64-rojo",
-      "external_id": "linea64 Rojo",
-      "name": "linea64 Rojo",
-      "code": "64",
+      "name": "Ruta RK-64-B",
+      "code": "RK-64-B",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -88202,24 +88267,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 173,
-        "seq_fin_ida": 353,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 172,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea64 Rojo",
+        "directions": {
+          "seq_inicio_ida": 173,
+          "seq_fin_ida": 353,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 172,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea65",
-      "external_id": "linea65",
-      "name": "linea65",
-      "code": "65",
+      "name": "Ruta RK-65",
+      "code": "RK-65",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -89614,24 +89680,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 241,
-        "seq_inicio_vuelta": 242,
-        "seq_fin_vuelta": 503,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea65",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 241,
+          "seq_inicio_vuelta": 242,
+          "seq_fin_vuelta": 503,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea66-rojo",
-      "external_id": "linea66 Rojo",
-      "name": "linea66 Rojo",
-      "code": "66",
+      "name": "Ruta RK-66",
+      "code": "RK-66",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -91171,24 +91238,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 318,
-        "seq_inicio_vuelta": 319,
-        "seq_fin_vuelta": 647,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea66 Rojo",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 318,
+          "seq_inicio_vuelta": 319,
+          "seq_fin_vuelta": 647,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea67",
-      "external_id": "linea67",
-      "name": "linea67",
-      "code": "67",
+      "name": "Ruta RK-67",
+      "code": "RK-67",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -92213,24 +92281,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 216,
-        "seq_inicio_vuelta": 217,
-        "seq_fin_vuelta": 483,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea67",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 216,
+          "seq_inicio_vuelta": 217,
+          "seq_fin_vuelta": 483,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea68-rojo",
-      "external_id": "linea68 Rojo",
-      "name": "linea68 Rojo",
-      "code": "68",
+      "name": "Ruta RK-68-A",
+      "code": "RK-68-A",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -93750,24 +93819,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 253,
-        "seq_inicio_vuelta": 254,
-        "seq_fin_vuelta": 1024,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea68 Rojo",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 253,
+          "seq_inicio_vuelta": 254,
+          "seq_fin_vuelta": 1024,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea68-verde",
-      "external_id": "linea68 Verde",
-      "name": "linea68 Verde",
-      "code": "68",
+      "name": "Ruta RK-68-B",
+      "code": "RK-68-B",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -94937,24 +95007,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 206,
-        "seq_inicio_vuelta": 207,
-        "seq_fin_vuelta": 694,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea68 Verde",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 206,
+          "seq_inicio_vuelta": 207,
+          "seq_fin_vuelta": 694,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea69",
-      "external_id": "linea69",
-      "name": "linea69",
-      "code": "69",
+      "name": "Ruta RK-69",
+      "code": "RK-69",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -95964,24 +96035,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 147,
-        "seq_inicio_vuelta": 148,
-        "seq_fin_vuelta": 342,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea69",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 147,
+          "seq_inicio_vuelta": 148,
+          "seq_fin_vuelta": 342,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea70",
-      "external_id": "linea70",
-      "name": "linea70",
-      "code": "70",
+      "name": "Ruta RK-70",
+      "code": "RK-70",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -97071,24 +97143,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 169,
-        "seq_inicio_vuelta": 170,
-        "seq_fin_vuelta": 465,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea70",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 169,
+          "seq_inicio_vuelta": 170,
+          "seq_fin_vuelta": 465,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea71",
-      "external_id": "linea71",
-      "name": "linea71",
-      "code": "71",
+      "name": "Ruta RK-71",
+      "code": "RK-71",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -98143,24 +98216,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 296,
-        "seq_fin_ida": 601,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 295,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea71",
+        "directions": {
+          "seq_inicio_ida": 296,
+          "seq_fin_ida": 601,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 295,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea72",
-      "external_id": "linea72",
-      "name": "linea72",
-      "code": "72",
+      "name": "Ruta RK-72",
+      "code": "RK-72",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -98570,24 +98644,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 163,
-        "seq_inicio_vuelta": 164,
-        "seq_fin_vuelta": 275,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea72",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 163,
+          "seq_inicio_vuelta": 164,
+          "seq_fin_vuelta": 275,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea73",
-      "external_id": "linea73",
-      "name": "linea73",
-      "code": "73",
+      "name": "Ruta RK-73",
+      "code": "RK-73",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -99047,24 +99122,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 163,
-        "seq_inicio_vuelta": 164,
-        "seq_fin_vuelta": 323,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea73",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 163,
+          "seq_inicio_vuelta": 164,
+          "seq_fin_vuelta": 323,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea74",
-      "external_id": "linea74",
-      "name": "linea74",
-      "code": "74",
+      "name": "Ruta RK-74",
+      "code": "RK-74",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -100944,24 +101020,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 329,
-        "seq_inicio_vuelta": 330,
-        "seq_fin_vuelta": 741,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea74",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 329,
+          "seq_inicio_vuelta": 330,
+          "seq_fin_vuelta": 741,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea75",
-      "external_id": "linea75",
-      "name": "linea75",
-      "code": "75",
+      "name": "Ruta RK-75",
+      "code": "RK-75",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -102976,24 +103053,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 327,
-        "seq_fin_ida": 693,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 326,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea75",
+        "directions": {
+          "seq_inicio_ida": 327,
+          "seq_fin_ida": 693,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 326,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea76",
-      "external_id": "linea76",
-      "name": "linea76",
-      "code": "76",
+      "name": "Ruta RK-76",
+      "code": "RK-76",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -104128,24 +104206,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 304,
-        "seq_fin_ida": 578,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 303,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea76",
+        "directions": {
+          "seq_inicio_ida": 304,
+          "seq_fin_ida": 578,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 303,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea77",
-      "external_id": "linea77",
-      "name": "linea77",
-      "code": "77",
+      "name": "Ruta RK-77",
+      "code": "RK-77",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -105250,24 +105329,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 250,
-        "seq_inicio_vuelta": 251,
-        "seq_fin_vuelta": 525,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea77",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 250,
+          "seq_inicio_vuelta": 251,
+          "seq_fin_vuelta": 525,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea78",
-      "external_id": "linea78",
-      "name": "linea78",
-      "code": "78",
+      "name": "Ruta RK-78",
+      "code": "RK-78",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -106227,24 +106307,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 297,
-        "seq_inicio_vuelta": 298,
-        "seq_fin_vuelta": 823,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea78",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 297,
+          "seq_inicio_vuelta": 298,
+          "seq_fin_vuelta": 823,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea79",
-      "external_id": "linea79",
-      "name": "linea79",
-      "code": "79",
+      "name": "Ruta RK-79",
+      "code": "RK-79",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -107754,24 +107835,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 316,
-        "seq_fin_ida": 624,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 315,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea79",
+        "directions": {
+          "seq_inicio_ida": 316,
+          "seq_fin_ida": 624,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 315,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea80",
-      "external_id": "linea80",
-      "name": "linea80",
-      "code": "80",
+      "name": "Ruta RK-80",
+      "code": "RK-80",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -110106,24 +110188,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 1878,
-        "seq_inicio_vuelta": 1879,
-        "seq_fin_vuelta": 2892,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea80",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 1878,
+          "seq_inicio_vuelta": 1879,
+          "seq_fin_vuelta": 2892,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea81",
-      "external_id": "linea81",
-      "name": "linea81",
-      "code": "81",
+      "name": "Ruta RK-81",
+      "code": "RK-81",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -111438,24 +111521,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 344,
-        "seq_inicio_vuelta": 345,
-        "seq_fin_vuelta": 672,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea81",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 344,
+          "seq_inicio_vuelta": 345,
+          "seq_fin_vuelta": 672,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea82",
-      "external_id": "linea82",
-      "name": "linea82",
-      "code": "82",
+      "name": "Ruta RK-82",
+      "code": "RK-82",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -113165,24 +113249,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 604,
-        "seq_fin_ida": 1581,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 603,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea82",
+        "directions": {
+          "seq_inicio_ida": 604,
+          "seq_fin_ida": 1581,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 603,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea83",
-      "external_id": "linea83",
-      "name": "linea83",
-      "code": "83",
+      "name": "Ruta RK-83",
+      "code": "RK-83",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -113757,24 +113842,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 225,
-        "seq_fin_ida": 436,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 224,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea83",
+        "directions": {
+          "seq_inicio_ida": 225,
+          "seq_fin_ida": 436,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 224,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea84",
-      "external_id": "linea84",
-      "name": "linea84",
-      "code": "84",
+      "name": "Ruta RK-84",
+      "code": "RK-84",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -115044,24 +115130,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 290,
-        "seq_fin_ida": 978,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 289,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea84",
+        "directions": {
+          "seq_inicio_ida": 290,
+          "seq_fin_ida": 978,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 289,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea85",
-      "external_id": "linea85",
-      "name": "linea85",
-      "code": "85",
+      "name": "Ruta RK-85",
+      "code": "RK-85",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -116501,24 +116588,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 500,
-        "seq_fin_ida": 979,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 499,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea85",
+        "directions": {
+          "seq_inicio_ida": 500,
+          "seq_fin_ida": 979,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 499,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea86",
-      "external_id": "linea86",
-      "name": "linea86",
-      "code": "86",
+      "name": "Ruta RK-86",
+      "code": "RK-86",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -118148,24 +118236,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 565,
-        "seq_fin_ida": 1144,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 564,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea86",
+        "directions": {
+          "seq_inicio_ida": 565,
+          "seq_fin_ida": 1144,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 564,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea87",
-      "external_id": "linea87",
-      "name": "linea87",
-      "code": "87",
+      "name": "Ruta RK-87",
+      "code": "RK-87",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -119675,24 +119764,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 435,
-        "seq_fin_ida": 772,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 434,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea87",
+        "directions": {
+          "seq_inicio_ida": 435,
+          "seq_fin_ida": 772,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 434,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea88-amarillo",
-      "external_id": "linea88 Amarillo",
-      "name": "linea88 Amarillo",
-      "code": "88",
+      "name": "Ruta RK-88-A",
+      "code": "RK-88-A",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -120307,24 +120397,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 158,
-        "seq_fin_ida": 403,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 157,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea88 Amarillo",
+        "directions": {
+          "seq_inicio_ida": 158,
+          "seq_fin_ida": 403,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 157,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea88-azul",
-      "external_id": "linea88 Azul",
-      "name": "linea88 Azul",
-      "code": "88",
+      "name": "Ruta RK-88-B",
+      "code": "RK-88-B",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -121449,24 +121540,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 538,
-        "seq_fin_ida": 1006,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 537,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea88 Azul",
+        "directions": {
+          "seq_inicio_ida": 538,
+          "seq_fin_ida": 1006,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 537,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea89",
-      "external_id": "linea89",
-      "name": "linea89",
-      "code": "89",
+      "name": "Ruta RK-89",
+      "code": "RK-89",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -122681,24 +122773,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 361,
-        "seq_fin_ida": 706,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 360,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea89",
+        "directions": {
+          "seq_inicio_ida": 361,
+          "seq_fin_ida": 706,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 360,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea90",
-      "external_id": "linea90",
-      "name": "linea90",
-      "code": "90",
+      "name": "Ruta RK-90",
+      "code": "RK-90",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -124198,24 +124291,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 408,
-        "seq_fin_ida": 980,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 407,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea90",
+        "directions": {
+          "seq_inicio_ida": 408,
+          "seq_fin_ida": 980,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 407,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea92",
-      "external_id": "linea92",
-      "name": "linea92",
-      "code": "92",
+      "name": "Ruta RK-92",
+      "code": "RK-92",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -125185,24 +125279,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 269,
-        "seq_fin_ida": 739,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 268,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea92",
+        "directions": {
+          "seq_inicio_ida": 269,
+          "seq_fin_ida": 739,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 268,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea93",
-      "external_id": "linea93",
-      "name": "linea93",
-      "code": "93",
+      "name": "Ruta RK-93",
+      "code": "RK-93",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -125952,24 +126047,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 234,
-        "seq_fin_ida": 394,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 233,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea93",
+        "directions": {
+          "seq_inicio_ida": 234,
+          "seq_fin_ida": 394,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 233,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea94",
-      "external_id": "linea94",
-      "name": "linea94",
-      "code": "94",
+      "name": "Ruta RK-94",
+      "code": "RK-94",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -127034,24 +127130,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 243,
-        "seq_fin_ida": 460,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 242,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea94",
+        "directions": {
+          "seq_inicio_ida": 243,
+          "seq_fin_ida": 460,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 242,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea96-amarillo",
-      "external_id": "linea96 Amarillo",
-      "name": "linea96 Amarillo",
-      "code": "96",
+      "name": "Ruta RK-96-A",
+      "code": "RK-96-A",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -128211,24 +128308,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 211,
-        "seq_fin_ida": 634,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 210,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea96 Amarillo",
+        "directions": {
+          "seq_inicio_ida": 211,
+          "seq_fin_ida": 634,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 210,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea96-rojo",
-      "external_id": "linea96 Rojo",
-      "name": "linea96 Rojo",
-      "code": "96",
+      "name": "Ruta RK-96-B",
+      "code": "RK-96-B",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -129228,24 +129326,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 308,
-        "seq_fin_ida": 760,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 307,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea96 Rojo",
+        "directions": {
+          "seq_inicio_ida": 308,
+          "seq_fin_ida": 760,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 307,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea97",
-      "external_id": "linea97",
-      "name": "linea97",
-      "code": "97",
+      "name": "Ruta RK-97",
+      "code": "RK-97",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -130330,24 +130429,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 231,
-        "seq_fin_ida": 501,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 230,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea97",
+        "directions": {
+          "seq_inicio_ida": 231,
+          "seq_fin_ida": 501,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 230,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea98",
-      "external_id": "linea98",
-      "name": "linea98",
-      "code": "98",
+      "name": "Ruta RK-98",
+      "code": "RK-98",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -131397,24 +131497,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 218,
-        "seq_fin_ida": 568,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 217,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea98",
+        "directions": {
+          "seq_inicio_ida": 218,
+          "seq_fin_ida": 568,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 217,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea99",
-      "external_id": "linea99",
-      "name": "linea99",
-      "code": "99",
+      "name": "Ruta RK-99",
+      "code": "RK-99",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -132154,24 +132255,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 311,
-        "seq_fin_ida": 535,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 310,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea99",
+        "directions": {
+          "seq_inicio_ida": 311,
+          "seq_fin_ida": 535,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 310,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea100",
-      "external_id": "linea100",
-      "name": "linea100",
-      "code": "100",
+      "name": "Ruta RK-100",
+      "code": "RK-100",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -133121,24 +133223,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 226,
-        "seq_fin_ida": 432,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 225,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea100",
+        "directions": {
+          "seq_inicio_ida": 226,
+          "seq_fin_ida": 432,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 225,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea101",
-      "external_id": "linea101",
-      "name": "linea101",
-      "code": "101",
+      "name": "Ruta RK-101",
+      "code": "RK-101",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -134203,24 +134306,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 451,
-        "seq_inicio_vuelta": 452,
-        "seq_fin_vuelta": 862,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea101",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 451,
+          "seq_inicio_vuelta": 452,
+          "seq_fin_vuelta": 862,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea102",
-      "external_id": "linea102",
-      "name": "linea102",
-      "code": "102",
+      "name": "Ruta RK-102",
+      "code": "RK-102",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -134615,24 +134719,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 118,
-        "seq_inicio_vuelta": 119,
-        "seq_fin_vuelta": 304,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea102",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 118,
+          "seq_inicio_vuelta": 119,
+          "seq_fin_vuelta": 304,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea103",
-      "external_id": "linea103",
-      "name": "linea103",
-      "code": "103",
+      "name": "Ruta RK-103",
+      "code": "RK-103",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -136132,24 +136237,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 306,
-        "seq_inicio_vuelta": 307,
-        "seq_fin_vuelta": 672,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea103",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 306,
+          "seq_inicio_vuelta": 307,
+          "seq_fin_vuelta": 672,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea104-el-carmen",
-      "external_id": "linea104 El Carmen",
-      "name": "linea104 El Carmen",
-      "code": "104",
+      "name": "Ruta RK-104-A",
+      "code": "RK-104-A",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -136964,24 +137070,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 218,
-        "seq_inicio_vuelta": 219,
-        "seq_fin_vuelta": 432,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea104 El Carmen",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 218,
+          "seq_inicio_vuelta": 219,
+          "seq_fin_vuelta": 432,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea104b",
-      "external_id": "linea104B",
-      "name": "linea104B",
-      "code": "104",
+      "name": "Ruta RK-104-B",
+      "code": "RK-104-B",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -137851,24 +137958,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 286,
-        "seq_inicio_vuelta": 287,
-        "seq_fin_vuelta": 588,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea104B",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 286,
+          "seq_inicio_vuelta": 287,
+          "seq_fin_vuelta": 588,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea105-verde",
-      "external_id": "linea105 Verde",
-      "name": "linea105 Verde",
-      "code": "105",
+      "name": "Ruta RK-105",
+      "code": "RK-105",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -138158,24 +138266,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 109,
-        "seq_fin_ida": 218,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 108,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea105 Verde",
+        "directions": {
+          "seq_inicio_ida": 109,
+          "seq_fin_ida": 218,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 108,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea106",
-      "external_id": "linea106",
-      "name": "linea106",
-      "code": "106",
+      "name": "Ruta RK-106",
+      "code": "RK-106",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -139385,24 +139494,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 307,
-        "seq_inicio_vuelta": 308,
-        "seq_fin_vuelta": 607,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea106",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 307,
+          "seq_inicio_vuelta": 308,
+          "seq_fin_vuelta": 607,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea107",
-      "external_id": "linea107",
-      "name": "linea107",
-      "code": "107",
+      "name": "Ruta RK-107",
+      "code": "RK-107",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -140397,24 +140507,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 282,
-        "seq_fin_ida": 574,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 281,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea107",
+        "directions": {
+          "seq_inicio_ida": 282,
+          "seq_fin_ida": 574,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 281,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea108",
-      "external_id": "linea108",
-      "name": "linea108",
-      "code": "108",
+      "name": "Ruta RK-108",
+      "code": "RK-108",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -141519,24 +141630,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 228,
-        "seq_fin_ida": 514,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 227,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea108",
+        "directions": {
+          "seq_inicio_ida": 228,
+          "seq_fin_ida": 514,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 227,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea109",
-      "external_id": "linea109",
-      "name": "linea109",
-      "code": "109",
+      "name": "Ruta RK-109",
+      "code": "RK-109",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -142621,24 +142733,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 243,
-        "seq_fin_ida": 535,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 242,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea109",
+        "directions": {
+          "seq_inicio_ida": 243,
+          "seq_fin_ida": 535,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 242,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea110",
-      "external_id": "linea110",
-      "name": "linea110",
-      "code": "110",
+      "name": "Ruta RK-110",
+      "code": "RK-110",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -143758,24 +143871,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 252,
-        "seq_fin_ida": 498,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 251,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea110",
+        "directions": {
+          "seq_inicio_ida": 252,
+          "seq_fin_ida": 498,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 251,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea111",
-      "external_id": "linea111",
-      "name": "linea111",
-      "code": "111",
+      "name": "Ruta RK-111-A",
+      "code": "RK-111-A",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -144315,24 +144429,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 221,
-        "seq_fin_ida": 343,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 220,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea111",
+        "directions": {
+          "seq_inicio_ida": 221,
+          "seq_fin_ida": 343,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 220,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea111-paititi",
-      "external_id": "linea111 Paititi",
-      "name": "linea111 Paititi",
-      "code": "111",
+      "name": "Ruta RK-111-B",
+      "code": "RK-111-B",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -144917,24 +145032,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 266,
-        "seq_inicio_vuelta": 267,
-        "seq_fin_vuelta": 608,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea111 Paititi",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 266,
+          "seq_inicio_vuelta": 267,
+          "seq_fin_vuelta": 608,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea112",
-      "external_id": "linea112",
-      "name": "linea112",
-      "code": "112",
+      "name": "Ruta RK-112",
+      "code": "RK-112",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -145944,24 +146060,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 335,
-        "seq_inicio_vuelta": 336,
-        "seq_fin_vuelta": 604,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea112",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 335,
+          "seq_inicio_vuelta": 336,
+          "seq_fin_vuelta": 604,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea113",
-      "external_id": "linea113",
-      "name": "linea113",
-      "code": "113",
+      "name": "Ruta RK-113",
+      "code": "RK-113",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -146906,24 +147023,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 441,
-        "seq_inicio_vuelta": 442,
-        "seq_fin_vuelta": 695,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea113",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 441,
+          "seq_inicio_vuelta": 442,
+          "seq_fin_vuelta": 695,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea114",
-      "external_id": "linea114",
-      "name": "linea114",
-      "code": "114",
+      "name": "Ruta RK-114",
+      "code": "RK-114",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -147983,24 +148101,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 381,
-        "seq_inicio_vuelta": 382,
-        "seq_fin_vuelta": 644,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea114",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 381,
+          "seq_inicio_vuelta": 382,
+          "seq_fin_vuelta": 644,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea115",
-      "external_id": "linea115",
-      "name": "linea115",
-      "code": "115",
+      "name": "Ruta RK-115",
+      "code": "RK-115",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -148940,24 +149059,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 289,
-        "seq_fin_ida": 499,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 288,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea115",
+        "directions": {
+          "seq_inicio_ida": 289,
+          "seq_fin_ida": 499,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 288,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea116",
-      "external_id": "linea116",
-      "name": "linea116",
-      "code": "116",
+      "name": "Ruta RK-116",
+      "code": "RK-116",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -149792,24 +149912,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 263,
-        "seq_inicio_vuelta": 264,
-        "seq_fin_vuelta": 542,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea116",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 263,
+          "seq_inicio_vuelta": 264,
+          "seq_fin_vuelta": 542,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea119",
-      "external_id": "linea119",
-      "name": "linea119",
-      "code": "119",
+      "name": "Ruta RK-119",
+      "code": "RK-119",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -150379,24 +150500,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 268,
-        "seq_inicio_vuelta": 269,
-        "seq_fin_vuelta": 441,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea119",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 268,
+          "seq_inicio_vuelta": 269,
+          "seq_fin_vuelta": 441,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea120",
-      "external_id": "linea120",
-      "name": "linea120",
-      "code": "120",
+      "name": "Ruta RK-120",
+      "code": "RK-120",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -151881,24 +152003,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 549,
-        "seq_inicio_vuelta": 550,
-        "seq_fin_vuelta": 991,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea120",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 549,
+          "seq_inicio_vuelta": 550,
+          "seq_fin_vuelta": 991,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea121-rojo",
-      "external_id": "linea121 Rojo",
-      "name": "linea121 Rojo",
-      "code": "121",
+      "name": "Ruta RK-121",
+      "code": "RK-121",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -152768,24 +152891,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 369,
-        "seq_inicio_vuelta": 370,
-        "seq_fin_vuelta": 571,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea121 Rojo",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 369,
+          "seq_inicio_vuelta": 370,
+          "seq_fin_vuelta": 571,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea122-amarillo",
-      "external_id": "linea122 Amarillo",
-      "name": "linea122 Amarillo",
-      "code": "122",
+      "name": "Ruta RK-122",
+      "code": "RK-122",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -153575,24 +153699,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 321,
-        "seq_inicio_vuelta": 322,
-        "seq_fin_vuelta": 638,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea122 Amarillo",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 321,
+          "seq_inicio_vuelta": 322,
+          "seq_fin_vuelta": 638,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea123",
-      "external_id": "linea123",
-      "name": "linea123",
-      "code": "123",
+      "name": "Ruta RK-123",
+      "code": "RK-123",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -155357,24 +155482,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 634,
-        "seq_inicio_vuelta": 635,
-        "seq_fin_vuelta": 1189,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea123",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 634,
+          "seq_inicio_vuelta": 635,
+          "seq_fin_vuelta": 1189,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea124",
-      "external_id": "linea124",
-      "name": "linea124",
-      "code": "124",
+      "name": "Ruta RK-124",
+      "code": "RK-124",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -156719,24 +156845,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 377,
-        "seq_inicio_vuelta": 378,
-        "seq_fin_vuelta": 796,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea124",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 377,
+          "seq_inicio_vuelta": 378,
+          "seq_fin_vuelta": 796,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea125-uv-doce",
-      "external_id": "linea125 UV Doce",
-      "name": "linea125 UV Doce",
-      "code": "125",
+      "name": "Ruta RK-125-A",
+      "code": "RK-125-A",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -157641,24 +157768,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 339,
-        "seq_fin_ida": 552,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 338,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea125 UV Doce",
+        "directions": {
+          "seq_inicio_ida": 339,
+          "seq_fin_ida": 552,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 338,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea125-uv-once",
-      "external_id": "linea125 UV Once",
-      "name": "linea125 UV Once",
-      "code": "125",
+      "name": "Ruta RK-125-B",
+      "code": "RK-125-B",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -158498,24 +158626,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 240,
-        "seq_fin_ida": 470,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 239,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea125 UV Once",
+        "directions": {
+          "seq_inicio_ida": 240,
+          "seq_fin_ida": 470,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 239,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea126",
-      "external_id": "linea126",
-      "name": "linea126",
-      "code": "126",
+      "name": "Ruta RK-126",
+      "code": "RK-126",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -159295,24 +159424,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 285,
-        "seq_inicio_vuelta": 286,
-        "seq_fin_vuelta": 462,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea126",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 285,
+          "seq_inicio_vuelta": 286,
+          "seq_fin_vuelta": 462,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea127",
-      "external_id": "linea127",
-      "name": "linea127",
-      "code": "127",
+      "name": "Ruta RK-127",
+      "code": "RK-127",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -159677,24 +159807,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 430,
-        "seq_fin_ida": 526,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 429,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea127",
+        "directions": {
+          "seq_inicio_ida": 430,
+          "seq_fin_ida": 526,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 429,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea129",
-      "external_id": "linea129",
-      "name": "linea129",
-      "code": "129",
+      "name": "Ruta RK-129",
+      "code": "RK-129",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -160199,24 +160330,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 323,
-        "seq_fin_ida": 441,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 322,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea129",
+        "directions": {
+          "seq_inicio_ida": 323,
+          "seq_fin_ida": 441,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 322,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea130",
-      "external_id": "linea130",
-      "name": "linea130",
-      "code": "130",
+      "name": "Ruta RK-130",
+      "code": "RK-130",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -161956,24 +162088,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 637,
-        "seq_fin_ida": 1083,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 636,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea130",
+        "directions": {
+          "seq_inicio_ida": 637,
+          "seq_fin_ida": 1083,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 636,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea132",
-      "external_id": "linea132",
-      "name": "linea132",
-      "code": "132",
+      "name": "Ruta RK-132-A",
+      "code": "RK-132-A",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -163038,24 +163171,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 394,
-        "seq_fin_ida": 760,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 393,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea132",
+        "directions": {
+          "seq_inicio_ida": 394,
+          "seq_fin_ida": 760,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 393,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea132-montero",
-      "external_id": "linea132 Montero",
-      "name": "linea132 Montero",
-      "code": "132",
+      "name": "Ruta RK-132-B",
+      "code": "RK-132-B",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -163645,24 +163779,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 116,
-        "seq_fin_ida": 285,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 115,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea132 Montero",
+        "directions": {
+          "seq_inicio_ida": 116,
+          "seq_fin_ida": 285,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 115,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea135-viru-viru",
-      "external_id": "linea135 Viru Viru",
-      "name": "linea135 Viru Viru",
-      "code": "135",
+      "name": "Ruta RK-135",
+      "code": "RK-135",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -164327,24 +164462,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 190,
-        "seq_inicio_vuelta": 191,
-        "seq_fin_vuelta": 454,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea135 Viru Viru",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 190,
+          "seq_inicio_vuelta": 191,
+          "seq_fin_vuelta": 454,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea136-norte",
-      "external_id": "linea136 Norte",
-      "name": "linea136 Norte",
-      "code": "136",
+      "name": "Ruta RK-136-A",
+      "code": "RK-136-A",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -164774,24 +164910,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 158,
-        "seq_fin_ida": 318,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 157,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea136 Norte",
+        "directions": {
+          "seq_inicio_ida": 158,
+          "seq_fin_ida": 318,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 157,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea136-recreo",
-      "external_id": "linea136 Recreo",
-      "name": "linea136 Recreo",
-      "code": "136",
+      "name": "Ruta RK-136-B",
+      "code": "RK-136-B",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -165716,24 +165853,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 166,
-        "seq_inicio_vuelta": 167,
-        "seq_fin_vuelta": 420,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea136 Recreo",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 166,
+          "seq_inicio_vuelta": 167,
+          "seq_fin_vuelta": 420,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea140-g-pascana",
-      "external_id": "linea140 G Pascana",
-      "name": "linea140 G Pascana",
-      "code": "140",
+      "name": "Ruta RK-140-A",
+      "code": "RK-140-A",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -166458,24 +166596,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 445,
-        "seq_fin_ida": 623,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 444,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea140 G Pascana",
+        "directions": {
+          "seq_inicio_ida": 445,
+          "seq_fin_ida": 623,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 444,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea140-p-pascana",
-      "external_id": "linea140 P Pascana",
-      "name": "linea140 P Pascana",
-      "code": "140",
+      "name": "Ruta RK-140-B",
+      "code": "RK-140-B",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -167355,24 +167494,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 180,
-        "seq_fin_ida": 395,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 179,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea140 P Pascana",
+        "directions": {
+          "seq_inicio_ida": 180,
+          "seq_fin_ida": 395,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 179,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea141",
-      "external_id": "linea141",
-      "name": "linea141",
-      "code": "141",
+      "name": "Ruta RK-141",
+      "code": "RK-141",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -168402,24 +168542,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 451,
-        "seq_fin_ida": 727,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 450,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea141",
+        "directions": {
+          "seq_inicio_ida": 451,
+          "seq_fin_ida": 727,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 450,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea142-verde",
-      "external_id": "linea142 Verde",
-      "name": "linea142 Verde",
-      "code": "142",
+      "name": "Ruta RK-142",
+      "code": "RK-142",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -168849,24 +168990,25 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 139,
-        "seq_fin_ida": 279,
-        "seq_inicio_vuelta": 1,
-        "seq_fin_vuelta": 138,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea142 Verde",
+        "directions": {
+          "seq_inicio_ida": 139,
+          "seq_fin_ida": 279,
+          "seq_inicio_vuelta": 1,
+          "seq_fin_vuelta": 138,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     },
     {
       "id": "microcruz-linea151",
-      "external_id": "linea151",
-      "name": "linea151",
-      "code": "151",
+      "name": "Ruta RK-151",
+      "code": "RK-151",
       "country_code": "BO",
       "city": "Santa Cruz de la Sierra",
-      "source": "Microcruz",
-      "source_url": "https://microcruz.tel.bo",
+      "source": "pública",
       "approval_status": "pending",
       "directions": [
         {
@@ -169141,13 +169283,16 @@
           ]
         }
       ],
-      "source_directions": {
-        "seq_inicio_ida": 1,
-        "seq_fin_ida": 111,
-        "seq_inicio_vuelta": 112,
-        "seq_fin_vuelta": 213,
-        "sentido_invertido": false,
-        "sentido_confirmado": true
+      "import_reference": {
+        "external_name": "linea151",
+        "directions": {
+          "seq_inicio_ida": 1,
+          "seq_fin_ida": 111,
+          "seq_inicio_vuelta": 112,
+          "seq_fin_vuelta": 213,
+          "sentido_invertido": false,
+          "sentido_confirmado": true
+        }
       }
     }
   ]
