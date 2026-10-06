@@ -11,14 +11,15 @@ export function getSupabaseConfigurationError() {
 }
 
 export function getSupabaseClient() {
-  if (getSupabaseConfigurationError()) {
+  const normalizedUrl = supabaseUrl?.trim().replace(/\/+$/, '').replace(/\/rest\/v1$/, '')
+  const normalizedKey = supabaseAnonKey?.trim()
+
+  if (!normalizedUrl || !normalizedKey) {
     return null
   }
 
-  const normalizedUrl = supabaseUrl.trim().replace(/\/+$/, '').replace(/\/rest\/v1$/, '')
-
   try {
-    return createClient(normalizedUrl, supabaseAnonKey.trim())
+    return createClient(normalizedUrl, normalizedKey)
   } catch {
     return null
   }
