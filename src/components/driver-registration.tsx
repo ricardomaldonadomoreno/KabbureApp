@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useMemo, useState } from 'react'
 import { ArrowLeft, CheckCircle2, LoaderCircle, Mail, MapPin, ShieldCheck } from 'lucide-react'
 import { countries } from 'countries-list'
+import { useRouter } from 'next/navigation'
 import { getSupabaseClient, getSupabaseConfigurationError } from '@/lib/supabase/client'
 
 type RegistrationStatus = 'idle' | 'loading' | 'success' | 'error'
@@ -25,6 +26,7 @@ const countryOptions: CountryOption[] = Object.entries(countries)
   .sort((a, b) => a.name.localeCompare(b.name, 'es'))
 
 export default function DriverRegistration() {
+  const router = useRouter()
   const [fullName, setFullName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -78,7 +80,7 @@ export default function DriverRegistration() {
           return
         }
 
-        setStatus('success')
+        router.replace('/conductor')
         return
       }
 
