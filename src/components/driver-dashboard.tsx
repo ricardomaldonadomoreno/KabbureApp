@@ -120,10 +120,12 @@ export default function DriverDashboard() {
 
   const verificationLabel = {
     pending: 'Pendiente de revisión',
-    approved: 'Perfil aprobado',
+    approved: 'Cuenta verificada',
     rejected: 'Perfil rechazado',
     suspended: 'Perfil suspendido',
   }[driver.verification_status]
+
+  const accountVerified = driver.verification_status === 'approved'
 
   const periodLabel = {
     daily: 'Diario',
@@ -148,7 +150,7 @@ export default function DriverDashboard() {
         <section className="grid gap-5 md:grid-cols-3">
           <article className="rounded-2xl border border-[#222222] bg-[#111111] p-5"><div className="grid h-10 w-10 place-items-center rounded-xl bg-[#CB9546]/15 text-[#E5C76B]"><UserRound size={20} /></div><p className="mt-5 text-xs uppercase tracking-[0.16em] text-[#888888]">Mi perfil</p><h2 className="mt-2 font-semibold">{profile.full_name}</h2><p className="mt-2 break-all text-sm text-[#888888]">{profile.email}</p><p className="mt-1 text-sm text-[#888888]">{profile.phone || 'Teléfono pendiente'}</p><Link href="/conductor/miperfil" className="mt-4 inline-flex rounded-lg border border-[#CB9546] px-3 py-2 text-xs font-semibold text-[#E5C76B] transition hover:bg-[#CB9546] hover:text-black">Completar mi perfil</Link></article>
           <article className="rounded-2xl border border-[#222222] bg-[#111111] p-5"><div className="grid h-10 w-10 place-items-center rounded-xl bg-[#CB9546]/15 text-[#E5C76B]"><BusFront size={20} /></div><p className="mt-5 text-xs uppercase tracking-[0.16em] text-[#888888]">Ruta de trabajo</p>{activeAssignment ? <><h2 className="mt-2 font-semibold text-[#E5C76B]">{activeAssignment.routeCode}</h2><p className="mt-1 text-sm text-white">{activeAssignment.routeName}</p><p className="mt-2 flex items-center gap-2 text-xs text-[#888888]"><CalendarDays size={14} /> Periodo: {periodLabel[activeAssignment.periodType]}</p><button onClick={() => setRouteSelectorOpen(true)} className="mt-4 rounded-lg border border-[#CB9546] px-3 py-2 text-xs font-semibold text-[#E5C76B] transition hover:bg-[#CB9546] hover:text-black">Cambiar ruta</button></> : <><h2 className="mt-2 font-semibold">Aún no seleccionada</h2><p className="mt-2 text-sm leading-6 text-[#888888]">Elige una ruta publicada para comenzar.</p><button onClick={() => setRouteSelectorOpen(true)} className="mt-4 rounded-lg bg-[#CB9546] px-3 py-2 text-xs font-semibold text-black transition hover:bg-[#E5C76B]">Elegir ruta de trabajo</button></>}</article>
-          <article className="rounded-2xl border border-[#222222] bg-[#111111] p-5"><div className="grid h-10 w-10 place-items-center rounded-xl bg-[#06D6A0]/15 text-[#06D6A0]"><Radio size={20} /></div><p className="mt-5 text-xs uppercase tracking-[0.16em] text-[#888888]">Ubicación</p><h2 className="mt-2 font-semibold">Transmisión inactiva</h2><p className="mt-2 text-sm leading-6 text-[#888888]">Actívala únicamente cuando estés realizando tu recorrido.</p><button disabled className="mt-4 rounded-lg border border-[#333333] px-3 py-2 text-xs font-semibold text-[#777777]">Activar GPS próximamente</button></article>
+          <article className="rounded-2xl border border-[#222222] bg-[#111111] p-5"><div className={`grid h-10 w-10 place-items-center rounded-xl ${accountVerified ? 'bg-[#06D6A0]/15 text-[#06D6A0]' : 'bg-[#CB9546]/15 text-[#E5C76B]'}`}><Radio size={20} /></div><p className="mt-5 text-xs uppercase tracking-[0.16em] text-[#888888]">Ubicación</p><h2 className="mt-2 font-semibold">{accountVerified ? 'Transmisión disponible próximamente' : 'GPS bloqueado'}</h2><p className="mt-2 text-sm leading-6 text-[#888888]">{accountVerified ? 'Tu cuenta está verificada. La activación GPS se habilitará en el siguiente módulo.' : 'No puedes compartir tu ubicación hasta que tu cuenta cambie a Cuenta verificada.'}</p><button disabled={!accountVerified} className="mt-4 rounded-lg border border-[#333333] px-3 py-2 text-xs font-semibold text-[#777777] disabled:cursor-not-allowed disabled:opacity-70">{accountVerified ? 'Activar GPS próximamente' : 'Esperando verificación'}</button></article>
         </section>
 
         {routeSelectorOpen ? <DriverRouteSelector driverUserId={driverUserId} onClose={() => setRouteSelectorOpen(false)} onJoined={(route, periodType, endedAt) => { setActiveAssignment({ routeId: routeIdFromMapRoute(route), routeCode: route.code, routeName: route.name, periodType, startedAt: new Date().toISOString(), endedAt }); setRouteSelectorOpen(false) }} /> : null}
