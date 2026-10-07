@@ -28,7 +28,7 @@ function parseImport(content: string): ImportData {
         name: String(route.name ?? 'Ruta sin nombre'),
         city: String(route.city ?? 'Ciudad pendiente'),
         country: String(route.country_code ?? 'País pendiente'),
-        paths: directions.slice(0, 2).map((direction, index) => ({
+        paths: directions.slice(0, 2).map((direction, index): DirectionPayload => ({
           pathCode: index === 0 ? 'A' : 'B',
           geometry: { type: 'LineString', coordinates: Array.isArray(direction.coordinates) ? direction.coordinates : [] },
           originName: null,
