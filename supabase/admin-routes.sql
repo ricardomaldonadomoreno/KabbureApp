@@ -68,6 +68,11 @@ create index if not exists route_import_paths_review_idx
   on public.route_import_paths(review_status, import_item_id);
 
 -- Sin RLS en esta fase, de acuerdo con la arquitectura inicial de Kabbure.
+-- Estas sentencias también corrigen tablas creadas previamente con RLS activado.
+alter table public.route_imports disable row level security;
+alter table public.route_import_items disable row level security;
+alter table public.route_import_paths disable row level security;
+
 -- El panel valida el UUID administrador antes de permitir la operación.
 grant select, insert, update, delete on public.route_imports to anon, authenticated;
 grant select, insert, update, delete on public.route_import_items to anon, authenticated;
