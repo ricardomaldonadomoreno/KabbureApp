@@ -34,17 +34,18 @@ export default function MobilityHome() {
   const [routesLoading, setRoutesLoading] = useState(false)
   const [routesError, setRoutesError] = useState<string | null>(null)
   const [search, setSearch] = useState('')
+  const [nearbyRadius, setNearbyRadius] = useState(100)
   const [selectedRouteId, setSelectedRouteId] = useState<string | null>(null)
   const [visibleRouteIds, setVisibleRouteIds] = useState<Set<string>>(new Set())
   const [driverPanelOpen, setDriverPanelOpen] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
-  const fetchRoutes = useCallback(async (position: [number, number]) => {
+  const fetchRoutes = useCallback(async (position: [number, number], radius = 2_500) => {
     setRoutesLoading(true)
     setRoutesError(null)
 
     try {
-      const response = await fetch(`/api/routes?lat=${position[0]}&lng=${position[1]}`)
+      const response = await fetch(`/api/routes?lat=${position[0]}&lng=${position[1]}&radius=${radius}`)
       const data = (await response.json()) as { routes?: MapRoute[]; error?: string }
       if (!response.ok) throw new Error(data.error || 'No se pudieron cargar las rutas.')
       setRoutes(data.routes ?? [])
@@ -105,13 +106,18 @@ export default function MobilityHome() {
         setMapPoint(null)
         setCenter(nextLocation)
         setLocationStatus('ready')
-        void fetchRoutes(nextLocation)
+        void fetchRoutes(nextLocation, nearbyRadius)
       },
       (error) => {
         setLocationStatus(error.code === error.PERMISSION_DENIED ? 'denied' : 'error')
       },
       { enableHighAccuracy: true, timeout: 10_000, maximumAge: 60_000 },
     )
+  }
+
+  function searchNearbyRoutes() {
+    const point = mapPoint ?? userLocation
+    if (point) void fetchRoutes(point, nearbyRadius)
   }
 
   function handleMapMove(nextCenter: [number, number]) {
@@ -125,7 +131,7 @@ export default function MobilityHome() {
     setSelectedRouteId(null)
     setVisibleRouteIds(new Set())
     setSearch('')
-    void fetchRoutes(point)
+    void fetchRoutes(point, nearbyRadius)
   }
 
   const selectedRoute = routes.find((route) => route.id === selectedRouteId)
@@ -215,6 +221,11 @@ export default function MobilityHome() {
               <Search size={17} /><span className="sr-only">Buscar ruta</span><input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Buscar ruta o código" className="w-full bg-transparent text-white outline-none placeholder:text-[#666666]" />
             </label>
             </div>
+          </div>
+          <div className="flex flex-wrap items-center gap-2 border-b border-[#222222] bg-[#0D0D0D] px-4 py-3 sm:px-5">
+            <span className="mr-1 text-xs font-semibold text-[#B7B7B7]">Radio del punto:</span>
+            {[10, 20, 50, 100, 250, 500].map((radius) => <button key={radius} onClick={() => setNearbyRadius(radius)} className={`rounded-lg border px-2.5 py-1.5 text-xs font-semibold transition ${nearbyRadius === radius ? 'border-[#CB9546] bg-[#CB9546] text-black' : 'border-[#333333] text-[#A5A5A5] hover:border-[#CB9546] hover:text-white'}`}>{radius} m</button>)}
+            <button onClick={searchNearbyRoutes} disabled={!mapPoint && !userLocation} className="ml-auto inline-flex items-center gap-2 rounded-lg border border-[#06D6A0]/50 px-3 py-1.5 text-xs font-semibold text-[#06D6A0] transition hover:bg-[#06D6A0]/10 disabled:cursor-not-allowed disabled:opacity-40"><Crosshair size={14} /> Buscar cercanas</button>
           </div>
           <div className="grid lg:grid-cols-[minmax(0,1fr)_330px]">
             <div className="relative min-h-[560px] bg-[#d9d3c5]">

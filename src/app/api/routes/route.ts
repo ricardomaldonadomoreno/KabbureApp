@@ -22,11 +22,30 @@ function geometryPoints(geometry: PublicRouteRow['geometry']): [number, number][
   return coordinates.flatMap((point) => Array.isArray(point) && point.length >= 2 && typeof point[0] === 'number' && typeof point[1] === 'number' ? [[point[1], point[0]] as [number, number]] : [])
 }
 
-function isNear(points: [number, number][], latitude: number, longitude: number) {
-  return points.some(([lat, lng]) => Math.abs(lat - latitude) <= 0.18 && Math.abs(lng - longitude) <= 0.18)
+function distanceToPathMeters(points: [number, number][], latitude: number, longitude: number) {
+  const latitudeScale = 110_540
+  const longitudeScale = 111_320 * Math.cos((latitude * Math.PI) / 180)
+  const projected = points.map(([lat, lng]) => [(lng - longitude) * longitudeScale, (lat - latitude) * latitudeScale] as [number, number])
+  let minimum = Number.POSITIVE_INFINITY
+
+  for (let index = 0; index < projected.length; index += 1) {
+    const [x, y] = projected[index]
+    if (index === 0) {
+      minimum = Math.min(minimum, Math.hypot(x, y))
+      continue
+    }
+    const [x2, y2] = projected[index - 1]
+    const dx = x - x2
+    const dy = y - y2
+    const lengthSquared = dx * dx + dy * dy
+    const projection = lengthSquared === 0 ? 0 : Math.max(0, Math.min(1, -(x2 * dx + y2 * dy) / lengthSquared))
+    minimum = Math.min(minimum, Math.hypot(x2 + projection * dx, y2 + projection * dy))
+  }
+
+  return minimum
 }
 
-async function publishedRoutes(latitude: number, longitude: number) {
+async function publishedRoutes(latitude: number, longitude: number, radiusMeters: number) {
   const supabase = getSupabaseClient()
   if (!supabase) return []
   const { data, error } = await supabase.from('published_route_paths').select('route_id, public_code, display_name, path_code, geometry')
@@ -41,7 +60,7 @@ async function publishedRoutes(latitude: number, longitude: number) {
       source: 'kabbure' as const,
       updatedAt: new Date().toISOString(),
     }))
-    .filter((route) => route.geometry.length > 1 && isNear(route.geometry, latitude, longitude))
+    .filter((route) => route.geometry.length > 1 && distanceToPathMeters(route.geometry, latitude, longitude) <= radiusMeters)
     .sort((a, b) => a.name.localeCompare(b.name))
 }
 
@@ -64,12 +83,13 @@ export async function GET(request: NextRequest) {
   const latitude = numberParam(searchParams.get('lat'), 20)
   const longitude = numberParam(searchParams.get('lng'), 0)
   const requestedRadius = numberParam(searchParams.get('radius'), 2_500)
-  const radius = Math.min(Math.max(requestedRadius, 1_000), MAX_RADIUS_METERS)
+  const radius = Math.min(Math.max(requestedRadius, 10), MAX_RADIUS_METERS)
   if (Math.abs(latitude) > 90 || Math.abs(longitude) > 180) return NextResponse.json({ error: 'Coordenadas inválidas.' }, { status: 400 })
 
   try {
-    const kabbureRoutes = await publishedRoutes(latitude, longitude)
+    const kabbureRoutes = await publishedRoutes(latitude, longitude, radius)
     if (kabbureRoutes.length) return NextResponse.json({ routes: kabbureRoutes, source: 'Kabbure' })
+    if (radius < 1_000) return NextResponse.json({ routes: [], source: 'Kabbure' })
     const routes = await fallbackOpenStreetMap(latitude, longitude, radius)
     return NextResponse.json({ routes, source: 'OpenStreetMap / Overpass API' })
   } catch (error) {
