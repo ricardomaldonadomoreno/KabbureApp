@@ -2,9 +2,11 @@
 
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import { BusFront, CheckCircle2, LogOut, MapPin, Radio, UserRound } from 'lucide-react'
+import { BusFront, CalendarDays, CheckCircle2, LogOut, MapPin, Radio, UserRound } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { getSupabaseClient } from '@/lib/supabase/client'
+import type { MapRoute } from '@/types/mobility'
+import DriverRouteSelector from '@/components/driver-route-selector'
 
 type Profile = {
   full_name: string
@@ -19,10 +21,26 @@ type Driver = {
   driver_status: 'inactive' | 'active' | 'paused'
 }
 
+type ActiveAssignment = {
+  routeId: string
+  routeCode: string
+  routeName: string
+  periodType: 'daily' | 'weekly' | 'monthly' | 'indefinite'
+  startedAt: string
+  endedAt: string | null
+}
+
+function routeIdFromMapRoute(route: MapRoute) {
+  return route.id.replace(/^kabbure-/, '').replace(/-[AB]$/, '')
+}
+
 export default function DriverDashboard() {
   const router = useRouter()
   const [profile, setProfile] = useState<Profile | null>(null)
   const [driver, setDriver] = useState<Driver | null>(null)
+  const [driverUserId, setDriverUserId] = useState('')
+  const [activeAssignment, setActiveAssignment] = useState<ActiveAssignment | null>(null)
+  const [routeSelectorOpen, setRouteSelectorOpen] = useState(false)
   const [loading, setLoading] = useState(true)
   const [errorMessage, setErrorMessage] = useState('')
 
@@ -47,9 +65,10 @@ export default function DriverDashboard() {
         return
       }
 
-      const [{ data: profileData, error: profileError }, { data: driverData, error: driverError }] = await Promise.all([
+      const [{ data: profileData, error: profileError }, { data: driverData, error: driverError }, { data: assignmentData }] = await Promise.all([
         supabase.from('profiles').select('full_name, email, country_code, phone, cargo').eq('id', user.id).maybeSingle(),
         supabase.from('drivers').select('verification_status, driver_status').eq('user_id', user.id).maybeSingle(),
+        supabase.from('driver_route_assignments').select('route_id, period_type, started_at, ended_at').eq('driver_user_id', user.id).eq('status', 'active').maybeSingle(),
       ])
 
       if (!active) return
@@ -62,6 +81,20 @@ export default function DriverDashboard() {
 
       setProfile(profileData as Profile)
       setDriver(driverData as Driver)
+      setDriverUserId(user.id)
+      if (assignmentData) {
+        const { data: routeData } = await supabase.from('routes').select('id, public_code, display_name').eq('id', assignmentData.route_id).maybeSingle()
+        if (routeData) {
+          setActiveAssignment({
+            routeId: routeData.id,
+            routeCode: routeData.public_code,
+            routeName: routeData.display_name,
+            periodType: assignmentData.period_type,
+            startedAt: assignmentData.started_at,
+            endedAt: assignmentData.ended_at,
+          })
+        }
+      }
       setLoading(false)
     }
 
@@ -92,6 +125,13 @@ export default function DriverDashboard() {
     suspended: 'Perfil suspendido',
   }[driver.verification_status]
 
+  const periodLabel = {
+    daily: 'Diario',
+    weekly: 'Semanal',
+    monthly: 'Mensual',
+    indefinite: 'Indefinido',
+  }
+
   return (
     <main className="min-h-screen bg-black px-5 py-8 text-white sm:px-8">
       <div className="mx-auto max-w-6xl">
@@ -107,11 +147,13 @@ export default function DriverDashboard() {
 
         <section className="grid gap-5 md:grid-cols-3">
           <article className="rounded-2xl border border-[#222222] bg-[#111111] p-5"><div className="grid h-10 w-10 place-items-center rounded-xl bg-[#CB9546]/15 text-[#E5C76B]"><UserRound size={20} /></div><p className="mt-5 text-xs uppercase tracking-[0.16em] text-[#888888]">Mi perfil</p><h2 className="mt-2 font-semibold">{profile.full_name}</h2><p className="mt-2 break-all text-sm text-[#888888]">{profile.email}</p><p className="mt-1 text-sm text-[#888888]">{profile.phone || 'Teléfono pendiente'}</p></article>
-          <article className="rounded-2xl border border-[#222222] bg-[#111111] p-5"><div className="grid h-10 w-10 place-items-center rounded-xl bg-[#CB9546]/15 text-[#E5C76B]"><BusFront size={20} /></div><p className="mt-5 text-xs uppercase tracking-[0.16em] text-[#888888]">Ruta de trabajo</p><h2 className="mt-2 font-semibold">Aún no seleccionada</h2><p className="mt-2 text-sm leading-6 text-[#888888]">Aquí aparecerá el recorrido que elijas para trabajar.</p><button disabled className="mt-4 rounded-lg border border-[#333333] px-3 py-2 text-xs font-semibold text-[#777777]">Elegir ruta próximamente</button></article>
+          <article className="rounded-2xl border border-[#222222] bg-[#111111] p-5"><div className="grid h-10 w-10 place-items-center rounded-xl bg-[#CB9546]/15 text-[#E5C76B]"><BusFront size={20} /></div><p className="mt-5 text-xs uppercase tracking-[0.16em] text-[#888888]">Ruta de trabajo</p>{activeAssignment ? <><h2 className="mt-2 font-semibold text-[#E5C76B]">{activeAssignment.routeCode}</h2><p className="mt-1 text-sm text-white">{activeAssignment.routeName}</p><p className="mt-2 flex items-center gap-2 text-xs text-[#888888]"><CalendarDays size={14} /> Periodo: {periodLabel[activeAssignment.periodType]}</p><button onClick={() => setRouteSelectorOpen(true)} className="mt-4 rounded-lg border border-[#CB9546] px-3 py-2 text-xs font-semibold text-[#E5C76B] transition hover:bg-[#CB9546] hover:text-black">Cambiar ruta</button></> : <><h2 className="mt-2 font-semibold">Aún no seleccionada</h2><p className="mt-2 text-sm leading-6 text-[#888888]">Elige una ruta publicada para comenzar.</p><button onClick={() => setRouteSelectorOpen(true)} className="mt-4 rounded-lg bg-[#CB9546] px-3 py-2 text-xs font-semibold text-black transition hover:bg-[#E5C76B]">Elegir ruta de trabajo</button></>}</article>
           <article className="rounded-2xl border border-[#222222] bg-[#111111] p-5"><div className="grid h-10 w-10 place-items-center rounded-xl bg-[#06D6A0]/15 text-[#06D6A0]"><Radio size={20} /></div><p className="mt-5 text-xs uppercase tracking-[0.16em] text-[#888888]">Ubicación</p><h2 className="mt-2 font-semibold">Transmisión inactiva</h2><p className="mt-2 text-sm leading-6 text-[#888888]">Actívala únicamente cuando estés realizando tu recorrido.</p><button disabled className="mt-4 rounded-lg border border-[#333333] px-3 py-2 text-xs font-semibold text-[#777777]">Activar GPS próximamente</button></article>
         </section>
 
-        <section className="mt-8 rounded-3xl border border-[#CB9546]/25 bg-[#CB9546]/10 p-6 sm:p-8"><div className="flex gap-4"><MapPin className="mt-1 shrink-0 text-[#E5C76B]" size={23} /><div><h2 className="font-semibold text-[#E5C76B]">Tu siguiente paso</h2><p className="mt-2 max-w-2xl text-sm leading-6 text-[#B7B7B7]">Cuando el catálogo de rutas esté disponible, podrás elegir un recorrido aprobado, renovarlo cuando lo necesites y comenzar a publicar tu ubicación de forma voluntaria.</p></div></div></section>
+        {routeSelectorOpen ? <DriverRouteSelector driverUserId={driverUserId} onClose={() => setRouteSelectorOpen(false)} onJoined={(route, periodType, endedAt) => { setActiveAssignment({ routeId: routeIdFromMapRoute(route), routeCode: route.code, routeName: route.name, periodType, startedAt: new Date().toISOString(), endedAt }); setRouteSelectorOpen(false) }} /> : null}
+
+        <section className="mt-8 rounded-3xl border border-[#CB9546]/25 bg-[#CB9546]/10 p-6 sm:p-8"><div className="flex gap-4"><MapPin className="mt-1 shrink-0 text-[#E5C76B]" size={23} /><div><h2 className="font-semibold text-[#E5C76B]">Tu siguiente paso</h2><p className="mt-2 max-w-2xl text-sm leading-6 text-[#B7B7B7]">Elige una ruta publicada, define por cuánto tiempo deseas trabajar en ella y, más adelante, podrás comenzar a publicar tu ubicación de forma voluntaria.</p></div></div></section>
       </div>
     </main>
   )
