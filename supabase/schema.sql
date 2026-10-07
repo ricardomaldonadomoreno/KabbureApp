@@ -87,21 +87,25 @@ create table public.drivers (
 );
 
 -- 6. Historial renovable de rutas elegidas por el conductor.
+-- El conductor elige la ruta completa; A y B son sus dos direcciones.
 create table public.driver_route_assignments (
   id uuid primary key default gen_random_uuid(),
   driver_user_id uuid not null references public.drivers(user_id) on delete cascade,
-  route_path_id uuid not null references public.route_paths(id),
+  route_id uuid not null references public.routes(id),
+  period_type text not null default 'indefinite' check (period_type in ('daily', 'weekly', 'monthly', 'indefinite')),
   status text not null default 'active' check (status in ('active', 'paused', 'ended')),
   started_at timestamptz not null default now(),
   ended_at timestamptz,
   created_at timestamptz not null default now(),
-  unique (driver_user_id, route_path_id, started_at)
+  unique (driver_user_id, route_id, started_at)
 );
 
 create index cities_country_idx on public.cities(country_code);
 create index routes_city_status_idx on public.routes(city_id, status);
 create index route_paths_route_status_idx on public.route_paths(route_id, status);
 create index assignments_driver_status_idx on public.driver_route_assignments(driver_user_id, status);
+create index assignments_route_status_idx on public.driver_route_assignments(route_id, status);
+create unique index driver_one_active_route_idx on public.driver_route_assignments(driver_user_id) where status = 'active';
 
 -- Vista pública para que el mapa solo lea rutas publicadas.
 create or replace view public.published_route_paths as
@@ -174,3 +178,4 @@ after insert on auth.users
 for each row execute procedure public.handle_new_kabbure_user();
 
 grant select on public.published_route_paths to anon, authenticated;
+grant select, insert, update, delete on public.driver_route_assignments to anon, authenticated;
