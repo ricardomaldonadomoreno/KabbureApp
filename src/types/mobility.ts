@@ -33,6 +33,6 @@ export type MapRoute = {
   code: string
   network: string | null
   geometry: [number, number][]
-  source: 'openstreetmap'
+  source: 'openstreetmap' | 'kabbure'
   updatedAt: string
 }
