@@ -101,7 +101,7 @@ export default function MobilityMap({
   onMapPick,
 }: MobilityMapProps) {
   return (
-    <MapContainer center={center} zoom={2} scrollWheelZoom className="h-full min-h-[560px] w-full">
+    <MapContainer center={center} zoom={2} scrollWheelZoom className="h-full min-h-[420px] w-full sm:min-h-[500px] lg:min-h-[560px]">
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

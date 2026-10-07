@@ -152,7 +152,7 @@ export default function MobilityHome() {
   const selectedRoute = routes.find((route) => route.id === selectedRouteId)
 
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen overflow-x-hidden bg-black text-white">
       <header className="fixed inset-x-0 top-0 z-[1000] border-b border-white/10 bg-black/85 backdrop-blur-xl">
         <div className="mx-auto flex h-[76px] max-w-[1600px] items-center justify-between px-5 sm:px-8">
           <a href="#inicio" className="flex items-center gap-3" aria-label="Kabbure, inicio">
@@ -189,24 +189,24 @@ export default function MobilityHome() {
       </header>
 
       <section id="inicio" className="mx-auto max-w-[1600px] px-5 pb-10 pt-32 sm:px-8 lg:pb-14 lg:pt-40">
-        <div className="grid items-end gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(420px,1.1fr)]">
+        <div className="grid items-end gap-10 md:grid-cols-[minmax(0,1fr)_minmax(280px,0.8fr)] lg:grid-cols-[minmax(0,0.9fr)_minmax(420px,1.1fr)]">
           <div>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#CB9546]/40 bg-[#CB9546]/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-[#E5C76B]">
               <span className="h-1.5 w-1.5 rounded-full bg-[#06D6A0]" /> Movilidad visible
             </div>
-            <h1 className="kabbure-display max-w-2xl text-5xl font-bold leading-[1.02] tracking-[-0.03em] sm:text-7xl">
+            <h1 className="kabbure-display max-w-2xl text-4xl font-bold leading-[1.02] tracking-[-0.03em] sm:text-5xl lg:text-7xl">
               Mira cómo se mueve <span className="text-[#CB9546]">tu ciudad.</span>
             </h1>
             <p className="mt-7 max-w-xl text-base leading-7 text-[#A5A5A5] sm:text-lg">
               Consulta rutas existentes y descubre la actividad de vehículos que comparten su ubicación en tiempo real.
               Kabbure informa; no asigna viajes ni opera el transporte.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <button onClick={updateLocation} className="kabbure-focus inline-flex items-center gap-2 rounded-xl bg-[#CB9546] px-5 py-3.5 text-sm font-semibold text-black transition hover:bg-[#E5C76B]">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <button onClick={updateLocation} className="kabbure-focus inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#CB9546] px-5 py-3.5 text-sm font-semibold text-black transition hover:bg-[#E5C76B] sm:w-auto">
                 {locationStatus === 'loading' ? <LoaderCircle className="animate-spin" size={18} /> : <Crosshair size={18} />}
                 {locationStatus === 'ready' ? 'Ubicación actualizada' : 'Actualizar mi ubicación'}
               </button>
-              <button onClick={() => setDriverPanelOpen(true)} className="kabbure-focus inline-flex items-center gap-2 rounded-xl border border-[#CB9546] px-5 py-3.5 text-sm font-semibold text-[#E5C76B] transition hover:bg-[#CB9546] hover:text-black">
+              <button onClick={() => setDriverPanelOpen(true)} className="kabbure-focus inline-flex w-full items-center justify-center gap-2 rounded-xl border border-[#CB9546] px-5 py-3.5 text-sm font-semibold text-[#E5C76B] transition hover:bg-[#CB9546] hover:text-black sm:w-auto">
                 Publicar como conductor <ArrowRight size={17} />
               </button>
             </div>
@@ -214,7 +214,7 @@ export default function MobilityHome() {
             {locationStatus === 'error' ? <p className="mt-3 flex items-center gap-2 text-xs text-[#E63946]"><AlertCircle size={14} /> No fue posible obtener tu ubicación en este momento.</p> : null}
           </div>
 
-          <div className="grid grid-cols-3 gap-3 border-t border-[#222222] pt-5 text-sm lg:border-t-0 lg:pt-0">
+          <div className="grid grid-cols-3 gap-2 border-t border-[#222222] pt-5 text-sm md:gap-3 lg:border-t-0 lg:pt-0">
             <div><p className="text-2xl font-semibold text-[#E5C76B]">{visibleRoutes.length}</p><p className="mt-1 text-[#888888]">rutas visibles</p></div>
             <div><p className="text-2xl font-semibold text-[#06D6A0]">GPS</p><p className="mt-1 text-[#888888]">en tiempo real</p></div>
             <div><p className="text-2xl font-semibold text-white">OSM</p><p className="mt-1 text-[#888888]">fuente abierta</p></div>
@@ -225,20 +225,20 @@ export default function MobilityHome() {
       <section id="mapa" className="mx-auto max-w-[1600px] px-5 pb-20 sm:px-8">
         <div className="overflow-hidden rounded-3xl border border-[#222222] bg-[#111111] shadow-2xl shadow-black/40">
           <div className="flex flex-col gap-4 border-b border-[#222222] p-4 sm:p-5 lg:flex-row lg:items-center lg:justify-between">
-            <div className="flex items-center gap-3">
+            <div className="flex min-w-0 items-center gap-3">
               <div className="grid h-10 w-10 place-items-center rounded-xl bg-[#CB9546]/15 text-[#E5C76B]"><BusFront size={20} /></div>
-              <div><h2 className="font-semibold">Rutas cercanas</h2><p className="text-xs text-[#888888]">Rutas públicas de Kabbure y datos abiertos</p></div>
+              <div className="min-w-0"><h2 className="font-semibold">Rutas cercanas</h2><p className="text-xs text-[#888888]">Rutas públicas de Kabbure y datos abiertos</p></div>
             </div>
             <HomeMapControls nearbyRadius={nearbyRadius} onRadiusChange={setNearbyRadius} onShowAll={showAllRoutes} onClearMap={clearMap} search={search} onSearchChange={setSearch} onSearchNearby={searchNearbyRoutes} nearbySearchDisabled={!mapPoint && !userLocation} />
           </div>
           <div className="grid lg:grid-cols-[minmax(0,1fr)_330px]">
-            <div className="relative min-h-[560px] bg-[#d9d3c5]">
+            <div className="relative min-h-[420px] bg-[#d9d3c5] sm:min-h-[500px] lg:min-h-[560px]">
               <MobilityMap center={center} userLocation={userLocation} mapPoint={mapPoint} routes={visibleRoutes} selectedRouteId={selectedRouteId} onRouteSelect={setSelectedRouteId} onMapMove={handleMapMove} onMapPick={handleMapPick} />
-              <div className="absolute left-4 top-4 z-[500] rounded-lg border border-[#CB9546]/50 bg-black/85 px-3 py-2 text-xs text-[#E5C76B] shadow-lg backdrop-blur-sm">Haz clic en el mapa para buscar rutas aquí</div><div className="absolute bottom-4 left-4 z-[500] rounded-lg bg-white/90 px-3 py-2 text-[10px] text-black shadow-lg backdrop-blur-sm">© OpenStreetMap contributors</div>
+              <div className="absolute left-3 top-3 z-[500] max-w-[calc(100%-1.5rem)] rounded-lg border border-[#CB9546]/50 bg-black/85 px-3 py-2 text-xs text-[#E5C76B] shadow-lg backdrop-blur-sm sm:left-4 sm:top-4">Haz clic en el mapa para buscar rutas aquí</div><div className="absolute bottom-3 left-3 z-[500] rounded-lg bg-white/90 px-3 py-2 text-[10px] text-black shadow-lg backdrop-blur-sm sm:bottom-4 sm:left-4">© OpenStreetMap contributors</div>
             </div>
             <aside className="border-t border-[#222222] lg:border-l lg:border-t-0">
               <div className="border-b border-[#222222] px-5 py-4"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#888888]">Rutas</p><p className="mt-1 text-sm text-[#B7B7B7]">El mapa inicia limpio. Selecciona una ruta para mostrarla.</p></div>
-              <div className="max-h-[500px] overflow-y-auto p-3">
+              <div className="max-h-[360px] overflow-y-auto p-3 sm:max-h-[420px] lg:max-h-[500px]">
                 {routesLoading ? <div className="flex items-center gap-2 px-3 py-5 text-sm text-[#888888]"><LoaderCircle className="animate-spin" size={17} /> Consultando rutas reales...</div> : null}
                 {!routesLoading && routesError ? <div className="rounded-xl border border-[#E63946]/30 bg-[#E63946]/10 p-4 text-sm text-[#FF9CA5]"><AlertCircle className="mb-2" size={18} /><p>{routesError}</p><button onClick={() => void fetchRoutes(userLocation ?? DEFAULT_CENTER)} className="mt-3 font-semibold underline">Intentar de nuevo</button></div> : null}
                 {!routesLoading && !routesError && filteredRoutes.length === 0 ? <div className="px-3 py-6 text-sm text-[#888888]"><MapPin className="mb-3 text-[#CB9546]" size={21} /><p className="font-medium text-[#B7B7B7]">Busca una ciudad para consultar sus rutas.</p><p className="mt-2 leading-6">Mueve el mapa a otra ciudad o país y Kabbure consultará los recorridos disponibles en esa zona.</p></div> : null}
@@ -276,7 +276,7 @@ export default function MobilityHome() {
         </div>
       </footer>
 
-      {driverPanelOpen ? <div className="fixed inset-0 z-[2000] bg-black/70 backdrop-blur-sm" onClick={() => setDriverPanelOpen(false)}><section role="dialog" aria-modal="true" aria-labelledby="driver-title" onClick={(event) => event.stopPropagation()} className="absolute inset-x-0 bottom-0 max-h-[92vh] overflow-y-auto rounded-t-3xl border-t border-[#CB9546]/40 bg-[#111111] p-6 shadow-2xl sm:inset-y-0 sm:left-auto sm:max-w-lg sm:rounded-none sm:border-l sm:border-t-0 sm:p-9"><div className="flex items-start justify-between"><div><p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#CB9546]">Kabbure Driver</p><h2 id="driver-title" className="kabbure-display mt-3 text-4xl font-bold">Haz visible tu recorrido.</h2></div><button onClick={() => setDriverPanelOpen(false)} className="kabbure-focus rounded-lg p-2 text-[#888888] hover:bg-[#222222] hover:text-white" aria-label="Cerrar"><X size={21} /></button></div><p className="mt-5 leading-7 text-[#B7B7B7]">Kabbure ofrece herramientas tecnológicas para que publiques tu actividad mientras realizas voluntariamente un recorrido existente.</p><div className="mt-8 space-y-5">{['Registra tu vehículo y selecciona una ruta disponible.', 'Activa la transmisión GPS únicamente cuando inicies el recorrido.', 'Aparece como vehículo activo para las personas que consultan el mapa.', 'Accede a herramientas de publicación e historial básico mediante el plan Driver.'].map((item) => <div key={item} className="flex gap-3"><span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-[#06D6A0]/15 text-[#06D6A0]"><Check size={15} /></span><p className="text-sm leading-6 text-[#D5D5D5]">{item}</p></div>)}</div><div className="mt-8 rounded-2xl border border-[#CB9546]/25 bg-[#CB9546]/10 p-5"><div className="flex gap-3"><ShieldCheck className="mt-0.5 shrink-0 text-[#E5C76B]" size={21} /><div><h3 className="font-semibold text-[#E5C76B]">Modelo claro</h3><p className="mt-2 text-sm leading-6 text-[#B7B7B7]">Kabbure cobra por las herramientas tecnológicas de publicación y visibilidad. No asigna pasajeros, no reserva viajes y no establece tarifas.</p></div></div></div><a href="/registro" onClick={() => setDriverPanelOpen(false)} className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl bg-[#CB9546] px-5 py-3.5 text-sm font-semibold text-black transition hover:bg-[#E5C76B]">Comenzar registro <ArrowRight size={17} /></a><div className="mt-4 flex items-center justify-center gap-2 text-center text-xs text-[#777777]"><Sparkles size={13} /> Verificación de correo antes de continuar.</div></section></div> : null}
+      {driverPanelOpen ? <div className="fixed inset-0 z-[2000] bg-black/70 backdrop-blur-sm" onClick={() => setDriverPanelOpen(false)}><section role="dialog" aria-modal="true" aria-labelledby="driver-title" onClick={(event) => event.stopPropagation()} className="absolute inset-x-0 bottom-0 max-h-[92vh] overflow-y-auto rounded-t-3xl border-t border-[#CB9546]/40 bg-[#111111] p-5 shadow-2xl sm:inset-y-0 sm:left-auto sm:max-w-lg sm:rounded-none sm:border-l sm:border-t-0 sm:p-9"><div className="flex items-start justify-between"><div><p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#CB9546]">Kabbure Driver</p><h2 id="driver-title" className="kabbure-display mt-3 text-3xl font-bold sm:text-4xl">Haz visible tu recorrido.</h2></div><button onClick={() => setDriverPanelOpen(false)} className="kabbure-focus rounded-lg p-2 text-[#888888] hover:bg-[#222222] hover:text-white" aria-label="Cerrar"><X size={21} /></button></div><p className="mt-5 leading-7 text-[#B7B7B7]">Kabbure ofrece herramientas tecnológicas para que publiques tu actividad mientras realizas voluntariamente un recorrido existente.</p><div className="mt-8 space-y-5">{['Registra tu vehículo y selecciona una ruta disponible.', 'Activa la transmisión GPS únicamente cuando inicies el recorrido.', 'Aparece como vehículo activo para las personas que consultan el mapa.', 'Accede a herramientas de publicación e historial básico mediante el plan Driver.'].map((item) => <div key={item} className="flex gap-3"><span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-[#06D6A0]/15 text-[#06D6A0]"><Check size={15} /></span><p className="text-sm leading-6 text-[#D5D5D5]">{item}</p></div>)}</div><div className="mt-8 rounded-2xl border border-[#CB9546]/25 bg-[#CB9546]/10 p-5"><div className="flex gap-3"><ShieldCheck className="mt-0.5 shrink-0 text-[#E5C76B]" size={21} /><div><h3 className="font-semibold text-[#E5C76B]">Modelo claro</h3><p className="mt-2 text-sm leading-6 text-[#B7B7B7]">Kabbure cobra por las herramientas tecnológicas de publicación y visibilidad. No asigna pasajeros, no reserva viajes y no establece tarifas.</p></div></div></div><a href="/registro" onClick={() => setDriverPanelOpen(false)} className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl bg-[#CB9546] px-5 py-3.5 text-sm font-semibold text-black transition hover:bg-[#E5C76B]">Comenzar registro <ArrowRight size={17} /></a><div className="mt-4 flex items-center justify-center gap-2 text-center text-xs text-[#777777]"><Sparkles size={13} /> Verificación de correo antes de continuar.</div></section></div> : null}
     </main>
   )
 }
