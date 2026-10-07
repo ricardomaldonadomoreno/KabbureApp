@@ -58,8 +58,14 @@ export default function MobilityHome() {
 
   const filteredRoutes = useMemo(() => {
     const normalizedSearch = search.trim().toLowerCase()
-    if (!normalizedSearch) return routes
-    return routes.filter((route) => `${route.name} ${route.code} ${route.network ?? ''}`.toLowerCase().includes(normalizedSearch))
+    const grouped = new Map<string, MapRoute>()
+    routes.forEach((route) => {
+      const groupId = route.source === 'kabbure' ? route.id.replace(/-[AB]$/, '') : route.id
+      if (!grouped.has(groupId)) grouped.set(groupId, route)
+    })
+    const uniqueRoutes = Array.from(grouped.values())
+    if (!normalizedSearch) return uniqueRoutes
+    return uniqueRoutes.filter((route) => `${route.name} ${route.code} ${route.network ?? ''}`.toLowerCase().includes(normalizedSearch))
   }, [routes, search])
 
   const visibleRoutes = useMemo(
@@ -68,10 +74,13 @@ export default function MobilityHome() {
   )
 
   function toggleRoute(routeId: string) {
+    const selectedRoute = routes.find((route) => route.id === routeId)
+    const groupId = selectedRoute?.source === 'kabbure' ? routeId.replace(/-[AB]$/, '') : routeId
+    const groupRouteIds = routes.filter((route) => (route.source === 'kabbure' ? route.id.replace(/-[AB]$/, '') : route.id) === groupId).map((route) => route.id)
     setVisibleRouteIds((current) => {
       const next = new Set(current)
-      if (next.has(routeId)) next.delete(routeId)
-      else next.add(routeId)
+      if (groupRouteIds.every((id) => next.has(id))) groupRouteIds.forEach((id) => next.delete(id))
+      else groupRouteIds.forEach((id) => next.add(id))
       return next
     })
     setSelectedRouteId(routeId)
@@ -88,7 +97,9 @@ export default function MobilityHome() {
   }
 
   function isolateRoute(routeId: string) {
-    setVisibleRouteIds(new Set([routeId]))
+    const selectedRoute = routes.find((route) => route.id === routeId)
+    const groupId = selectedRoute?.source === 'kabbure' ? routeId.replace(/-[AB]$/, '') : routeId
+    setVisibleRouteIds(new Set(routes.filter((route) => (route.source === 'kabbure' ? route.id.replace(/-[AB]$/, '') : route.id) === groupId).map((route) => route.id)))
     setSelectedRouteId(routeId)
   }
 
