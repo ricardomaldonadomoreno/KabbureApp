@@ -4,7 +4,8 @@ import Link from 'next/link'
 import { ArrowRight, BusFront, FileUp, MapPinned, ShieldCheck, UsersRound } from 'lucide-react'
 
 const cards = [
-  { title: 'Rutas', description: 'Importa, crea, revisa y administra rutas públicas con códigos RK.', href: '/admin/rutas', icon: MapPinned, accent: '#E5C76B' },
+  { title: 'Rutas', description: 'Importa y recibe datos de rutas públicas con códigos RK.', href: '/admin/rutas', icon: MapPinned, accent: '#E5C76B' },
+  { title: 'Editor de mapa', description: 'Selecciona país, ciudad y ruta para editar recorridos sobre el mapa.', href: '/admin/rutas/editor', icon: MapPinned, accent: '#E5C76B' },
   { title: 'Importar datos', description: 'Carga paquetes JSON o GeoJSON para preparar nuevas rutas.', href: '/admin/rutas#importar', icon: FileUp, accent: '#06D6A0' },
   { title: 'Conductores', description: 'Consulta posteriormente los conductores registrados en Kabbure.', href: '/admin', icon: UsersRound, accent: '#A5A5A5' },
 ]
