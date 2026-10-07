@@ -12,18 +12,22 @@ import {
   LoaderCircle,
   MapPin,
   Menu,
-  Search,
   ShieldCheck,
   Sparkles,
   X,
 } from 'lucide-react'
 import type { MapRoute } from '@/types/mobility'
+import HomeMapControls from '@/components/home-map-controls'
 
 const MobilityMap = dynamic(() => import('@/components/mobility-map'), { ssr: false })
 
 const DEFAULT_CENTER: [number, number] = [20, 0]
 
 type LocationStatus = 'idle' | 'loading' | 'ready' | 'denied' | 'error'
+
+function getRouteGroupId(route: MapRoute) {
+  return route.source === 'kabbure' ? route.id.replace(/-[AB]$/, '') : route.id
+}
 
 export default function MobilityHome() {
   const [center, setCenter] = useState(DEFAULT_CENTER)
@@ -60,7 +64,7 @@ export default function MobilityHome() {
     const normalizedSearch = search.trim().toLowerCase()
     const grouped = new Map<string, MapRoute>()
     routes.forEach((route) => {
-      const groupId = route.source === 'kabbure' ? route.id.replace(/-[AB]$/, '') : route.id
+      const groupId = getRouteGroupId(route)
       if (!grouped.has(groupId)) grouped.set(groupId, route)
     })
     const uniqueRoutes = Array.from(grouped.values())
@@ -75,8 +79,8 @@ export default function MobilityHome() {
 
   function toggleRoute(routeId: string) {
     const selectedRoute = routes.find((route) => route.id === routeId)
-    const groupId = selectedRoute?.source === 'kabbure' ? routeId.replace(/-[AB]$/, '') : routeId
-    const groupRouteIds = routes.filter((route) => (route.source === 'kabbure' ? route.id.replace(/-[AB]$/, '') : route.id) === groupId).map((route) => route.id)
+    const groupId = selectedRoute ? getRouteGroupId(selectedRoute) : routeId
+    const groupRouteIds = routes.filter((route) => getRouteGroupId(route) === groupId).map((route) => route.id)
     setVisibleRouteIds((current) => {
       const next = new Set(current)
       if (groupRouteIds.every((id) => next.has(id))) groupRouteIds.forEach((id) => next.delete(id))
@@ -98,8 +102,8 @@ export default function MobilityHome() {
 
   function isolateRoute(routeId: string) {
     const selectedRoute = routes.find((route) => route.id === routeId)
-    const groupId = selectedRoute?.source === 'kabbure' ? routeId.replace(/-[AB]$/, '') : routeId
-    setVisibleRouteIds(new Set(routes.filter((route) => (route.source === 'kabbure' ? route.id.replace(/-[AB]$/, '') : route.id) === groupId).map((route) => route.id)))
+    const groupId = selectedRoute ? getRouteGroupId(selectedRoute) : routeId
+    setVisibleRouteIds(new Set(routes.filter((route) => getRouteGroupId(route) === groupId).map((route) => route.id)))
     setSelectedRouteId(routeId)
   }
 
@@ -225,16 +229,7 @@ export default function MobilityHome() {
               <div className="grid h-10 w-10 place-items-center rounded-xl bg-[#CB9546]/15 text-[#E5C76B]"><BusFront size={20} /></div>
               <div><h2 className="font-semibold">Rutas cercanas</h2><p className="text-xs text-[#888888]">Rutas públicas de Kabbure y datos abiertos</p></div>
             </div>
-            <div className="flex flex-wrap gap-2 lg:justify-end">
-              <span className="flex items-center text-xs font-semibold text-[#B7B7B7]">Radio:</span>
-              {[100, 300, 900].map((radius) => <button key={radius} onClick={() => setNearbyRadius(radius)} className={`rounded-lg border px-2.5 py-2 text-xs font-semibold transition ${nearbyRadius === radius ? 'border-[#CB9546] bg-[#CB9546] text-black' : 'border-[#333333] text-[#A5A5A5] hover:border-[#CB9546] hover:text-white'}`}>{radius} m</button>)}
-              <button onClick={showAllRoutes} className="rounded-lg border border-[#CB9546]/60 px-3 py-2 text-xs font-semibold text-[#E5C76B] transition hover:bg-[#CB9546] hover:text-black">Mostrar todas</button>
-              <button onClick={clearMap} className="rounded-lg border border-[#333333] px-3 py-2 text-xs font-semibold text-[#B7B7B7] transition hover:border-[#CB9546] hover:text-white">Mapa limpio</button>
-              <label className="flex w-full items-center gap-2 rounded-xl border border-[#2B2B2B] bg-black px-3 py-2.5 text-sm text-[#888888] sm:w-56">
-                <Search size={17} /><span className="sr-only">Buscar ruta</span><input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Buscar ruta o código" className="w-full bg-transparent text-white outline-none placeholder:text-[#666666]" />
-              </label>
-              <button onClick={searchNearbyRoutes} disabled={!mapPoint && !userLocation} className="inline-flex items-center gap-2 rounded-lg border border-[#06D6A0]/50 px-3 py-2 text-xs font-semibold text-[#06D6A0] transition hover:bg-[#06D6A0]/10 disabled:cursor-not-allowed disabled:opacity-40"><Crosshair size={14} /> Buscar cercanas</button>
-            </div>
+            <HomeMapControls nearbyRadius={nearbyRadius} onRadiusChange={setNearbyRadius} onShowAll={showAllRoutes} onClearMap={clearMap} search={search} onSearchChange={setSearch} onSearchNearby={searchNearbyRoutes} nearbySearchDisabled={!mapPoint && !userLocation} />
           </div>
           <div className="grid lg:grid-cols-[minmax(0,1fr)_330px]">
             <div className="relative min-h-[560px] bg-[#d9d3c5]">
