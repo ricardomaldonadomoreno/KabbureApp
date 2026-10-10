@@ -199,7 +199,6 @@ export default function MobilityHome() {
             </h1>
             <p className="mt-7 max-w-xl text-base leading-7 text-[#A5A5A5] sm:text-lg">
               Consulta rutas existentes y descubre la actividad de vehículos que comparten su ubicación en tiempo real.
-              Kabbure informa; no asigna viajes ni opera el transporte.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <button onClick={updateLocation} className="kabbure-focus inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#CB9546] px-5 py-3.5 text-sm font-semibold text-black transition hover:bg-[#E5C76B] sm:w-auto">
