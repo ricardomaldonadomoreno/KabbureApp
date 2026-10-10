@@ -195,18 +195,19 @@ export default function MobilityHome() {
               <span className="h-1.5 w-1.5 rounded-full bg-[#06D6A0]" /> Movilidad visible
             </div>
             <h1 className="kabbure-display max-w-2xl text-4xl font-bold leading-[1.02] tracking-[-0.03em] sm:text-5xl lg:text-7xl">
-              Mira cómo se mueve <span className="text-[#CB9546]">tu ciudad.</span>
+              Encuentra o crea <span className="text-[#CB9546]">rutas cerca de ti.</span>
             </h1>
             <p className="mt-7 max-w-xl text-base leading-7 text-[#A5A5A5] sm:text-lg">
-              Consulta rutas existentes y descubre la actividad de vehículos que comparten su ubicación en tiempo real.
+              Consulta las rutas cerca de ti y descubre vehículos disponibles en tiempo real.
+              Si tienes un vehículo, gana dinero transportando personas en las rutas disponibles.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <button onClick={updateLocation} className="kabbure-focus inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#CB9546] px-5 py-3.5 text-sm font-semibold text-black transition hover:bg-[#E5C76B] sm:w-auto">
                 {locationStatus === 'loading' ? <LoaderCircle className="animate-spin" size={18} /> : <Crosshair size={18} />}
-                {locationStatus === 'ready' ? 'Ubicación actualizada' : 'Actualizar mi ubicación'}
+                {locationStatus === 'ready' ? 'Rutas cercanas actualizadas' : 'Ver rutas cercanas'}
               </button>
               <button onClick={() => setDriverPanelOpen(true)} className="kabbure-focus inline-flex w-full items-center justify-center gap-2 rounded-xl border border-[#CB9546] px-5 py-3.5 text-sm font-semibold text-[#E5C76B] transition hover:bg-[#CB9546] hover:text-black sm:w-auto">
-                Publicar como conductor <ArrowRight size={17} />
+                Ser conductor <ArrowRight size={17} />
               </button>
             </div>
             {locationStatus === 'denied' ? <p className="mt-3 flex items-center gap-2 text-xs text-[#E5C76B]"><AlertCircle size={14} /> Permite la ubicación del navegador para buscar rutas cercanas.</p> : null}
